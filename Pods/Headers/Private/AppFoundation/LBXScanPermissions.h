@@ -1,0 +1,1 @@
+../../../../../AppFoundation/AppFoundation/GBFoundation/GBQRScan/LBXScanPermissions.h

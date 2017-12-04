@@ -1,0 +1,1 @@
+../../../../../../AppFoundation/AppFoundation/ThirdPart/ShareSDK/ShareSDK/ShareSDK.framework/Headers/SSDKUser.h

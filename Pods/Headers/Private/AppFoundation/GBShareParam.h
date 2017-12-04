@@ -1,0 +1,1 @@
+../../../../../AppFoundation/AppFoundation/Utils/ShareUtil/GBShareParam.h

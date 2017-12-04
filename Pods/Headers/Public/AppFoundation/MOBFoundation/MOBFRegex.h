@@ -1,0 +1,1 @@
+../../../../../../AppFoundation/AppFoundation/ThirdPart/ShareSDK/Required/MOBFoundation.framework/Headers/MOBFRegex.h

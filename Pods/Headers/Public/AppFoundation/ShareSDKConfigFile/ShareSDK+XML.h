@@ -1,0 +1,1 @@
+../../../../../../AppFoundation/AppFoundation/ThirdPart/ShareSDK/ShareSDK/Support/Optional/ShareSDKConfigFile.framework/Headers/ShareSDK+XML.h

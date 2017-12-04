@@ -1,0 +1,1 @@
+../../../../../../AppFoundation/AppFoundation/ThirdPart/ShareSDK/ShareSDK/Support/PlatformConnector/QQConnector.framework/Headers/QQConnector.h
