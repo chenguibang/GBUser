@@ -16,7 +16,6 @@ MJCodingImplementation
     static dispatch_once_t onceToken;
     static UserCenterManager *shareInstance = nil;
     dispatch_once(&onceToken, ^{
-        
         UserCenterManager *app = [NSKeyedUnarchiver unarchiveObjectWithFile:ENCODE_PATH];
         if (!app) {
             shareInstance = [[UserCenterManager alloc]init];
@@ -24,7 +23,6 @@ MJCodingImplementation
         }else{
             shareInstance = app;
         }
-        shareInstance = [[UserCenterManager alloc]init];
     });
     return shareInstance;
 }
@@ -32,19 +30,22 @@ MJCodingImplementation
 
 
 - (void)loginWith:(LoginRequest *)params{
-    
     [GBUserAPI loginWith:params progress:^(NSProgress *progress) {
         
     } success:^(ApiResponse *response) {
-        
         int code = [response.data[@"code"] intValue];
         if (code == 200) {
             self.currentUser = nil;
             self.currentToken = response.data[@"user_token"];
+            self.rc_token = response.data[@"rc_token"];
             [[NSNotificationCenter defaultCenter] postNotificationName:AppClientNOTI_LOGIN_SUCEESS object:response];
+            if([NSKeyedArchiver archiveRootObject:self toFile:ENCODE_PATH]){
+                NSLog(@"用户归档成功");
+            }
         }else{
             [[NSNotificationCenter defaultCenter] postNotificationName:AppClientNOTI_LOGIN_FAILE object:response];
         }
+        [NSKeyedArchiver archiveRootObject:self toFile:ENCODE_PATH];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [[NSNotificationCenter defaultCenter] postNotificationName:AppClientNOTI_LOGIN_FAILE object:error];
     }];
@@ -92,6 +93,10 @@ MJCodingImplementation
 - (void)clearUserInfo{
     self.currentToken = nil;
     self.currentUser = nil;
+    self.rc_token = nil;
+    if([NSKeyedArchiver archiveRootObject:self toFile:ENCODE_PATH]){
+        NSLog(@"用户归档成功");
+    }
 }
 
 
@@ -103,6 +108,26 @@ MJCodingImplementation
         }
         return;
     }
+}
+
+- (void)getUserInfoWithUserId:(NSString *)userId reuslt:(void(^)(UserInfo *userInfo))reuslt{
+    UserInfoParam *parm = [[UserInfoParam alloc]init];
+    parm.userId = userId;
+    [GBUserAPI getUserInfoWithUserInfoParam:parm progress:^(NSProgress *progress) {
+        
+    } success:^(ApiResponse *response) {
+        UserInfoRespone *data = [UserInfoRespone mj_objectWithKeyValues:response.data];
+        if ([data.code intValue] == 200) {
+            UserInfo *user = data.userInfo;
+            if (reuslt) {
+                reuslt(user);
+            }
+        }else{
+            
+        }
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    }];
 }
 
 - (void)getCurrentUserInfoWith:(void (^)(UserInfo *))reuslt{
@@ -180,7 +205,6 @@ MJCodingImplementation
 
 - (void)setCurrentToken:(NSString *)currentToken{
     _currentToken = currentToken;
-    
     [[NSUserDefaults standardUserDefaults] setObject:currentToken forKey:@"token"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }

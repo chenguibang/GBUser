@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "ApiResponse.h"
 #import "ApiResponse.h"
-#import "ApiRequest.h"
+#import "GBUserRequest.h"
 #import "APiSessionManager.h"
 #import <AliyunOSSiOS/OSSService.h>
 #import "BindingRequest.h"
 #import "LoginRequest.h"
 #import "UserInfo.h"
+#import "UserInfoParam.h"
 @interface GBUserAPI : NSObject
 
 //登录网络请求
@@ -47,6 +48,17 @@
  @param failure failure description
  */
 + (void)getCurrentUserInfoWith:(void (^)(NSProgress * progress))downloadProgress success:(void (^)(ApiResponse *response))success failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure;
+
+
+
+/**
+ 获取用户信息
+ 
+ @param downloadProgress downloadProgress description
+ @param success success description
+ @param failure failure description
+ */
++ (void)getUserInfoWithUserInfoParam:(UserInfoParam *)param progress:(void (^)(NSProgress * progress))downloadProgress success:(void (^)(ApiResponse *response))success failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure;
 
 
 /**

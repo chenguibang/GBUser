@@ -26,10 +26,8 @@
 		F8075DEF1FD54603004B4480 /* UserSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DE11FD54602004B4480 /* UserSettingController.m */; };
 		F8075DF01FD54603004B4480 /* UserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DE21FD54603004B4480 /* UserInfoController.m */; };
 		F8075DF11FD54603004B4480 /* YTLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8075DE31FD54603004B4480 /* YTLoginController.xib */; };
-		F8075E041FD54618004B4480 /* UserTableHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DF21FD54616004B4480 /* UserTableHeaderView.h */; };
 		F8075E051FD54618004B4480 /* AuthorityView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DF31FD54616004B4480 /* AuthorityView.h */; };
 		F8075E081FD54618004B4480 /* UserHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DF61FD54616004B4480 /* UserHeaderCell.m */; };
-		F8075E091FD54618004B4480 /* UserTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DF71FD54616004B4480 /* UserTableHeaderView.m */; };
 		F8075E0A1FD54618004B4480 /* YTLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DF81FD54616004B4480 /* YTLoginView.m */; };
 		F8075E0E1FD54618004B4480 /* YTLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8075DFC1FD54617004B4480 /* YTLoginView.xib */; };
 		F8075E0F1FD54618004B4480 /* YTLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DFD1FD54617004B4480 /* YTLoginView.h */; };
@@ -74,6 +72,10 @@
 		F8075E631FD54751004B4480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8075E621FD54751004B4480 /* Assets.xcassets */; };
 		F8075E661FD54751004B4480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8075E641FD54751004B4480 /* LaunchScreen.storyboard */; };
 		F8075E691FD54751004B4480 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E681FD54751004B4480 /* main.m */; };
+		F889E2E11FD64B91000BA03A /* GBUserRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F889E2DF1FD64B91000BA03A /* GBUserRequest.h */; };
+		F889E2E21FD64B91000BA03A /* GBUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F889E2E01FD64B91000BA03A /* GBUserRequest.m */; };
+		F889E2E51FD697C8000BA03A /* UserInfoParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F889E2E31FD697C8000BA03A /* UserInfoParam.h */; };
+		F889E2E61FD697C8000BA03A /* UserInfoParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F889E2E41FD697C8000BA03A /* UserInfoParam.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,10 +104,8 @@
 		F8075DE11FD54602004B4480 /* UserSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingController.m; sourceTree = "<group>"; };
 		F8075DE21FD54603004B4480 /* UserInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoController.m; sourceTree = "<group>"; };
 		F8075DE31FD54603004B4480 /* YTLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTLoginController.xib; sourceTree = "<group>"; };
-		F8075DF21FD54616004B4480 /* UserTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableHeaderView.h; sourceTree = "<group>"; };
 		F8075DF31FD54616004B4480 /* AuthorityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorityView.h; sourceTree = "<group>"; };
 		F8075DF61FD54616004B4480 /* UserHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHeaderCell.m; sourceTree = "<group>"; };
-		F8075DF71FD54616004B4480 /* UserTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableHeaderView.m; sourceTree = "<group>"; };
 		F8075DF81FD54616004B4480 /* YTLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTLoginView.m; sourceTree = "<group>"; };
 		F8075DFC1FD54617004B4480 /* YTLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTLoginView.xib; sourceTree = "<group>"; };
 		F8075DFD1FD54617004B4480 /* YTLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTLoginView.h; sourceTree = "<group>"; };
@@ -154,6 +154,10 @@
 		F8075E651FD54751004B4480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8075E671FD54751004B4480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8075E681FD54751004B4480 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F889E2DF1FD64B91000BA03A /* GBUserRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBUserRequest.h; sourceTree = "<group>"; };
+		F889E2E01FD64B91000BA03A /* GBUserRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBUserRequest.m; sourceTree = "<group>"; };
+		F889E2E31FD697C8000BA03A /* UserInfoParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoParam.h; sourceTree = "<group>"; };
+		F889E2E41FD697C8000BA03A /* UserInfoParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoParam.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,8 +280,6 @@
 				F8075E001FD54617004B4480 /* UserHeaderCell.h */,
 				F8075DF61FD54616004B4480 /* UserHeaderCell.m */,
 				F8075E031FD54618004B4480 /* UserHeaderCell.xib */,
-				F8075DF21FD54616004B4480 /* UserTableHeaderView.h */,
-				F8075DF71FD54616004B4480 /* UserTableHeaderView.m */,
 				F8075E021FD54618004B4480 /* UserTableHeaderView.xib */,
 				F8075DFD1FD54617004B4480 /* YTLoginView.h */,
 				F8075DF81FD54616004B4480 /* YTLoginView.m */,
@@ -309,6 +311,8 @@
 				F8075E351FD54643004B4480 /* UserInfoModifyRespone.m */,
 				F8075E391FD54644004B4480 /* UserInfoRespone.h */,
 				F8075E311FD54642004B4480 /* UserInfoRespone.m */,
+				F889E2E31FD697C8000BA03A /* UserInfoParam.h */,
+				F889E2E41FD697C8000BA03A /* UserInfoParam.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -318,6 +322,8 @@
 			children = (
 				F8075DB21FD5403C004B4480 /* GBUserAPI.h */,
 				F8075DB31FD5403C004B4480 /* GBUserAPI.m */,
+				F889E2DF1FD64B91000BA03A /* GBUserRequest.h */,
+				F889E2E01FD64B91000BA03A /* GBUserRequest.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -359,7 +365,6 @@
 				F8075E3F1FD54644004B4480 /* BindingRequest.h in Headers */,
 				F8075E4A1FD54644004B4480 /* LoginModel.h in Headers */,
 				F8075E0F1FD54618004B4480 /* YTLoginView.h in Headers */,
-				F8075E041FD54618004B4480 /* UserTableHeaderView.h in Headers */,
 				F8075E051FD54618004B4480 /* AuthorityView.h in Headers */,
 				F8075E231FD5462D004B4480 /* UserCenterManager.h in Headers */,
 				F8075E401FD54644004B4480 /* APIBaseRequest.h in Headers */,
@@ -380,6 +385,8 @@
 				F8075E471FD54644004B4480 /* APIBaseResponse.h in Headers */,
 				F8075DE61FD54603004B4480 /* GBTextEditController.h in Headers */,
 				F8075E461FD54644004B4480 /* LoginRequest.h in Headers */,
+				F889E2E51FD697C8000BA03A /* UserInfoParam.h in Headers */,
+				F889E2E11FD64B91000BA03A /* GBUserRequest.h in Headers */,
 				F8075DEA1FD54603004B4480 /* YTLoginController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,7 +581,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8075E091FD54618004B4480 /* UserTableHeaderView.m in Sources */,
 				F8075E0A1FD54618004B4480 /* YTLoginView.m in Sources */,
 				F8075E421FD54644004B4480 /* LoginRequest.m in Sources */,
 				F8075DED1FD54603004B4480 /* UserSecurityController.m in Sources */,
@@ -585,8 +591,10 @@
 				F8075E451FD54644004B4480 /* UserInfoRespone.m in Sources */,
 				F8075DEC1FD54603004B4480 /* GBTextEditController.m in Sources */,
 				F8075DEF1FD54603004B4480 /* UserSettingController.m in Sources */,
+				F889E2E21FD64B91000BA03A /* GBUserRequest.m in Sources */,
 				F8075E491FD54644004B4480 /* UserInfoModifyRespone.m in Sources */,
 				F8075E3C1FD54644004B4480 /* APIBaseResponse.m in Sources */,
+				F889E2E61FD697C8000BA03A /* UserInfoParam.m in Sources */,
 				F8075E221FD5462D004B4480 /* UserInfoVM.m in Sources */,
 				F8075E101FD54618004B4480 /* AuthorityView.m in Sources */,
 				F8075DB51FD5403C004B4480 /* GBUserAPI.m in Sources */,

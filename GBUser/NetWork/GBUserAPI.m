@@ -10,7 +10,7 @@
 
 @implementation GBUserAPI
 + (void)getOSSToken:(void (^)(OSSTaskCompletionSource *, OSSFederationToken *))reult{
-    ApiRequest *loginReq = [ApiRequest requestWith:nil];
+    GBUserRequest *loginReq = [GBUserRequest requestWith:nil];
     NSURL * url = [NSURL URLWithString:[loginReq.serverUrl stringByAppendingString:@"/api/ossToken"]];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     OSSTaskCompletionSource * tcs = [OSSTaskCompletionSource taskCompletionSource];
@@ -53,40 +53,48 @@
 
 + (void)loginWith:(LoginRequest *)params progress:(void (^)(NSProgress *))downloadProgress success:(void (^)(ApiResponse *))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure{
     
-    ApiRequest *loginReq = [ApiRequest requestWith:params];
+    GBUserRequest *loginReq = [GBUserRequest requestWith:params];
     loginReq.apiInterface = @"/api/login";
     [[APiSessionManager shared] API_GET:loginReq progress:downloadProgress success:success failure:failure];
     
 }
 
 + (void)logoutWith:(NSString *)token  progress:(void (^)(NSProgress * progress))downloadProgress success:(void (^)(ApiResponse *response))success failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure{
-    ApiRequest *loginReq = [ApiRequest requestWith:@{@"token":token ? token : @""}];
+    GBUserRequest *loginReq = [GBUserRequest requestWith:@{@"token":token ? token : @""}];
     loginReq.apiInterface = @"/api/logout";
     [[APiSessionManager shared] API_GET:loginReq progress:downloadProgress success:success failure:failure];
 }
 
 + (void)getCurrentUserInfoWith:(void (^)(NSProgress *))downloadProgress success:(void (^)(ApiResponse *))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure{
-    ApiRequest *requst = [ApiRequest requestWith:nil];
+    GBUserRequest *requst = [GBUserRequest requestWith:nil];
+    requst.showMsg = NO;
+    requst.apiInterface = @"/api/userInfo/get";
+    [[APiSessionManager shared] API_GET:requst progress:downloadProgress success:success failure:failure];
+}
+
++ (void)getUserInfoWithUserInfoParam:(UserInfoParam *)param progress:(void (^)(NSProgress * progress))downloadProgress success:(void (^)(ApiResponse *response))success failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure{
+    GBUserRequest *requst = [GBUserRequest requestWith:param];
+    requst.showMsg = NO;
     requst.apiInterface = @"/api/userInfo/get";
     [[APiSessionManager shared] API_GET:requst progress:downloadProgress success:success failure:failure];
 }
 
 + (void)modifyUserInfo:(UserInfo *)userInfo progress:(void (^)(NSProgress *))downloadProgress success:(void (^)(ApiResponse *))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure{
-    ApiRequest *requst = [ApiRequest requestWith:userInfo];
+    GBUserRequest *requst = [GBUserRequest requestWith:userInfo];
     requst.apiInterface = @"/api/userInfo/update";
     [[APiSessionManager shared] API_GET:requst progress:downloadProgress success:success failure:failure];
 }
 
 
 + (void)bindingWith:(BindingRequest *)params progress:(void (^)(NSProgress *))downloadProgress success:(void (^)(ApiResponse *))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure{
-    ApiRequest *requst = [ApiRequest requestWith:params];
+    GBUserRequest *requst = [GBUserRequest requestWith:params];
     
     requst.apiInterface = @"/api/binding";
     [[APiSessionManager shared] API_GET:requst progress:downloadProgress success:success failure:failure];
 }
 
 + (void)getAuthInfoWith:(void (^)(NSProgress *))downloadProgress success:(void (^)(ApiResponse *))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure{
-    ApiRequest *requst = [ApiRequest requestWith:nil];
+    GBUserRequest *requst = [GBUserRequest requestWith:nil];
     requst.apiInterface = @"/api/userInfo/getAuths";
     requst.showMsg = NO;
     [[APiSessionManager shared] API_GET:requst progress:downloadProgress success:success failure:failure];

@@ -18,6 +18,7 @@
     NSString * _currentToken;
 }
 @property (nonatomic ,strong) UserInfo *currentUser;
+@property (nonatomic ,copy) NSString *rc_token;
 @property (nonatomic ,copy) NSString *currentToken;
 
 
@@ -93,6 +94,15 @@
  @param reuslt reuslt description
  */
 - (void)getUserInfoWith:(NSString *)token reuslt:(void(^)(UserInfo *userInfo))reuslt;
+
+
+/**
+ 通过userId 获取用户信息
+ 
+ @param token token
+ @param reuslt reuslt description
+ */
+- (void)getUserInfoWithUserId:(NSString *)userId reuslt:(void(^)(UserInfo *userInfo))reuslt;
 
 
 /**
