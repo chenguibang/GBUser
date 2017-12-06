@@ -123,7 +123,9 @@ MJCodingImplementation
                 reuslt(user);
             }
         }else{
-            
+            if (reuslt) {
+                reuslt([UserInfo new]);
+            }
         }
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         

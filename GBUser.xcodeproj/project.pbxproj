@@ -34,7 +34,6 @@
 		F8075E101FD54618004B4480 /* AuthorityView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DFE1FD54617004B4480 /* AuthorityView.m */; };
 		F8075E121FD54618004B4480 /* UserHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E001FD54617004B4480 /* UserHeaderCell.h */; };
 		F8075E131FD54618004B4480 /* AuthorityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8075E011FD54618004B4480 /* AuthorityView.xib */; };
-		F8075E141FD54618004B4480 /* UserTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8075E021FD54618004B4480 /* UserTableHeaderView.xib */; };
 		F8075E151FD54618004B4480 /* UserHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8075E031FD54618004B4480 /* UserHeaderCell.xib */; };
 		F8075E1E1FD5462D004B4480 /* UserCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E161FD5462D004B4480 /* UserCenterManager.m */; };
 		F8075E1F1FD5462D004B4480 /* UserSecurityVM.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E171FD5462D004B4480 /* UserSecurityVM.h */; };
@@ -112,7 +111,6 @@
 		F8075DFE1FD54617004B4480 /* AuthorityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorityView.m; sourceTree = "<group>"; };
 		F8075E001FD54617004B4480 /* UserHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHeaderCell.h; sourceTree = "<group>"; };
 		F8075E011FD54618004B4480 /* AuthorityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorityView.xib; sourceTree = "<group>"; };
-		F8075E021FD54618004B4480 /* UserTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableHeaderView.xib; sourceTree = "<group>"; };
 		F8075E031FD54618004B4480 /* UserHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserHeaderCell.xib; sourceTree = "<group>"; };
 		F8075E161FD5462D004B4480 /* UserCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterManager.m; sourceTree = "<group>"; };
 		F8075E171FD5462D004B4480 /* UserSecurityVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSecurityVM.h; sourceTree = "<group>"; };
@@ -280,7 +278,6 @@
 				F8075E001FD54617004B4480 /* UserHeaderCell.h */,
 				F8075DF61FD54616004B4480 /* UserHeaderCell.m */,
 				F8075E031FD54618004B4480 /* UserHeaderCell.xib */,
-				F8075E021FD54618004B4480 /* UserTableHeaderView.xib */,
 				F8075DFD1FD54617004B4480 /* YTLoginView.h */,
 				F8075DF81FD54616004B4480 /* YTLoginView.m */,
 				F8075DFC1FD54617004B4480 /* YTLoginView.xib */,
@@ -479,7 +476,6 @@
 			files = (
 				F8075E131FD54618004B4480 /* AuthorityView.xib in Resources */,
 				F8075E0E1FD54618004B4480 /* YTLoginView.xib in Resources */,
-				F8075E141FD54618004B4480 /* UserTableHeaderView.xib in Resources */,
 				F8075E151FD54618004B4480 /* UserHeaderCell.xib in Resources */,
 				F8075DF11FD54603004B4480 /* YTLoginController.xib in Resources */,
 				F8075DEE1FD54603004B4480 /* GBTextEditController.xib in Resources */,
