@@ -15,5 +15,6 @@ FOUNDATION_EXPORT double GBUserVersionNumber;
 FOUNDATION_EXPORT const unsigned char GBUserVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <GBUser/PublicHeader.h>
-
+#import <GBUser/YTLoginController.h>
+#import <GBUser/UserSettingController.h>
 

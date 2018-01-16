@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7D23769F4D9797EBFD7988759CF9152E'
+               BlueprintIdentifier = '461358EF3D200F6E7437C5392B4397F6'
                BlueprintName = 'DBCorner'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libDBCorner.a'>

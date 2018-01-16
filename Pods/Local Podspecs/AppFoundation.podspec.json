@@ -82,9 +82,6 @@
     "UIButton-SSEdgeInsets": [
       "~> 0.1.7"
     ],
-    "UIButton+HHAddLayout": [
-      "~> 0.0.1"
-    ],
     "NSDate-Escort": [
       "~> 1.8.2"
     ],
@@ -109,8 +106,8 @@
     "Bugly": [
 
     ],
-    "JSONKit-NoWarning": [
-      "~> 1.2"
+    "JSONKit": [
+      "~> 1.5pre"
     ],
     "MBProgressHUD": [
       "~> 1.0.0"

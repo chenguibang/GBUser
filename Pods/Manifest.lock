@@ -25,7 +25,7 @@ PODS:
     - FMDB (~> 2.6.2)
     - IQKeyboardManager (~> 4.0.9)
     - JKCategories (~> 1.5)
-    - JSONKit-NoWarning (~> 1.2)
+    - JSONKit (~> 1.5pre)
     - KVOController
     - LBXScan (~> 2.2)
     - Masonry (~> 1.0.2)
@@ -44,7 +44,6 @@ PODS:
     - SDCycleScrollView
     - SVProgressHUD (~> 2.1.2)
     - TZImagePickerController (~> 1.8.1)
-    - UIButton+HHAddLayout (~> 0.0.1)
     - UIButton-SSEdgeInsets (~> 0.1.7)
     - UIImage+Additions (~> 2.1.1)
     - UITableView+FDTemplateLayoutCell (~> 1.6)
@@ -79,13 +78,10 @@ PODS:
   - GBNetWork (1.0.0):
     - AFNetworking
     - MJExtension
-  - GBUser (1.0.0):
-    - AFNetworking
-    - MJExtension
   - GPUImage (0.1.7)
   - IQKeyboardManager (4.0.13)
   - JKCategories (1.6)
-  - JSONKit-NoWarning (1.2)
+  - JSONKit (1.5pre)
   - KVOController (1.2.0)
   - KYGooeyMenu (1.0.5)
   - LBXScan (2.2):
@@ -115,7 +111,6 @@ PODS:
   - SDWebImage/Core (4.2.1)
   - SVProgressHUD (2.1.2)
   - TZImagePickerController (1.8.9)
-  - UIButton+HHAddLayout (0.0.1)
   - UIButton-SSEdgeInsets (0.1.7)
   - UIImage+Additions (2.1.4)
   - UITableView+FDTemplateLayoutCell (1.6)
@@ -134,7 +129,6 @@ DEPENDENCIES:
   - AppFoundation (from `/Users/yh/Desktop/CGB/AppFoundation`)
   - FCFileManager
   - GBNetWork (from `/Users/yh/Desktop/CGB/GBNetWork`)
-  - GBUser (from `/Users/yh/Desktop/CGB/GBUser`)
   - GPUImage (~> 0.1.7)
   - KYGooeyMenu (~> 1.0.5)
   - XMLDictionary (~> 1.4.1)
@@ -144,13 +138,11 @@ EXTERNAL SOURCES:
     :path: "/Users/yh/Desktop/CGB/AppFoundation"
   GBNetWork:
     :path: "/Users/yh/Desktop/CGB/GBNetWork"
-  GBUser:
-    :path: "/Users/yh/Desktop/CGB/GBUser"
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   AliyunOSSiOS: 6d7f1f6aae0176095d147a88d60b23bbef93e0b7
-  AppFoundation: 9763b4323867ab2db9a413119066cb02717178ae
+  AppFoundation: 7744b672e7bbcd15719851ba91ccefc21a7f7517
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   Bugly: da3c02408c14838d498429320545a8e439392978
   CYLTableViewPlaceHolder: 44075c119aab78bbc514c75d771d6565e19938e8
@@ -158,11 +150,10 @@ SPEC CHECKSUMS:
   FCFileManager: df8ae7498afedf9ca56dd0cd12335f04dbe96af3
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GBNetWork: c4e0820fd96ec43fa5b3fdde7d7a551ebc199e60
-  GBUser: 93f5e67017749267951bfef34822856892b21009
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   IQKeyboardManager: 8eab4d8111418414619d1df8e4779ce5d0f8d7e2
   JKCategories: dab1bd3f7500836c5066d09052b85c12a963db12
-  JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
+  JSONKit: bae313ce6a6c444f40489a6c0b023f399888871f
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   KYGooeyMenu: 3d9f3504b59a5dd1b6c4ff34a06836284647a2aa
   LBXScan: 31b69c9657404133324e6b68ef814802ef9cacc0
@@ -182,7 +173,6 @@ SPEC CHECKSUMS:
   SDWebImage: 1fa4c9edf525b744f002db89f3f5a38b3cd4c541
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   TZImagePickerController: b44f4cfc6d320dab9a53adcdda725099be36dcda
-  UIButton+HHAddLayout: 35344f927721a2a63d77a18f0b4bfa07d44fbb22
   UIButton-SSEdgeInsets: 64a600adc670d98e140ddcde1d0e64d7b952502c
   UIImage+Additions: da531911c34e298b46b567a28df03bb098af1389
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
@@ -195,6 +185,6 @@ SPEC CHECKSUMS:
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
   ZYCornerRadius: f0af817be7805b5c63d793042ca7a03f81e14069
 
-PODFILE CHECKSUM: bfb6ec306309980c6d1ca0e9364893d3d9f77b80
+PODFILE CHECKSUM: c0a3f142e7787fee5bdafb4d62d3a953c527f35e
 
 COCOAPODS: 1.2.1

@@ -120,12 +120,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "ZBarSDK/iphone/res/zbar-help.html"
   install_resource "ZBarSDK/iphone/res/zbar-helpicons.png"
   install_resource "ZBarSDK/iphone/res/zbar-samples.png"
-  install_resource "../GBUser/ViewControllers/GBTextEditController.xib"
-  install_resource "../GBUser/ViewControllers/YTLoginController.xib"
-  install_resource "../GBUser/Views/AuthorityView.xib"
-  install_resource "../GBUser/Views/UserHeaderCell.xib"
-  install_resource "../GBUser/Views/UserTableHeaderView.xib"
-  install_resource "../GBUser/Views/YTLoginView.xib"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "../../AppFoundation/AppFoundation/Category/UISearchBar/UISearchBarToolBar.xib"
@@ -168,12 +162,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "ZBarSDK/iphone/res/zbar-help.html"
   install_resource "ZBarSDK/iphone/res/zbar-helpicons.png"
   install_resource "ZBarSDK/iphone/res/zbar-samples.png"
-  install_resource "../GBUser/ViewControllers/GBTextEditController.xib"
-  install_resource "../GBUser/ViewControllers/YTLoginController.xib"
-  install_resource "../GBUser/Views/AuthorityView.xib"
-  install_resource "../GBUser/Views/UserHeaderCell.xib"
-  install_resource "../GBUser/Views/UserTableHeaderView.xib"
-  install_resource "../GBUser/Views/YTLoginView.xib"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

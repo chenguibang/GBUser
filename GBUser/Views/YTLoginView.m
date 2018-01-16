@@ -125,7 +125,11 @@
     _loginViewModel = loginViewModel;
     RAC(_loginViewModel,name) = _nameTextFiled.rac_textSignal;
     RAC(_loginViewModel,passwd) = _passwdTextFiled.rac_textSignal;
-    RAC(_loginBtn,enabled) = _loginViewModel.loginEnableSig;
+    
+//    [_loginViewModel.loginEnableSig subscribeNext:^(id  _Nullable x) {
+//        _loginBtn.enabled = [x boolValue];
+//    }];
+    
     [RACObserve(_loginViewModel, showProgress) subscribeNext:^(id  _Nullable x) {
         NSNumber *isShow = x;
         if ([isShow boolValue]) {

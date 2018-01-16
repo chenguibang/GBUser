@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '855527DE1A0AB3A2C86EB462CD432DDA'
+               BlueprintIdentifier = '6CDA630644AE26A4708281D6B5A508EE'
                BlueprintName = 'UITextField+Max'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libUITextField+Max.a'>

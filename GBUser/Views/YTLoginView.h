@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GBImageTextFiled.h>
+#import <AppFoundation/GBImageTextFiled.h>
 #import "LoginViewModel.h"
 @interface YTLoginView : UIView
 @property (nonatomic ,strong) LoginViewModel *loginViewModel;

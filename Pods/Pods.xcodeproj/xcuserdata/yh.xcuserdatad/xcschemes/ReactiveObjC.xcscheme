@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '47AAC3ED03D2C55D226D2DB816EE402B'
+               BlueprintIdentifier = 'A423A8A6A7D7C0FF598B8D8A9FA8D2DC'
                BlueprintName = 'ReactiveObjC'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libReactiveObjC.a'>
