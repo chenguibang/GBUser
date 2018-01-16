@@ -27,7 +27,10 @@ MJCodingImplementation
     return shareInstance;
 }
 
-
+- (void)setupWith:(NSString *)host port:(NSString *)port{
+    _host = host;
+    _port = port;
+}
 
 - (void)loginWith:(LoginRequest *)params{
     [GBUserAPI loginWith:params progress:^(NSProgress *progress) {

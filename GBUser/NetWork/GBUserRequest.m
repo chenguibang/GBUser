@@ -20,4 +20,9 @@
     return [UserCenterManager shared].currentToken;
 }
 
+- (NSString *)serverUrl{
+//    NSAssert(([UserCenterManager shared].host == nil )|| ([UserCenterManager shared].port == nil), @"服务器地址不能为空");
+    return [NSString stringWithFormat:@"http://%@:%@",[UserCenterManager shared].host,[UserCenterManager shared].port];
+}
+
 @end

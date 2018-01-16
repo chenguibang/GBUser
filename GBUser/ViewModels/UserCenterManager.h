@@ -20,11 +20,19 @@
 @property (nonatomic ,strong) UserInfo *currentUser;
 @property (nonatomic ,copy) NSString *rc_token;
 @property (nonatomic ,copy) NSString *currentToken;
-
+@property (nonatomic ,copy) NSString *host;
+@property (nonatomic ,copy) NSString *port;
 
 + (instancetype)shared;
 
 
+/**
+ 设置服务器相关信息
+
+ @param host host description
+ @param port port description
+ */
+- (void)setupWith:(NSString *)host port:(NSString *)port;
 
 /**
  注册
