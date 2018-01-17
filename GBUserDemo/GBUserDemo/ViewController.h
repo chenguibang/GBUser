@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <GBUser/UserSettingController.h>
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UserSettingController
 
 
 @end

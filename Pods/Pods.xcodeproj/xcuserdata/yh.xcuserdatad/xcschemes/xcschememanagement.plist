@@ -151,7 +151,7 @@
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
-		<key>Pods-GBUserExample.xcscheme</key>
+		<key>Pods-GBUserDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

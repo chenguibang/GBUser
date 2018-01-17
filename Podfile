@@ -20,9 +20,9 @@ pod 'FCFileManager'
 end
 
 
-target 'GBUserExample' do
+target 'GBUserDemo' do
 
-xcodeproj 'GBUserExample/GBUserExample.xcodeproj' #指定项目路径
+xcodeproj 'GBUserDemo/GBUserDemo.xcodeproj' #指定项目路径
 pod 'AppFoundation', :path => '/Users/yh/Desktop/CGB/AppFoundation'      #指定路径
 pod 'GBNetWork', :path => '/Users/yh/Desktop/CGB/GBNetWork'      #指定路径
 pod 'GPUImage', '~> 0.1.7'
