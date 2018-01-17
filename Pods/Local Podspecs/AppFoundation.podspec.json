@@ -106,9 +106,6 @@
     "Bugly": [
 
     ],
-    "JSONKit": [
-      "~> 1.5pre"
-    ],
     "MBProgressHUD": [
       "~> 1.0.0"
     ],

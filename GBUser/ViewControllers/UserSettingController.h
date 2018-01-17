@@ -7,7 +7,6 @@
 //
 
 #import <AppFoundation/AppFoundation.h>
-
 @interface UserSettingController : GBTableViewController
 //@property (nonatomic ,strong) UITableView *tableView;
 @end

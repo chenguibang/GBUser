@@ -11,6 +11,8 @@
 #import <UIImage+Additions/UIImage+Additions.h>
 #import <JKCategories/JKUIKit.h>
 #import "AuthorityView.h"
+#import <GPUImage.h>
+#import <AppFoundation/AppFoundation.h>
 @implementation YTLoginView
 
 
@@ -19,6 +21,12 @@
     self = [super init];
     if (self) {
         [self setupViews];
+        
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"];
+//        NSBundle *bundle = [NSBundle bundleWithPath:path];
+//        
+//        UIImage *ime =  [UIImage jk_imageWithFileName:@"radio" inBundle:bundle];
+//        NSLog(@"rrr");
     }
     return self;
 }
@@ -27,6 +35,31 @@
 - (void)setupViews{
     self.backgroundColor = [APPManager shared].theme.viewControllerBackgroundColor;
     WeakSelf(self)
+    
+    
+    _loginBackGroundImageView = [[UIImageView alloc]init];
+    [self addSubview:_loginBackGroundImageView];
+    [_loginBackGroundImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self);
+    }];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:path];
+    
+    
+    UIImage *image = [UIImage imageNamed:@"loginbgimg" inBundle:bundle compatibleWithTraitCollection:nil];
+    
+    GPUImageGaussianBlurFilter *filter = [[GPUImageGaussianBlurFilter alloc] init];
+    filter.texelSpacingMultiplier = 2.0;
+    filter.blurRadiusInPixels = 1.0;
+    [filter forceProcessingAtSize:image.size];
+    GPUImagePicture *pic = [[GPUImagePicture alloc] initWithImage:image];
+    [pic addTarget:filter];
+    [pic processImage];
+    [filter useNextFrameForImageCapture];
+    _loginBackGroundImageView.image =  [filter imageFromCurrentFramebuffer];
+    
+    
     _content = [[UIImageView alloc]init];
     [self addSubview:_content];
     [_content mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -41,7 +74,9 @@
     
     
     _nameTextFiled = [[GBImageTextFiled alloc]init];
-    _nameTextFiled.imageView.image = [UIImage imageNamed:@"contacts_hover"];
+    _nameTextFiled.imageView.image = GBUserImage(@"contacts_hover");
+    _nameTextFiled.textColor = [UIColor whiteColor];
+    
     [_content addSubview:_nameTextFiled];
     [_nameTextFiled mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_content).offset(10);
@@ -50,11 +85,13 @@
         make.top.equalTo(_content);
     }];
     _nameTextFiled.keyboardType = UIKeyboardTypeASCIICapable;
-    _nameTextFiled.placeholder = @"请输入账号";
+    _nameTextFiled.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入账号" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     _nameTextFiled.font = [UIFont systemFontOfSize:14];
     _nameTextFiled.jk_maxLength = 11;
     _passwdTextFiled = [[GBImageTextFiled alloc]init];
-    _passwdTextFiled.imageView.image = [UIImage imageNamed:@"contacts_hover"];
+    
+    _passwdTextFiled.textColor = [UIColor whiteColor];
+    _passwdTextFiled.imageView.image = GBUserImage(@"radio");
     [_content addSubview:_passwdTextFiled];
     [_passwdTextFiled mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_content).offset(10);
@@ -62,7 +99,7 @@
         make.height.equalTo(@40);
         make.top.equalTo(_nameTextFiled.mas_bottom);
     }];
-    _passwdTextFiled.placeholder = @"请输入密码";
+      _passwdTextFiled.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入密码" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     _passwdTextFiled.font = [UIFont systemFontOfSize:14];
     _passwdTextFiled.keyboardType = UIKeyboardTypeASCIICapable;
     
@@ -93,7 +130,7 @@
     
     _cancleBtn = [[UIButton alloc]init];
     [self addSubview:_cancleBtn];
-    [_cancleBtn setBackgroundImage:[UIImage imageNamed:@"cancle"] forState:UIControlStateNormal];
+    [_cancleBtn setBackgroundImage:GBUserImage(@"cancle") forState:UIControlStateNormal];
     [_cancleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(30, 30));
         make.top.equalTo(self).offset(40);
@@ -102,7 +139,8 @@
     [_cancleBtn addTarget:self action:@selector(cancleAction:) forControlEvents:UIControlEventTouchUpInside];
     
     
-    AuthorityView *authorityView = XIB(@"AuthorityView");
+    AuthorityView *authorityView = GBUserXIBView(@"AuthorityView");
+    authorityView.backgroundColor = [UIColor clearColor];
     [self addSubview:authorityView];
     [authorityView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self);

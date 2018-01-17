@@ -9,6 +9,8 @@
 #import "UserCenterManager.h"
 #import "GBUserAPI.h"
 #import <MJExtension/MJExtension.h>
+#import <AppFoundation/AppFoundation.h>
+
 #define ENCODE_PATH [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingString:@"/app.data"]
 @implementation UserCenterManager
 MJCodingImplementation
@@ -27,7 +29,7 @@ MJCodingImplementation
     return shareInstance;
 }
 
-- (void)setupWith:(NSString *)host port:(NSString *)port{
+- (void)setupWithHost:(NSString *)host port:(NSString *)port{
     _host = host;
     _port = port;
 }

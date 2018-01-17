@@ -1,0 +1,22 @@
+//
+//  GBUserPrefixHeader.pch
+//  GBUser
+//
+//  Created by yh on 2018/1/17.
+//  Copyright © 2018年 chengb. All rights reserved.
+//
+
+#ifndef GBUserPrefixHeader_pch
+#define GBUserPrefixHeader_pch
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//#define GBUserImage(a) [UIImage jk_imageWithFileName:a inBundle:[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]]]
+
+
+
+
+#define GBUserImage(a) [UIImage imageNamed:a inBundle:[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]] compatibleWithTraitCollection:nil]
+#define GBUserXIBView(name) [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]] loadNibNamed:name owner:nil options:nil][0]
+
+#endif /* GBUserPrefixHeader_pch */

@@ -25,7 +25,7 @@
 
 
 - (void)setupView{
-    UIBarButtonItem *setBtn = [[UIBarButtonItem alloc] bk_initWithImage:UIImageWithNamed(@"setting") style:UIBarButtonItemStyleDone handler:^(id sender) {
+    UIBarButtonItem *setBtn = [[UIBarButtonItem alloc] bk_initWithImage:GBUserImage(@"setting") style:UIBarButtonItemStyleDone handler:^(id sender) {
        UserSettingController *userSettingController = [UserSettingController new];
         userSettingController.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:userSettingController animated:YES];

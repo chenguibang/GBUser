@@ -16,4 +16,5 @@
 @property (nonatomic ,strong) GBImageTextFiled *passwdTextFiled;
 @property (nonatomic ,strong) UIButton *loginBtn;
 @property (nonatomic ,strong) UIButton *cancleBtn;
+@property (nonatomic, strong) UIImageView *loginBackGroundImageView;
 @end

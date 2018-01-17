@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LoginModel.h"
-#import <AppFoundation/AppFoundation.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 @interface LoginViewModel : NSObject
 @property (nonatomic ,strong) LoginModel *loginModel;
 @property (nonatomic, copy) NSString *name;

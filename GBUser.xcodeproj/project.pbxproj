@@ -8,66 +8,77 @@
 
 /* Begin PBXBuildFile section */
 		B5BE205710C1E502814486B6 /* libPods-GBUser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2926D8717716FACC44BD72 /* libPods-GBUser.a */; };
-		F8075CC91FD4E54B004B4480 /* GBUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075CC71FD4E54B004B4480 /* GBUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075DB41FD5403C004B4480 /* GBUserAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DB21FD5403C004B4480 /* GBUserAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075DB51FD5403C004B4480 /* GBUserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DB31FD5403C004B4480 /* GBUserAPI.m */; };
-		F8075DE41FD54603004B4480 /* YTLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DD61FD54601004B4480 /* YTLoginController.m */; };
-		F8075DE51FD54603004B4480 /* UserInfoController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DD71FD54601004B4480 /* UserInfoController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075DE61FD54603004B4480 /* GBTextEditController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DD81FD54602004B4480 /* GBTextEditController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075DE71FD54603004B4480 /* UserSettingController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DD91FD54602004B4480 /* UserSettingController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075DE81FD54603004B4480 /* UserSecurityController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DDA1FD54602004B4480 /* UserSecurityController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075DE91FD54603004B4480 /* UserCenterController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DDB1FD54602004B4480 /* UserCenterController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075DEA1FD54603004B4480 /* YTLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DDC1FD54602004B4480 /* YTLoginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075DEB1FD54603004B4480 /* UserCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DDD1FD54602004B4480 /* UserCenterController.m */; };
-		F8075DEC1FD54603004B4480 /* GBTextEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DDE1FD54602004B4480 /* GBTextEditController.m */; };
-		F8075DED1FD54603004B4480 /* UserSecurityController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DDF1FD54602004B4480 /* UserSecurityController.m */; };
-		F8075DEE1FD54603004B4480 /* GBTextEditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8075DE01FD54602004B4480 /* GBTextEditController.xib */; };
-		F8075DEF1FD54603004B4480 /* UserSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DE11FD54602004B4480 /* UserSettingController.m */; };
-		F8075DF01FD54603004B4480 /* UserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DE21FD54603004B4480 /* UserInfoController.m */; };
-		F8075DF11FD54603004B4480 /* YTLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8075DE31FD54603004B4480 /* YTLoginController.xib */; };
-		F8075E051FD54618004B4480 /* AuthorityView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DF31FD54616004B4480 /* AuthorityView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E081FD54618004B4480 /* UserHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DF61FD54616004B4480 /* UserHeaderCell.m */; };
-		F8075E0A1FD54618004B4480 /* YTLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DF81FD54616004B4480 /* YTLoginView.m */; };
-		F8075E0E1FD54618004B4480 /* YTLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8075DFC1FD54617004B4480 /* YTLoginView.xib */; };
-		F8075E0F1FD54618004B4480 /* YTLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075DFD1FD54617004B4480 /* YTLoginView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E101FD54618004B4480 /* AuthorityView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075DFE1FD54617004B4480 /* AuthorityView.m */; };
-		F8075E121FD54618004B4480 /* UserHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E001FD54617004B4480 /* UserHeaderCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E131FD54618004B4480 /* AuthorityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8075E011FD54618004B4480 /* AuthorityView.xib */; };
-		F8075E151FD54618004B4480 /* UserHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8075E031FD54618004B4480 /* UserHeaderCell.xib */; };
-		F8075E1E1FD5462D004B4480 /* UserCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E161FD5462D004B4480 /* UserCenterManager.m */; };
-		F8075E1F1FD5462D004B4480 /* UserSecurityVM.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E171FD5462D004B4480 /* UserSecurityVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E201FD5462D004B4480 /* UserSecurityVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E181FD5462D004B4480 /* UserSecurityVM.m */; };
-		F8075E211FD5462D004B4480 /* UserInfoVM.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E191FD5462D004B4480 /* UserInfoVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E221FD5462D004B4480 /* UserInfoVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E1A1FD5462D004B4480 /* UserInfoVM.m */; };
-		F8075E231FD5462D004B4480 /* UserCenterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E1B1FD5462D004B4480 /* UserCenterManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E241FD5462D004B4480 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E1C1FD5462D004B4480 /* LoginViewModel.m */; };
-		F8075E251FD5462D004B4480 /* LoginViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E1D1FD5462D004B4480 /* LoginViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E3A1FD54644004B4480 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E261FD54641004B4480 /* LoginModel.m */; };
-		F8075E3B1FD54644004B4480 /* APIBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E271FD54641004B4480 /* APIBaseRequest.m */; };
-		F8075E3C1FD54644004B4480 /* APIBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E281FD54641004B4480 /* APIBaseResponse.m */; };
-		F8075E3D1FD54644004B4480 /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E291FD54641004B4480 /* BaseResponse.m */; };
-		F8075E3E1FD54644004B4480 /* BindingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E2A1FD54641004B4480 /* BindingRequest.m */; };
-		F8075E3F1FD54644004B4480 /* BindingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E2B1FD54642004B4480 /* BindingRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E401FD54644004B4480 /* APIBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E2C1FD54642004B4480 /* APIBaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E411FD54644004B4480 /* LoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E2D1FD54642004B4480 /* LoginParam.m */; };
-		F8075E421FD54644004B4480 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E2E1FD54642004B4480 /* LoginRequest.m */; };
-		F8075E431FD54644004B4480 /* UserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E2F1FD54642004B4480 /* UserInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E441FD54644004B4480 /* UserInfoModifyRespone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E301FD54642004B4480 /* UserInfoModifyRespone.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E451FD54644004B4480 /* UserInfoRespone.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E311FD54642004B4480 /* UserInfoRespone.m */; };
-		F8075E461FD54644004B4480 /* LoginRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E321FD54643004B4480 /* LoginRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E471FD54644004B4480 /* APIBaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E331FD54643004B4480 /* APIBaseResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E481FD54644004B4480 /* LoginParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E341FD54643004B4480 /* LoginParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E491FD54644004B4480 /* UserInfoModifyRespone.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E351FD54643004B4480 /* UserInfoModifyRespone.m */; };
-		F8075E4A1FD54644004B4480 /* LoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E361FD54643004B4480 /* LoginModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E4B1FD54644004B4480 /* BaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E371FD54643004B4480 /* BaseResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E4C1FD54644004B4480 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E381FD54643004B4480 /* UserInfo.m */; };
-		F8075E4D1FD54644004B4480 /* UserInfoRespone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E391FD54644004B4480 /* UserInfoRespone.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E511FD546C8004B4480 /* GBOSSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F8075E4F1FD546C8004B4480 /* GBOSSUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8075E521FD546C8004B4480 /* GBOSSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F8075E501FD546C8004B4480 /* GBOSSUtil.m */; };
-		F889E2E11FD64B91000BA03A /* GBUserRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F889E2DF1FD64B91000BA03A /* GBUserRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F889E2E21FD64B91000BA03A /* GBUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F889E2E01FD64B91000BA03A /* GBUserRequest.m */; };
-		F889E2E51FD697C8000BA03A /* UserInfoParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F889E2E31FD697C8000BA03A /* UserInfoParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F889E2E61FD697C8000BA03A /* UserInfoParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F889E2E41FD697C8000BA03A /* UserInfoParam.m */; };
+		F8883CD0200F4E0100F715A1 /* GBUserPrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = F8883C89200F4E0100F715A1 /* GBUserPrefixHeader.pch */; };
+		F8883CD1200F4E0100F715A1 /* GBUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8A200F4E0100F715A1 /* GBUser.h */; };
+		F8883CD2200F4E0100F715A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8883C8B200F4E0100F715A1 /* Info.plist */; };
+		F8883CD3200F4E0100F715A1 /* APIBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8D200F4E0100F715A1 /* APIBaseRequest.h */; };
+		F8883CD4200F4E0100F715A1 /* APIBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C8E200F4E0100F715A1 /* APIBaseRequest.m */; };
+		F8883CD5200F4E0100F715A1 /* APIBaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8F200F4E0100F715A1 /* APIBaseResponse.h */; };
+		F8883CD6200F4E0100F715A1 /* APIBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C90200F4E0100F715A1 /* APIBaseResponse.m */; };
+		F8883CD7200F4E0100F715A1 /* BaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C91200F4E0100F715A1 /* BaseResponse.h */; };
+		F8883CD8200F4E0100F715A1 /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C92200F4E0100F715A1 /* BaseResponse.m */; };
+		F8883CD9200F4E0100F715A1 /* BindingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C93200F4E0100F715A1 /* BindingRequest.h */; };
+		F8883CDA200F4E0100F715A1 /* BindingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C94200F4E0100F715A1 /* BindingRequest.m */; };
+		F8883CDB200F4E0100F715A1 /* LoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C95200F4E0100F715A1 /* LoginModel.h */; };
+		F8883CDC200F4E0100F715A1 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C96200F4E0100F715A1 /* LoginModel.m */; };
+		F8883CDD200F4E0100F715A1 /* LoginParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C97200F4E0100F715A1 /* LoginParam.h */; };
+		F8883CDE200F4E0100F715A1 /* LoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C98200F4E0100F715A1 /* LoginParam.m */; };
+		F8883CDF200F4E0100F715A1 /* LoginRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C99200F4E0100F715A1 /* LoginRequest.h */; };
+		F8883CE0200F4E0100F715A1 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C9A200F4E0100F715A1 /* LoginRequest.m */; };
+		F8883CE1200F4E0100F715A1 /* UserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C9B200F4E0100F715A1 /* UserInfo.h */; };
+		F8883CE2200F4E0100F715A1 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C9C200F4E0100F715A1 /* UserInfo.m */; };
+		F8883CE3200F4E0100F715A1 /* UserInfoModifyRespone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C9D200F4E0100F715A1 /* UserInfoModifyRespone.h */; };
+		F8883CE4200F4E0100F715A1 /* UserInfoModifyRespone.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C9E200F4E0100F715A1 /* UserInfoModifyRespone.m */; };
+		F8883CE5200F4E0100F715A1 /* UserInfoParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C9F200F4E0100F715A1 /* UserInfoParam.h */; };
+		F8883CE6200F4E0100F715A1 /* UserInfoParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA0200F4E0100F715A1 /* UserInfoParam.m */; };
+		F8883CE7200F4E0100F715A1 /* UserInfoRespone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA1200F4E0100F715A1 /* UserInfoRespone.h */; };
+		F8883CE8200F4E0200F715A1 /* UserInfoRespone.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA2200F4E0100F715A1 /* UserInfoRespone.m */; };
+		F8883CE9200F4E0200F715A1 /* GBUserAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA4200F4E0100F715A1 /* GBUserAPI.h */; };
+		F8883CEA200F4E0200F715A1 /* GBUserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA5200F4E0100F715A1 /* GBUserAPI.m */; };
+		F8883CEB200F4E0200F715A1 /* GBUserRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA6200F4E0100F715A1 /* GBUserRequest.h */; };
+		F8883CEC200F4E0200F715A1 /* GBUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA7200F4E0100F715A1 /* GBUserRequest.m */; };
+		F8883CED200F4E0200F715A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8883CA9200F4E0100F715A1 /* Assets.xcassets */; };
+		F8883CEE200F4E0200F715A1 /* radio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8883CAA200F4E0100F715A1 /* radio@2x.png */; };
+		F8883CEF200F4E0200F715A1 /* GBOSSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CAC200F4E0100F715A1 /* GBOSSUtil.h */; };
+		F8883CF0200F4E0200F715A1 /* GBOSSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CAD200F4E0100F715A1 /* GBOSSUtil.m */; };
+		F8883CF1200F4E0200F715A1 /* GBTextEditController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CAF200F4E0100F715A1 /* GBTextEditController.h */; };
+		F8883CF2200F4E0200F715A1 /* GBTextEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB0200F4E0100F715A1 /* GBTextEditController.m */; };
+		F8883CF3200F4E0200F715A1 /* GBTextEditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CB1200F4E0100F715A1 /* GBTextEditController.xib */; };
+		F8883CF4200F4E0200F715A1 /* UserCenterController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB2200F4E0100F715A1 /* UserCenterController.h */; };
+		F8883CF5200F4E0200F715A1 /* UserCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB3200F4E0100F715A1 /* UserCenterController.m */; };
+		F8883CF6200F4E0200F715A1 /* UserInfoController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB4200F4E0100F715A1 /* UserInfoController.h */; };
+		F8883CF7200F4E0200F715A1 /* UserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB5200F4E0100F715A1 /* UserInfoController.m */; };
+		F8883CF8200F4E0200F715A1 /* UserSecurityController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB6200F4E0100F715A1 /* UserSecurityController.h */; };
+		F8883CF9200F4E0200F715A1 /* UserSecurityController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB7200F4E0100F715A1 /* UserSecurityController.m */; };
+		F8883CFA200F4E0200F715A1 /* UserSettingController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB8200F4E0100F715A1 /* UserSettingController.h */; };
+		F8883CFB200F4E0200F715A1 /* UserSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB9200F4E0100F715A1 /* UserSettingController.m */; };
+		F8883CFC200F4E0200F715A1 /* YTLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CBA200F4E0100F715A1 /* YTLoginController.h */; };
+		F8883CFD200F4E0200F715A1 /* YTLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CBB200F4E0100F715A1 /* YTLoginController.m */; };
+		F8883CFE200F4E0200F715A1 /* YTLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CBC200F4E0100F715A1 /* YTLoginController.xib */; };
+		F8883CFF200F4E0200F715A1 /* LoginViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CBE200F4E0100F715A1 /* LoginViewModel.h */; };
+		F8883D00200F4E0200F715A1 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CBF200F4E0100F715A1 /* LoginViewModel.m */; };
+		F8883D01200F4E0200F715A1 /* UserCenterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC0200F4E0100F715A1 /* UserCenterManager.h */; };
+		F8883D02200F4E0200F715A1 /* UserCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CC1200F4E0100F715A1 /* UserCenterManager.m */; };
+		F8883D03200F4E0200F715A1 /* UserInfoVM.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC2200F4E0100F715A1 /* UserInfoVM.h */; };
+		F8883D04200F4E0200F715A1 /* UserInfoVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CC3200F4E0100F715A1 /* UserInfoVM.m */; };
+		F8883D05200F4E0200F715A1 /* UserSecurityVM.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC4200F4E0100F715A1 /* UserSecurityVM.h */; };
+		F8883D06200F4E0200F715A1 /* UserSecurityVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CC5200F4E0100F715A1 /* UserSecurityVM.m */; };
+		F8883D07200F4E0200F715A1 /* AuthorityView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC7200F4E0100F715A1 /* AuthorityView.h */; };
+		F8883D08200F4E0200F715A1 /* AuthorityView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CC8200F4E0100F715A1 /* AuthorityView.m */; };
+		F8883D09200F4E0200F715A1 /* AuthorityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CC9200F4E0100F715A1 /* AuthorityView.xib */; };
+		F8883D0A200F4E0200F715A1 /* UserHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CCA200F4E0100F715A1 /* UserHeaderCell.h */; };
+		F8883D0B200F4E0200F715A1 /* UserHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CCB200F4E0100F715A1 /* UserHeaderCell.m */; };
+		F8883D0C200F4E0200F715A1 /* UserHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCC200F4E0100F715A1 /* UserHeaderCell.xib */; };
+		F8883D0D200F4E0200F715A1 /* YTLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CCD200F4E0100F715A1 /* YTLoginView.h */; };
+		F8883D0E200F4E0200F715A1 /* YTLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CCE200F4E0100F715A1 /* YTLoginView.m */; };
+		F8883D0F200F4E0200F715A1 /* YTLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCF200F4E0100F715A1 /* YTLoginView.xib */; };
+		F8883D24200F4ED200F715A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8883CA9200F4E0100F715A1 /* Assets.xcassets */; };
+		F8883D25200F4ED200F715A1 /* radio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8883CAA200F4E0100F715A1 /* radio@2x.png */; };
+		F8883D26200F4EDD00F715A1 /* GBTextEditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CB1200F4E0100F715A1 /* GBTextEditController.xib */; };
+		F8883D27200F4EDD00F715A1 /* YTLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CBC200F4E0100F715A1 /* YTLoginController.xib */; };
+		F8883D28200F4EDD00F715A1 /* AuthorityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CC9200F4E0100F715A1 /* AuthorityView.xib */; };
+		F8883D29200F4EDD00F715A1 /* UserHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCC200F4E0100F715A1 /* UserHeaderCell.xib */; };
+		F8883D2A200F4EDD00F715A1 /* YTLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCF200F4E0100F715A1 /* YTLoginView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,67 +89,72 @@
 		B23988CA0E7BFE2C3A016600 /* Pods-GBUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBUser.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBUser/Pods-GBUser.release.xcconfig"; sourceTree = "<group>"; };
 		D3D9BD10881388D3AD9D31AA /* Pods-GBUserExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBUserExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBUserExample/Pods-GBUserExample.debug.xcconfig"; sourceTree = "<group>"; };
 		F8075CC41FD4E54B004B4480 /* GBUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GBUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8075CC71FD4E54B004B4480 /* GBUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBUser.h; sourceTree = "<group>"; };
-		F8075CC81FD4E54B004B4480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8075DB21FD5403C004B4480 /* GBUserAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBUserAPI.h; sourceTree = "<group>"; };
-		F8075DB31FD5403C004B4480 /* GBUserAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBUserAPI.m; sourceTree = "<group>"; };
-		F8075DD61FD54601004B4480 /* YTLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTLoginController.m; sourceTree = "<group>"; };
-		F8075DD71FD54601004B4480 /* UserInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoController.h; sourceTree = "<group>"; };
-		F8075DD81FD54602004B4480 /* GBTextEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBTextEditController.h; sourceTree = "<group>"; };
-		F8075DD91FD54602004B4480 /* UserSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingController.h; sourceTree = "<group>"; };
-		F8075DDA1FD54602004B4480 /* UserSecurityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSecurityController.h; sourceTree = "<group>"; };
-		F8075DDB1FD54602004B4480 /* UserCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterController.h; sourceTree = "<group>"; };
-		F8075DDC1FD54602004B4480 /* YTLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTLoginController.h; sourceTree = "<group>"; };
-		F8075DDD1FD54602004B4480 /* UserCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterController.m; sourceTree = "<group>"; };
-		F8075DDE1FD54602004B4480 /* GBTextEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBTextEditController.m; sourceTree = "<group>"; };
-		F8075DDF1FD54602004B4480 /* UserSecurityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSecurityController.m; sourceTree = "<group>"; };
-		F8075DE01FD54602004B4480 /* GBTextEditController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBTextEditController.xib; sourceTree = "<group>"; };
-		F8075DE11FD54602004B4480 /* UserSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingController.m; sourceTree = "<group>"; };
-		F8075DE21FD54603004B4480 /* UserInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoController.m; sourceTree = "<group>"; };
-		F8075DE31FD54603004B4480 /* YTLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTLoginController.xib; sourceTree = "<group>"; };
-		F8075DF31FD54616004B4480 /* AuthorityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorityView.h; sourceTree = "<group>"; };
-		F8075DF61FD54616004B4480 /* UserHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHeaderCell.m; sourceTree = "<group>"; };
-		F8075DF81FD54616004B4480 /* YTLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTLoginView.m; sourceTree = "<group>"; };
-		F8075DFC1FD54617004B4480 /* YTLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTLoginView.xib; sourceTree = "<group>"; };
-		F8075DFD1FD54617004B4480 /* YTLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTLoginView.h; sourceTree = "<group>"; };
-		F8075DFE1FD54617004B4480 /* AuthorityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorityView.m; sourceTree = "<group>"; };
-		F8075E001FD54617004B4480 /* UserHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHeaderCell.h; sourceTree = "<group>"; };
-		F8075E011FD54618004B4480 /* AuthorityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorityView.xib; sourceTree = "<group>"; };
-		F8075E031FD54618004B4480 /* UserHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserHeaderCell.xib; sourceTree = "<group>"; };
-		F8075E161FD5462D004B4480 /* UserCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterManager.m; sourceTree = "<group>"; };
-		F8075E171FD5462D004B4480 /* UserSecurityVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSecurityVM.h; sourceTree = "<group>"; };
-		F8075E181FD5462D004B4480 /* UserSecurityVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSecurityVM.m; sourceTree = "<group>"; };
-		F8075E191FD5462D004B4480 /* UserInfoVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoVM.h; sourceTree = "<group>"; };
-		F8075E1A1FD5462D004B4480 /* UserInfoVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoVM.m; sourceTree = "<group>"; };
-		F8075E1B1FD5462D004B4480 /* UserCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterManager.h; sourceTree = "<group>"; };
-		F8075E1C1FD5462D004B4480 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
-		F8075E1D1FD5462D004B4480 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
-		F8075E261FD54641004B4480 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
-		F8075E271FD54641004B4480 /* APIBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIBaseRequest.m; sourceTree = "<group>"; };
-		F8075E281FD54641004B4480 /* APIBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIBaseResponse.m; sourceTree = "<group>"; };
-		F8075E291FD54641004B4480 /* BaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
-		F8075E2A1FD54641004B4480 /* BindingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindingRequest.m; sourceTree = "<group>"; };
-		F8075E2B1FD54642004B4480 /* BindingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindingRequest.h; sourceTree = "<group>"; };
-		F8075E2C1FD54642004B4480 /* APIBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIBaseRequest.h; sourceTree = "<group>"; };
-		F8075E2D1FD54642004B4480 /* LoginParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParam.m; sourceTree = "<group>"; };
-		F8075E2E1FD54642004B4480 /* LoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
-		F8075E2F1FD54642004B4480 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
-		F8075E301FD54642004B4480 /* UserInfoModifyRespone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModifyRespone.h; sourceTree = "<group>"; };
-		F8075E311FD54642004B4480 /* UserInfoRespone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoRespone.m; sourceTree = "<group>"; };
-		F8075E321FD54643004B4480 /* LoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
-		F8075E331FD54643004B4480 /* APIBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIBaseResponse.h; sourceTree = "<group>"; };
-		F8075E341FD54643004B4480 /* LoginParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginParam.h; sourceTree = "<group>"; };
-		F8075E351FD54643004B4480 /* UserInfoModifyRespone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModifyRespone.m; sourceTree = "<group>"; };
-		F8075E361FD54643004B4480 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
-		F8075E371FD54643004B4480 /* BaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
-		F8075E381FD54643004B4480 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
-		F8075E391FD54644004B4480 /* UserInfoRespone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoRespone.h; sourceTree = "<group>"; };
-		F8075E4F1FD546C8004B4480 /* GBOSSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBOSSUtil.h; sourceTree = "<group>"; };
-		F8075E501FD546C8004B4480 /* GBOSSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBOSSUtil.m; sourceTree = "<group>"; };
-		F889E2DF1FD64B91000BA03A /* GBUserRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBUserRequest.h; sourceTree = "<group>"; };
-		F889E2E01FD64B91000BA03A /* GBUserRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBUserRequest.m; sourceTree = "<group>"; };
-		F889E2E31FD697C8000BA03A /* UserInfoParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoParam.h; sourceTree = "<group>"; };
-		F889E2E41FD697C8000BA03A /* UserInfoParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoParam.m; sourceTree = "<group>"; };
+		F8883C89200F4E0100F715A1 /* GBUserPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUserPrefixHeader.pch; sourceTree = "<group>"; };
+		F8883C8A200F4E0100F715A1 /* GBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUser.h; sourceTree = "<group>"; };
+		F8883C8B200F4E0100F715A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8883C8D200F4E0100F715A1 /* APIBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIBaseRequest.h; sourceTree = "<group>"; };
+		F8883C8E200F4E0100F715A1 /* APIBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIBaseRequest.m; sourceTree = "<group>"; };
+		F8883C8F200F4E0100F715A1 /* APIBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIBaseResponse.h; sourceTree = "<group>"; };
+		F8883C90200F4E0100F715A1 /* APIBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIBaseResponse.m; sourceTree = "<group>"; };
+		F8883C91200F4E0100F715A1 /* BaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
+		F8883C92200F4E0100F715A1 /* BaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
+		F8883C93200F4E0100F715A1 /* BindingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindingRequest.h; sourceTree = "<group>"; };
+		F8883C94200F4E0100F715A1 /* BindingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindingRequest.m; sourceTree = "<group>"; };
+		F8883C95200F4E0100F715A1 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		F8883C96200F4E0100F715A1 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		F8883C97200F4E0100F715A1 /* LoginParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginParam.h; sourceTree = "<group>"; };
+		F8883C98200F4E0100F715A1 /* LoginParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParam.m; sourceTree = "<group>"; };
+		F8883C99200F4E0100F715A1 /* LoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		F8883C9A200F4E0100F715A1 /* LoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
+		F8883C9B200F4E0100F715A1 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		F8883C9C200F4E0100F715A1 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		F8883C9D200F4E0100F715A1 /* UserInfoModifyRespone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModifyRespone.h; sourceTree = "<group>"; };
+		F8883C9E200F4E0100F715A1 /* UserInfoModifyRespone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModifyRespone.m; sourceTree = "<group>"; };
+		F8883C9F200F4E0100F715A1 /* UserInfoParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoParam.h; sourceTree = "<group>"; };
+		F8883CA0200F4E0100F715A1 /* UserInfoParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoParam.m; sourceTree = "<group>"; };
+		F8883CA1200F4E0100F715A1 /* UserInfoRespone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoRespone.h; sourceTree = "<group>"; };
+		F8883CA2200F4E0100F715A1 /* UserInfoRespone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoRespone.m; sourceTree = "<group>"; };
+		F8883CA4200F4E0100F715A1 /* GBUserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUserAPI.h; sourceTree = "<group>"; };
+		F8883CA5200F4E0100F715A1 /* GBUserAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBUserAPI.m; sourceTree = "<group>"; };
+		F8883CA6200F4E0100F715A1 /* GBUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUserRequest.h; sourceTree = "<group>"; };
+		F8883CA7200F4E0100F715A1 /* GBUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBUserRequest.m; sourceTree = "<group>"; };
+		F8883CA9200F4E0100F715A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8883CAA200F4E0100F715A1 /* radio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio@2x.png"; sourceTree = "<group>"; };
+		F8883CAC200F4E0100F715A1 /* GBOSSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBOSSUtil.h; sourceTree = "<group>"; };
+		F8883CAD200F4E0100F715A1 /* GBOSSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBOSSUtil.m; sourceTree = "<group>"; };
+		F8883CAF200F4E0100F715A1 /* GBTextEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBTextEditController.h; sourceTree = "<group>"; };
+		F8883CB0200F4E0100F715A1 /* GBTextEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBTextEditController.m; sourceTree = "<group>"; };
+		F8883CB1200F4E0100F715A1 /* GBTextEditController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBTextEditController.xib; sourceTree = "<group>"; };
+		F8883CB2200F4E0100F715A1 /* UserCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterController.h; sourceTree = "<group>"; };
+		F8883CB3200F4E0100F715A1 /* UserCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterController.m; sourceTree = "<group>"; };
+		F8883CB4200F4E0100F715A1 /* UserInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoController.h; sourceTree = "<group>"; };
+		F8883CB5200F4E0100F715A1 /* UserInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoController.m; sourceTree = "<group>"; };
+		F8883CB6200F4E0100F715A1 /* UserSecurityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSecurityController.h; sourceTree = "<group>"; };
+		F8883CB7200F4E0100F715A1 /* UserSecurityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSecurityController.m; sourceTree = "<group>"; };
+		F8883CB8200F4E0100F715A1 /* UserSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingController.h; sourceTree = "<group>"; };
+		F8883CB9200F4E0100F715A1 /* UserSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingController.m; sourceTree = "<group>"; };
+		F8883CBA200F4E0100F715A1 /* YTLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTLoginController.h; sourceTree = "<group>"; };
+		F8883CBB200F4E0100F715A1 /* YTLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTLoginController.m; sourceTree = "<group>"; };
+		F8883CBC200F4E0100F715A1 /* YTLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTLoginController.xib; sourceTree = "<group>"; };
+		F8883CBE200F4E0100F715A1 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		F8883CBF200F4E0100F715A1 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		F8883CC0200F4E0100F715A1 /* UserCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterManager.h; sourceTree = "<group>"; };
+		F8883CC1200F4E0100F715A1 /* UserCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterManager.m; sourceTree = "<group>"; };
+		F8883CC2200F4E0100F715A1 /* UserInfoVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoVM.h; sourceTree = "<group>"; };
+		F8883CC3200F4E0100F715A1 /* UserInfoVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoVM.m; sourceTree = "<group>"; };
+		F8883CC4200F4E0100F715A1 /* UserSecurityVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSecurityVM.h; sourceTree = "<group>"; };
+		F8883CC5200F4E0100F715A1 /* UserSecurityVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSecurityVM.m; sourceTree = "<group>"; };
+		F8883CC7200F4E0100F715A1 /* AuthorityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorityView.h; sourceTree = "<group>"; };
+		F8883CC8200F4E0100F715A1 /* AuthorityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorityView.m; sourceTree = "<group>"; };
+		F8883CC9200F4E0100F715A1 /* AuthorityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorityView.xib; sourceTree = "<group>"; };
+		F8883CCA200F4E0100F715A1 /* UserHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHeaderCell.h; sourceTree = "<group>"; };
+		F8883CCB200F4E0100F715A1 /* UserHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHeaderCell.m; sourceTree = "<group>"; };
+		F8883CCC200F4E0100F715A1 /* UserHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserHeaderCell.xib; sourceTree = "<group>"; };
+		F8883CCD200F4E0100F715A1 /* YTLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTLoginView.h; sourceTree = "<group>"; };
+		F8883CCE200F4E0100F715A1 /* YTLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTLoginView.m; sourceTree = "<group>"; };
+		F8883CCF200F4E0100F715A1 /* YTLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTLoginView.xib; sourceTree = "<group>"; };
+		F8883D1E200F4E8800F715A1 /* GBUserResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBUserResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8883D20200F4E8800F715A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +163,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5BE205710C1E502814486B6 /* libPods-GBUser.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8883D1B200F4E8800F715A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +199,8 @@
 		F8075CBA1FD4E54B004B4480 = {
 			isa = PBXGroup;
 			children = (
-				F8075CC61FD4E54B004B4480 /* GBUser */,
+				F8883C87200F4E0100F715A1 /* GBUser */,
+				F8883D1F200F4E8800F715A1 /* GBUserResource */,
 				F8075CC51FD4E54B004B4480 /* Products */,
 				C6E693FAA9BE91423E34CA6F /* Pods */,
 				56BA51CFD20C6E56105CF402 /* Frameworks */,
@@ -187,124 +211,152 @@
 			isa = PBXGroup;
 			children = (
 				F8075CC41FD4E54B004B4480 /* GBUser.framework */,
+				F8883D1E200F4E8800F715A1 /* GBUserResource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F8075CC61FD4E54B004B4480 /* GBUser */ = {
+		F8883C87200F4E0100F715A1 /* GBUser */ = {
 			isa = PBXGroup;
 			children = (
-				F8075E4E1FD546AD004B4480 /* Utils */,
-				F8075DB11FD5401D004B4480 /* NetWork */,
-				F8075CDC1FD4E686004B4480 /* Models */,
-				F8075CDB1FD4E67C004B4480 /* Views */,
-				F8075CDA1FD4E673004B4480 /* ViewModels */,
-				F8075CD91FD4E669004B4480 /* ViewControllers */,
-				F8075CC71FD4E54B004B4480 /* GBUser.h */,
-				F8075CC81FD4E54B004B4480 /* Info.plist */,
+				F8883C88200F4E0100F715A1 /* Config */,
+				F8883C8A200F4E0100F715A1 /* GBUser.h */,
+				F8883C8B200F4E0100F715A1 /* Info.plist */,
+				F8883C8C200F4E0100F715A1 /* Models */,
+				F8883CA3200F4E0100F715A1 /* NetWork */,
+				F8883CA8200F4E0100F715A1 /* Resources */,
+				F8883CAB200F4E0100F715A1 /* Utils */,
+				F8883CAE200F4E0100F715A1 /* ViewControllers */,
+				F8883CBD200F4E0100F715A1 /* ViewModels */,
+				F8883CC6200F4E0100F715A1 /* Views */,
 			);
 			path = GBUser;
 			sourceTree = "<group>";
 		};
-		F8075CD91FD4E669004B4480 /* ViewControllers */ = {
+		F8883C88200F4E0100F715A1 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				F8075DD81FD54602004B4480 /* GBTextEditController.h */,
-				F8075DDE1FD54602004B4480 /* GBTextEditController.m */,
-				F8075DE01FD54602004B4480 /* GBTextEditController.xib */,
-				F8075DDB1FD54602004B4480 /* UserCenterController.h */,
-				F8075DDD1FD54602004B4480 /* UserCenterController.m */,
-				F8075DD71FD54601004B4480 /* UserInfoController.h */,
-				F8075DE21FD54603004B4480 /* UserInfoController.m */,
-				F8075DDA1FD54602004B4480 /* UserSecurityController.h */,
-				F8075DDF1FD54602004B4480 /* UserSecurityController.m */,
-				F8075DD91FD54602004B4480 /* UserSettingController.h */,
-				F8075DE11FD54602004B4480 /* UserSettingController.m */,
-				F8075DDC1FD54602004B4480 /* YTLoginController.h */,
-				F8075DD61FD54601004B4480 /* YTLoginController.m */,
-				F8075DE31FD54603004B4480 /* YTLoginController.xib */,
+				F8883C89200F4E0100F715A1 /* GBUserPrefixHeader.pch */,
 			);
-			path = ViewControllers;
+			path = Config;
 			sourceTree = "<group>";
 		};
-		F8075CDA1FD4E673004B4480 /* ViewModels */ = {
+		F8883C8C200F4E0100F715A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F8075E1D1FD5462D004B4480 /* LoginViewModel.h */,
-				F8075E1C1FD5462D004B4480 /* LoginViewModel.m */,
-				F8075E1B1FD5462D004B4480 /* UserCenterManager.h */,
-				F8075E161FD5462D004B4480 /* UserCenterManager.m */,
-				F8075E191FD5462D004B4480 /* UserInfoVM.h */,
-				F8075E1A1FD5462D004B4480 /* UserInfoVM.m */,
-				F8075E171FD5462D004B4480 /* UserSecurityVM.h */,
-				F8075E181FD5462D004B4480 /* UserSecurityVM.m */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		F8075CDB1FD4E67C004B4480 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F8075DF31FD54616004B4480 /* AuthorityView.h */,
-				F8075DFE1FD54617004B4480 /* AuthorityView.m */,
-				F8075E011FD54618004B4480 /* AuthorityView.xib */,
-				F8075E001FD54617004B4480 /* UserHeaderCell.h */,
-				F8075DF61FD54616004B4480 /* UserHeaderCell.m */,
-				F8075E031FD54618004B4480 /* UserHeaderCell.xib */,
-				F8075DFD1FD54617004B4480 /* YTLoginView.h */,
-				F8075DF81FD54616004B4480 /* YTLoginView.m */,
-				F8075DFC1FD54617004B4480 /* YTLoginView.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F8075CDC1FD4E686004B4480 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F8075E2C1FD54642004B4480 /* APIBaseRequest.h */,
-				F8075E271FD54641004B4480 /* APIBaseRequest.m */,
-				F8075E331FD54643004B4480 /* APIBaseResponse.h */,
-				F8075E281FD54641004B4480 /* APIBaseResponse.m */,
-				F8075E371FD54643004B4480 /* BaseResponse.h */,
-				F8075E291FD54641004B4480 /* BaseResponse.m */,
-				F8075E2B1FD54642004B4480 /* BindingRequest.h */,
-				F8075E2A1FD54641004B4480 /* BindingRequest.m */,
-				F8075E361FD54643004B4480 /* LoginModel.h */,
-				F8075E261FD54641004B4480 /* LoginModel.m */,
-				F8075E341FD54643004B4480 /* LoginParam.h */,
-				F8075E2D1FD54642004B4480 /* LoginParam.m */,
-				F8075E321FD54643004B4480 /* LoginRequest.h */,
-				F8075E2E1FD54642004B4480 /* LoginRequest.m */,
-				F8075E2F1FD54642004B4480 /* UserInfo.h */,
-				F8075E381FD54643004B4480 /* UserInfo.m */,
-				F8075E301FD54642004B4480 /* UserInfoModifyRespone.h */,
-				F8075E351FD54643004B4480 /* UserInfoModifyRespone.m */,
-				F8075E391FD54644004B4480 /* UserInfoRespone.h */,
-				F8075E311FD54642004B4480 /* UserInfoRespone.m */,
-				F889E2E31FD697C8000BA03A /* UserInfoParam.h */,
-				F889E2E41FD697C8000BA03A /* UserInfoParam.m */,
+				F8883C8D200F4E0100F715A1 /* APIBaseRequest.h */,
+				F8883C8E200F4E0100F715A1 /* APIBaseRequest.m */,
+				F8883C8F200F4E0100F715A1 /* APIBaseResponse.h */,
+				F8883C90200F4E0100F715A1 /* APIBaseResponse.m */,
+				F8883C91200F4E0100F715A1 /* BaseResponse.h */,
+				F8883C92200F4E0100F715A1 /* BaseResponse.m */,
+				F8883C93200F4E0100F715A1 /* BindingRequest.h */,
+				F8883C94200F4E0100F715A1 /* BindingRequest.m */,
+				F8883C95200F4E0100F715A1 /* LoginModel.h */,
+				F8883C96200F4E0100F715A1 /* LoginModel.m */,
+				F8883C97200F4E0100F715A1 /* LoginParam.h */,
+				F8883C98200F4E0100F715A1 /* LoginParam.m */,
+				F8883C99200F4E0100F715A1 /* LoginRequest.h */,
+				F8883C9A200F4E0100F715A1 /* LoginRequest.m */,
+				F8883C9B200F4E0100F715A1 /* UserInfo.h */,
+				F8883C9C200F4E0100F715A1 /* UserInfo.m */,
+				F8883C9D200F4E0100F715A1 /* UserInfoModifyRespone.h */,
+				F8883C9E200F4E0100F715A1 /* UserInfoModifyRespone.m */,
+				F8883C9F200F4E0100F715A1 /* UserInfoParam.h */,
+				F8883CA0200F4E0100F715A1 /* UserInfoParam.m */,
+				F8883CA1200F4E0100F715A1 /* UserInfoRespone.h */,
+				F8883CA2200F4E0100F715A1 /* UserInfoRespone.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F8075DB11FD5401D004B4480 /* NetWork */ = {
+		F8883CA3200F4E0100F715A1 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				F8075DB21FD5403C004B4480 /* GBUserAPI.h */,
-				F8075DB31FD5403C004B4480 /* GBUserAPI.m */,
-				F889E2DF1FD64B91000BA03A /* GBUserRequest.h */,
-				F889E2E01FD64B91000BA03A /* GBUserRequest.m */,
+				F8883CA4200F4E0100F715A1 /* GBUserAPI.h */,
+				F8883CA5200F4E0100F715A1 /* GBUserAPI.m */,
+				F8883CA6200F4E0100F715A1 /* GBUserRequest.h */,
+				F8883CA7200F4E0100F715A1 /* GBUserRequest.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
 		};
-		F8075E4E1FD546AD004B4480 /* Utils */ = {
+		F8883CA8200F4E0100F715A1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F8075E4F1FD546C8004B4480 /* GBOSSUtil.h */,
-				F8075E501FD546C8004B4480 /* GBOSSUtil.m */,
+				F8883CA9200F4E0100F715A1 /* Assets.xcassets */,
+				F8883CAA200F4E0100F715A1 /* radio@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F8883CAB200F4E0100F715A1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F8883CAC200F4E0100F715A1 /* GBOSSUtil.h */,
+				F8883CAD200F4E0100F715A1 /* GBOSSUtil.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F8883CAE200F4E0100F715A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8883CAF200F4E0100F715A1 /* GBTextEditController.h */,
+				F8883CB0200F4E0100F715A1 /* GBTextEditController.m */,
+				F8883CB1200F4E0100F715A1 /* GBTextEditController.xib */,
+				F8883CB2200F4E0100F715A1 /* UserCenterController.h */,
+				F8883CB3200F4E0100F715A1 /* UserCenterController.m */,
+				F8883CB4200F4E0100F715A1 /* UserInfoController.h */,
+				F8883CB5200F4E0100F715A1 /* UserInfoController.m */,
+				F8883CB6200F4E0100F715A1 /* UserSecurityController.h */,
+				F8883CB7200F4E0100F715A1 /* UserSecurityController.m */,
+				F8883CB8200F4E0100F715A1 /* UserSettingController.h */,
+				F8883CB9200F4E0100F715A1 /* UserSettingController.m */,
+				F8883CBA200F4E0100F715A1 /* YTLoginController.h */,
+				F8883CBB200F4E0100F715A1 /* YTLoginController.m */,
+				F8883CBC200F4E0100F715A1 /* YTLoginController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F8883CBD200F4E0100F715A1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F8883CBE200F4E0100F715A1 /* LoginViewModel.h */,
+				F8883CBF200F4E0100F715A1 /* LoginViewModel.m */,
+				F8883CC0200F4E0100F715A1 /* UserCenterManager.h */,
+				F8883CC1200F4E0100F715A1 /* UserCenterManager.m */,
+				F8883CC2200F4E0100F715A1 /* UserInfoVM.h */,
+				F8883CC3200F4E0100F715A1 /* UserInfoVM.m */,
+				F8883CC4200F4E0100F715A1 /* UserSecurityVM.h */,
+				F8883CC5200F4E0100F715A1 /* UserSecurityVM.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F8883CC6200F4E0100F715A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8883CC7200F4E0100F715A1 /* AuthorityView.h */,
+				F8883CC8200F4E0100F715A1 /* AuthorityView.m */,
+				F8883CC9200F4E0100F715A1 /* AuthorityView.xib */,
+				F8883CCA200F4E0100F715A1 /* UserHeaderCell.h */,
+				F8883CCB200F4E0100F715A1 /* UserHeaderCell.m */,
+				F8883CCC200F4E0100F715A1 /* UserHeaderCell.xib */,
+				F8883CCD200F4E0100F715A1 /* YTLoginView.h */,
+				F8883CCE200F4E0100F715A1 /* YTLoginView.m */,
+				F8883CCF200F4E0100F715A1 /* YTLoginView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8883D1F200F4E8800F715A1 /* GBUserResource */ = {
+			isa = PBXGroup;
+			children = (
+				F8883D20200F4E8800F715A1 /* Info.plist */,
+			);
+			path = GBUserResource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,34 +366,35 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8075E211FD5462D004B4480 /* UserInfoVM.h in Headers */,
-				F8075DE91FD54603004B4480 /* UserCenterController.h in Headers */,
-				F8075E3F1FD54644004B4480 /* BindingRequest.h in Headers */,
-				F8075E4A1FD54644004B4480 /* LoginModel.h in Headers */,
-				F8075E0F1FD54618004B4480 /* YTLoginView.h in Headers */,
-				F8075E051FD54618004B4480 /* AuthorityView.h in Headers */,
-				F8075E231FD5462D004B4480 /* UserCenterManager.h in Headers */,
-				F8075E401FD54644004B4480 /* APIBaseRequest.h in Headers */,
-				F8075DE71FD54603004B4480 /* UserSettingController.h in Headers */,
-				F8075E1F1FD5462D004B4480 /* UserSecurityVM.h in Headers */,
-				F8075E4B1FD54644004B4480 /* BaseResponse.h in Headers */,
-				F8075DE51FD54603004B4480 /* UserInfoController.h in Headers */,
-				F8075E4D1FD54644004B4480 /* UserInfoRespone.h in Headers */,
-				F8075E511FD546C8004B4480 /* GBOSSUtil.h in Headers */,
-				F8075E431FD54644004B4480 /* UserInfo.h in Headers */,
-				F8075E481FD54644004B4480 /* LoginParam.h in Headers */,
-				F8075E121FD54618004B4480 /* UserHeaderCell.h in Headers */,
-				F8075E441FD54644004B4480 /* UserInfoModifyRespone.h in Headers */,
-				F8075CC91FD4E54B004B4480 /* GBUser.h in Headers */,
-				F8075DE81FD54603004B4480 /* UserSecurityController.h in Headers */,
-				F8075E251FD5462D004B4480 /* LoginViewModel.h in Headers */,
-				F8075DB41FD5403C004B4480 /* GBUserAPI.h in Headers */,
-				F8075E471FD54644004B4480 /* APIBaseResponse.h in Headers */,
-				F8075DE61FD54603004B4480 /* GBTextEditController.h in Headers */,
-				F8075E461FD54644004B4480 /* LoginRequest.h in Headers */,
-				F889E2E51FD697C8000BA03A /* UserInfoParam.h in Headers */,
-				F889E2E11FD64B91000BA03A /* GBUserRequest.h in Headers */,
-				F8075DEA1FD54603004B4480 /* YTLoginController.h in Headers */,
+				F8883CE7200F4E0100F715A1 /* UserInfoRespone.h in Headers */,
+				F8883CD7200F4E0100F715A1 /* BaseResponse.h in Headers */,
+				F8883D07200F4E0200F715A1 /* AuthorityView.h in Headers */,
+				F8883CF4200F4E0200F715A1 /* UserCenterController.h in Headers */,
+				F8883CF1200F4E0200F715A1 /* GBTextEditController.h in Headers */,
+				F8883CE5200F4E0100F715A1 /* UserInfoParam.h in Headers */,
+				F8883CD3200F4E0100F715A1 /* APIBaseRequest.h in Headers */,
+				F8883CF6200F4E0200F715A1 /* UserInfoController.h in Headers */,
+				F8883CD9200F4E0100F715A1 /* BindingRequest.h in Headers */,
+				F8883CE3200F4E0100F715A1 /* UserInfoModifyRespone.h in Headers */,
+				F8883D03200F4E0200F715A1 /* UserInfoVM.h in Headers */,
+				F8883CE1200F4E0100F715A1 /* UserInfo.h in Headers */,
+				F8883CFA200F4E0200F715A1 /* UserSettingController.h in Headers */,
+				F8883D05200F4E0200F715A1 /* UserSecurityVM.h in Headers */,
+				F8883CDB200F4E0100F715A1 /* LoginModel.h in Headers */,
+				F8883D01200F4E0200F715A1 /* UserCenterManager.h in Headers */,
+				F8883CDD200F4E0100F715A1 /* LoginParam.h in Headers */,
+				F8883CD1200F4E0100F715A1 /* GBUser.h in Headers */,
+				F8883D0A200F4E0200F715A1 /* UserHeaderCell.h in Headers */,
+				F8883CD0200F4E0100F715A1 /* GBUserPrefixHeader.pch in Headers */,
+				F8883CD5200F4E0100F715A1 /* APIBaseResponse.h in Headers */,
+				F8883CDF200F4E0100F715A1 /* LoginRequest.h in Headers */,
+				F8883CFC200F4E0200F715A1 /* YTLoginController.h in Headers */,
+				F8883CEF200F4E0200F715A1 /* GBOSSUtil.h in Headers */,
+				F8883CF8200F4E0200F715A1 /* UserSecurityController.h in Headers */,
+				F8883CFF200F4E0200F715A1 /* LoginViewModel.h in Headers */,
+				F8883D0D200F4E0200F715A1 /* YTLoginView.h in Headers */,
+				F8883CE9200F4E0200F715A1 /* GBUserAPI.h in Headers */,
+				F8883CEB200F4E0200F715A1 /* GBUserRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +421,23 @@
 			productReference = F8075CC41FD4E54B004B4480 /* GBUser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F8883D1D200F4E8800F715A1 /* GBUserResource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8883D21200F4E8800F715A1 /* Build configuration list for PBXNativeTarget "GBUserResource" */;
+			buildPhases = (
+				F8883D1A200F4E8800F715A1 /* Sources */,
+				F8883D1B200F4E8800F715A1 /* Frameworks */,
+				F8883D1C200F4E8800F715A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GBUserResource;
+			productName = GBUserResource;
+			productReference = F8883D1E200F4E8800F715A1 /* GBUserResource.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -380,6 +450,10 @@
 					F8075CC31FD4E54B004B4480 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+					};
+					F8883D1D200F4E8800F715A1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -397,6 +471,7 @@
 			projectRoot = "";
 			targets = (
 				F8075CC31FD4E54B004B4480 /* GBUser */,
+				F8883D1D200F4E8800F715A1 /* GBUserResource */,
 			);
 		};
 /* End PBXProject section */
@@ -406,11 +481,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8075E131FD54618004B4480 /* AuthorityView.xib in Resources */,
-				F8075E0E1FD54618004B4480 /* YTLoginView.xib in Resources */,
-				F8075E151FD54618004B4480 /* UserHeaderCell.xib in Resources */,
-				F8075DF11FD54603004B4480 /* YTLoginController.xib in Resources */,
-				F8075DEE1FD54603004B4480 /* GBTextEditController.xib in Resources */,
+				F8883D09200F4E0200F715A1 /* AuthorityView.xib in Resources */,
+				F8883D0F200F4E0200F715A1 /* YTLoginView.xib in Resources */,
+				F8883CED200F4E0200F715A1 /* Assets.xcassets in Resources */,
+				F8883CFE200F4E0200F715A1 /* YTLoginController.xib in Resources */,
+				F8883CF3200F4E0200F715A1 /* GBTextEditController.xib in Resources */,
+				F8883D0C200F4E0200F715A1 /* UserHeaderCell.xib in Resources */,
+				F8883CD2200F4E0100F715A1 /* Info.plist in Resources */,
+				F8883CEE200F4E0200F715A1 /* radio@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8883D1C200F4E8800F715A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8883D26200F4EDD00F715A1 /* GBTextEditController.xib in Resources */,
+				F8883D27200F4EDD00F715A1 /* YTLoginController.xib in Resources */,
+				F8883D28200F4EDD00F715A1 /* AuthorityView.xib in Resources */,
+				F8883D29200F4EDD00F715A1 /* UserHeaderCell.xib in Resources */,
+				F8883D2A200F4EDD00F715A1 /* YTLoginView.xib in Resources */,
+				F8883D24200F4ED200F715A1 /* Assets.xcassets in Resources */,
+				F8883D25200F4ED200F715A1 /* radio@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,33 +546,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8075E0A1FD54618004B4480 /* YTLoginView.m in Sources */,
-				F8075E421FD54644004B4480 /* LoginRequest.m in Sources */,
-				F8075DED1FD54603004B4480 /* UserSecurityController.m in Sources */,
-				F8075E411FD54644004B4480 /* LoginParam.m in Sources */,
-				F8075E3D1FD54644004B4480 /* BaseResponse.m in Sources */,
-				F8075E3E1FD54644004B4480 /* BindingRequest.m in Sources */,
-				F8075DF01FD54603004B4480 /* UserInfoController.m in Sources */,
-				F8075E451FD54644004B4480 /* UserInfoRespone.m in Sources */,
-				F8075DEC1FD54603004B4480 /* GBTextEditController.m in Sources */,
-				F8075DEF1FD54603004B4480 /* UserSettingController.m in Sources */,
-				F889E2E21FD64B91000BA03A /* GBUserRequest.m in Sources */,
-				F8075E491FD54644004B4480 /* UserInfoModifyRespone.m in Sources */,
-				F8075E3C1FD54644004B4480 /* APIBaseResponse.m in Sources */,
-				F889E2E61FD697C8000BA03A /* UserInfoParam.m in Sources */,
-				F8075E221FD5462D004B4480 /* UserInfoVM.m in Sources */,
-				F8075E101FD54618004B4480 /* AuthorityView.m in Sources */,
-				F8075DB51FD5403C004B4480 /* GBUserAPI.m in Sources */,
-				F8075E3A1FD54644004B4480 /* LoginModel.m in Sources */,
-				F8075E4C1FD54644004B4480 /* UserInfo.m in Sources */,
-				F8075E201FD5462D004B4480 /* UserSecurityVM.m in Sources */,
-				F8075E241FD5462D004B4480 /* LoginViewModel.m in Sources */,
-				F8075DE41FD54603004B4480 /* YTLoginController.m in Sources */,
-				F8075DEB1FD54603004B4480 /* UserCenterController.m in Sources */,
-				F8075E3B1FD54644004B4480 /* APIBaseRequest.m in Sources */,
-				F8075E1E1FD5462D004B4480 /* UserCenterManager.m in Sources */,
-				F8075E521FD546C8004B4480 /* GBOSSUtil.m in Sources */,
-				F8075E081FD54618004B4480 /* UserHeaderCell.m in Sources */,
+				F8883CE6200F4E0100F715A1 /* UserInfoParam.m in Sources */,
+				F8883CFB200F4E0200F715A1 /* UserSettingController.m in Sources */,
+				F8883CE2200F4E0100F715A1 /* UserInfo.m in Sources */,
+				F8883CF9200F4E0200F715A1 /* UserSecurityController.m in Sources */,
+				F8883CF0200F4E0200F715A1 /* GBOSSUtil.m in Sources */,
+				F8883D0E200F4E0200F715A1 /* YTLoginView.m in Sources */,
+				F8883D06200F4E0200F715A1 /* UserSecurityVM.m in Sources */,
+				F8883CEC200F4E0200F715A1 /* GBUserRequest.m in Sources */,
+				F8883CE0200F4E0100F715A1 /* LoginRequest.m in Sources */,
+				F8883CF5200F4E0200F715A1 /* UserCenterController.m in Sources */,
+				F8883D0B200F4E0200F715A1 /* UserHeaderCell.m in Sources */,
+				F8883CD6200F4E0100F715A1 /* APIBaseResponse.m in Sources */,
+				F8883CD8200F4E0100F715A1 /* BaseResponse.m in Sources */,
+				F8883CD4200F4E0100F715A1 /* APIBaseRequest.m in Sources */,
+				F8883D00200F4E0200F715A1 /* LoginViewModel.m in Sources */,
+				F8883D04200F4E0200F715A1 /* UserInfoVM.m in Sources */,
+				F8883CE4200F4E0100F715A1 /* UserInfoModifyRespone.m in Sources */,
+				F8883CFD200F4E0200F715A1 /* YTLoginController.m in Sources */,
+				F8883CF7200F4E0200F715A1 /* UserInfoController.m in Sources */,
+				F8883CDE200F4E0100F715A1 /* LoginParam.m in Sources */,
+				F8883CEA200F4E0200F715A1 /* GBUserAPI.m in Sources */,
+				F8883D08200F4E0200F715A1 /* AuthorityView.m in Sources */,
+				F8883CDA200F4E0100F715A1 /* BindingRequest.m in Sources */,
+				F8883CF2200F4E0200F715A1 /* GBTextEditController.m in Sources */,
+				F8883D02200F4E0200F715A1 /* UserCenterManager.m in Sources */,
+				F8883CDC200F4E0100F715A1 /* LoginModel.m in Sources */,
+				F8883CE8200F4E0200F715A1 /* UserInfoRespone.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8883D1A200F4E8800F715A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +710,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/GBUser/Config/GBUserPrefixHeader.pch;
 				INFOPLIST_FILE = GBUser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -637,6 +737,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/GBUser/Config/GBUserPrefixHeader.pch;
 				INFOPLIST_FILE = GBUser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -646,6 +747,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8883D22200F4E8800F715A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DS9W6935FH;
+				INFOPLIST_FILE = GBUserResource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chengb.GBUserResource;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F8883D23200F4E8800F715A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DS9W6935FH;
+				INFOPLIST_FILE = GBUserResource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chengb.GBUserResource;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -666,6 +807,15 @@
 			buildConfigurations = (
 				F8075CCD1FD4E54B004B4480 /* Debug */,
 				F8075CCE1FD4E54B004B4480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8883D21200F4E8800F715A1 /* Build configuration list for PBXNativeTarget "GBUserResource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8883D22200F4E8800F715A1 /* Debug */,
+				F8883D23200F4E8800F715A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

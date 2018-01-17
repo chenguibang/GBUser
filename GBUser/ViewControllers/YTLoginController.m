@@ -7,7 +7,7 @@
 //
 
 #import "YTLoginController.h"
-
+#import <AppFoundation/AppFoundation.h>
 @interface YTLoginController ()
 
 @end
@@ -50,6 +50,7 @@
 
 - (void)setupView{
     self.title = @"登录";
+    self.view.backgroundColor = [UIColor whiteColor];
     _loginView = [[YTLoginView alloc]init];
     [self.view addSubview:_loginView];
     [_loginView mas_makeConstraints:^(MASConstraintMaker *make) {

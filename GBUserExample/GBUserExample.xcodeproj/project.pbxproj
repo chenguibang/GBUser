@@ -14,8 +14,6 @@
 		F837618C200DF9AB00D5C3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F837618B200DF9AB00D5C3AF /* Assets.xcassets */; };
 		F837618F200DF9AB00D5C3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F837618D200DF9AB00D5C3AF /* LaunchScreen.storyboard */; };
 		F8376192200DF9AB00D5C3AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8376191200DF9AB00D5C3AF /* main.m */; };
-		F8376199200DFB9D00D5C3AF /* GBUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8376198200DFB9D00D5C3AF /* GBUser.framework */; };
-		F837619A200DFB9D00D5C3AF /* GBUser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8376198200DFB9D00D5C3AF /* GBUser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F837619A200DFB9D00D5C3AF /* GBUser.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +43,6 @@
 		F837618E200DF9AB00D5C3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8376190200DF9AB00D5C3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8376191200DF9AB00D5C3AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F8376198200DFB9D00D5C3AF /* GBUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GBUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8376199200DFB9D00D5C3AF /* GBUser.framework in Frameworks */,
 				243248C95543A8FA2AD8E0CD /* libPods-GBUserExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,7 +77,6 @@
 		F8376176200DF9AB00D5C3AF = {
 			isa = PBXGroup;
 			children = (
-				F8376198200DFB9D00D5C3AF /* GBUser.framework */,
 				F8376181200DF9AB00D5C3AF /* GBUserExample */,
 				F8376180200DF9AB00D5C3AF /* Products */,
 				92A272F93FBC5118BA3A6E41 /* Pods */,

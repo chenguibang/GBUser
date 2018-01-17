@@ -32,7 +32,7 @@
  @param host host description
  @param port port description
  */
-- (void)setupWith:(NSString *)host port:(NSString *)port;
+- (void)setupWithHost:(NSString *)host port:(NSString *)port;
 
 /**
  注册
