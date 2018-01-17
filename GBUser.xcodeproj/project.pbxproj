@@ -50,14 +50,14 @@
 		F8883CF7200F4E0200F715A1 /* UserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB5200F4E0100F715A1 /* UserInfoController.m */; };
 		F8883CF8200F4E0200F715A1 /* UserSecurityController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB6200F4E0100F715A1 /* UserSecurityController.h */; };
 		F8883CF9200F4E0200F715A1 /* UserSecurityController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB7200F4E0100F715A1 /* UserSecurityController.m */; };
-		F8883CFA200F4E0200F715A1 /* UserSettingController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB8200F4E0100F715A1 /* UserSettingController.h */; };
+		F8883CFA200F4E0200F715A1 /* UserSettingController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB8200F4E0100F715A1 /* UserSettingController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CFB200F4E0200F715A1 /* UserSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB9200F4E0100F715A1 /* UserSettingController.m */; };
 		F8883CFC200F4E0200F715A1 /* YTLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CBA200F4E0100F715A1 /* YTLoginController.h */; };
 		F8883CFD200F4E0200F715A1 /* YTLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CBB200F4E0100F715A1 /* YTLoginController.m */; };
 		F8883CFE200F4E0200F715A1 /* YTLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CBC200F4E0100F715A1 /* YTLoginController.xib */; };
 		F8883CFF200F4E0200F715A1 /* LoginViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CBE200F4E0100F715A1 /* LoginViewModel.h */; };
 		F8883D00200F4E0200F715A1 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CBF200F4E0100F715A1 /* LoginViewModel.m */; };
-		F8883D01200F4E0200F715A1 /* UserCenterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC0200F4E0100F715A1 /* UserCenterManager.h */; };
+		F8883D01200F4E0200F715A1 /* UserCenterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC0200F4E0100F715A1 /* UserCenterManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883D02200F4E0200F715A1 /* UserCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CC1200F4E0100F715A1 /* UserCenterManager.m */; };
 		F8883D03200F4E0200F715A1 /* UserInfoVM.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC2200F4E0100F715A1 /* UserInfoVM.h */; };
 		F8883D04200F4E0200F715A1 /* UserInfoVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CC3200F4E0100F715A1 /* UserInfoVM.m */; };
@@ -366,6 +366,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8883D01200F4E0200F715A1 /* UserCenterManager.h in Headers */,
+				F8883CFA200F4E0200F715A1 /* UserSettingController.h in Headers */,
 				F8883CE7200F4E0100F715A1 /* UserInfoRespone.h in Headers */,
 				F8883CD7200F4E0100F715A1 /* BaseResponse.h in Headers */,
 				F8883D07200F4E0200F715A1 /* AuthorityView.h in Headers */,
@@ -378,10 +380,8 @@
 				F8883CE3200F4E0100F715A1 /* UserInfoModifyRespone.h in Headers */,
 				F8883D03200F4E0200F715A1 /* UserInfoVM.h in Headers */,
 				F8883CE1200F4E0100F715A1 /* UserInfo.h in Headers */,
-				F8883CFA200F4E0200F715A1 /* UserSettingController.h in Headers */,
 				F8883D05200F4E0200F715A1 /* UserSecurityVM.h in Headers */,
 				F8883CDB200F4E0100F715A1 /* LoginModel.h in Headers */,
-				F8883D01200F4E0200F715A1 /* UserCenterManager.h in Headers */,
 				F8883CDD200F4E0100F715A1 /* LoginParam.h in Headers */,
 				F8883CD1200F4E0100F715A1 /* GBUser.h in Headers */,
 				F8883D0A200F4E0200F715A1 /* UserHeaderCell.h in Headers */,
@@ -758,8 +758,10 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DS9W6935FH;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = GBUserResource/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengb.GBUserResource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -778,8 +780,10 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DS9W6935FH;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = GBUserResource/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengb.GBUserResource;
 				PRODUCT_NAME = "$(TARGET_NAME)";

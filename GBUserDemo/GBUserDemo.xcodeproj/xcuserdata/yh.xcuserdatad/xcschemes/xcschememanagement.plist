@@ -4,15 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GBUserExample.xcscheme</key>
+		<key>GBUserDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>43</integer>
-		</dict>
-		<key>GBUserResource.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>45</integer>
+			<integer>46</integer>
 		</dict>
 	</dict>
 </dict>

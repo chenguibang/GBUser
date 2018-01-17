@@ -1,13 +1,14 @@
 //
 //  AppDelegate.m
-//  GBUserExample
+//  GBUserDemo
 //
-//  Created by yh on 2018/1/16.
+//  Created by yh on 2018/1/17.
 //  Copyright © 2018年 chengb. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import <AppFoundation/APPManager.h>
+
+
 @interface AppDelegate ()
 
 @end
@@ -17,9 +18,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    [APPManager shared].theme.navigationBarItemColor = [UIColor whiteColor];
-    
     return YES;
 }
 
