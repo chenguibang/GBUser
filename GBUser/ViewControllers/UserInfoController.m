@@ -49,7 +49,7 @@
 
 - (void)setupView{
     self.title = @"个人信息";
-    [self.tableView registerNib:[UINib nibWithNibName:@"UserHeaderCell" bundle:nil] forCellReuseIdentifier:@"UserHeaderCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"UserHeaderCell" bundle:GBUserBundle] forCellReuseIdentifier:@"UserHeaderCell"];
 }
 
 
@@ -101,7 +101,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSString *title = self.userInfoVM.menus[indexPath.section][indexPath.row][@"title"];
     if ([title isEqualToString:@"性别"]) {
-        GBSexPickView *sexPicker = XIB(@"GBSexPickView");
+        GBSexPickView *sexPicker = GBUserXIBView(@"GBSexPickView");
         sexPicker.sexPickResult = ^(NSInteger index, NSString *sexName) {
             UserInfo *userInfo = [[UserInfo alloc]init];
             userInfo.sex = @[@(1),@(2),@(0)][index];
@@ -109,7 +109,7 @@
         };
         [sexPicker showAt:self];
     }else if ([title isEqualToString:@"生日"]) {
-        GBDatePickerView *timePicker = XIB(@"GBDatePickerView");
+        GBDatePickerView *timePicker = GBUserXIBView(@"GBDatePickerView");
         timePicker.datePicker.datePickerMode = UIDatePickerModeDate;
         [timePicker pickTimeAt:self];
         timePicker.datePickResult = ^(NSTimeInterval timestamp) {

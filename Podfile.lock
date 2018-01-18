@@ -67,10 +67,10 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - Bugly (2.4.8)
+  - Bugly (2.5.0)
   - CYLTableViewPlaceHolder (1.0.8)
   - DBCorner (0.1.1)
-  - FCFileManager (1.0.19)
+  - FCFileManager (1.0.20)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -82,31 +82,31 @@ PODS:
   - JKCategories (1.6)
   - KVOController (1.2.0)
   - KYGooeyMenu (1.0.5)
-  - LBXScan (2.2):
-    - LBXScan/All (= 2.2)
-  - LBXScan/All (2.2):
+  - LBXScan (2.3):
+    - LBXScan/All (= 2.3)
+  - LBXScan/All (2.3):
     - LBXScan/Types (~> 2.2)
     - ZBarSDK (~> 1.3.1)
-  - LBXScan/Types (2.2)
+  - LBXScan/Types (2.3)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
-  - MJRefresh (3.1.15)
+  - MJRefresh (3.1.15.1)
   - NSDate-Escort (1.8.2)
   - pop (1.0.10)
   - QrcodeBuilder (1.0.1)
   - ReactiveObjC (3.0.0)
   - RefreshControl (2.0.5)
-  - RKNotificationHub (2.0.4)
-  - RongCloudIM/IMKit (2.8.20):
+  - RKNotificationHub (2.0.5)
+  - RongCloudIM/IMKit (2.8.26):
     - RongCloudIM/IMLib
-  - RongCloudIM/IMLib (2.8.20)
+  - RongCloudIM/IMLib (2.8.26)
   - ScottAlertController (0.1.0)
-  - SDCycleScrollView (1.74):
+  - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
-  - SDWebImage (4.2.1):
-    - SDWebImage/Core (= 4.2.1)
-  - SDWebImage/Core (4.2.1)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
   - SVProgressHUD (2.1.2)
   - TZImagePickerController (1.8.9)
   - UIButton-SSEdgeInsets (0.1.7)
@@ -114,7 +114,7 @@ PODS:
   - UITableView+FDTemplateLayoutCell (1.6)
   - UITextField+Max (1.0.2)
   - VIPhotoView (0.1)
-  - WebViewJavascriptBridge (6.0.2)
+  - WebViewJavascriptBridge (6.0.3)
   - XMLDictionary (1.4.1)
   - YBPopupMenu (0.1.2)
   - YYKit (1.0.9):
@@ -142,10 +142,10 @@ SPEC CHECKSUMS:
   AliyunOSSiOS: 6d7f1f6aae0176095d147a88d60b23bbef93e0b7
   AppFoundation: baf228514c3518f6d7e864081ecbef9e5d0e5238
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  Bugly: da3c02408c14838d498429320545a8e439392978
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   CYLTableViewPlaceHolder: 44075c119aab78bbc514c75d771d6565e19938e8
   DBCorner: e09d0dc1a7f8c0ac29fa221ed5cfe79c51b3c866
-  FCFileManager: df8ae7498afedf9ca56dd0cd12335f04dbe96af3
+  FCFileManager: e0f73316e6aa2eb04d2ff4caa75fe7df1ae44270
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GBNetWork: c4e0820fd96ec43fa5b3fdde7d7a551ebc199e60
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
@@ -153,21 +153,21 @@ SPEC CHECKSUMS:
   JKCategories: dab1bd3f7500836c5066d09052b85c12a963db12
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   KYGooeyMenu: 3d9f3504b59a5dd1b6c4ff34a06836284647a2aa
-  LBXScan: 31b69c9657404133324e6b68ef814802ef9cacc0
+  LBXScan: e51449f0832d1fe17da632af0d22adeb3cfa3543
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
-  MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
   NSDate-Escort: c79db277a401c0ad219acd295ec17c7b4f61266f
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   QrcodeBuilder: 542404d402bee839245eddb16c23b749fd15b5a4
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   RefreshControl: 12281dd89de757022fa708a45bd003a41ad060ed
-  RKNotificationHub: 3765424499139c3d3885b681bb0837f072d12ae6
-  RongCloudIM: fbb835e78844cb11f3f279467dea0fc962905002
+  RKNotificationHub: e926748820d719f21ff374657a47fceefa1796b4
+  RongCloudIM: 895b1f6079b231846c04487699ca85c0b881cc68
   ScottAlertController: 2edee4ca00ee521777740d8e02ad550f7354f61d
-  SDCycleScrollView: f821215226f6146a35470721a9d6e83ec5cfb04b
-  SDWebImage: 1fa4c9edf525b744f002db89f3f5a38b3cd4c541
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   TZImagePickerController: b44f4cfc6d320dab9a53adcdda725099be36dcda
   UIButton-SSEdgeInsets: 64a600adc670d98e140ddcde1d0e64d7b952502c
@@ -175,13 +175,13 @@ SPEC CHECKSUMS:
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   UITextField+Max: b7c067d0b1ff64ba5b33bdd6b8e809882b096288
   VIPhotoView: bdc0cf8ddadda754b451869bd3a919e8eb5c11ab
-  WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
   YBPopupMenu: f081ab289c4c72483b940594e4976314157fc727
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
   ZYCornerRadius: f0af817be7805b5c63d793042ca7a03f81e14069
 
-PODFILE CHECKSUM: 847d97556330729f0fe58611e3900c47361b6054
+PODFILE CHECKSUM: 88dcf9eea5ca431440a420bbabf9e97a0e91f872
 
 COCOAPODS: 1.2.1

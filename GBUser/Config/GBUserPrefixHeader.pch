@@ -14,9 +14,8 @@
 //#define GBUserImage(a) [UIImage jk_imageWithFileName:a inBundle:[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]]]
 
 
+#import "GBUserMacros.h"
 
 
-#define GBUserImage(a) [UIImage imageNamed:a inBundle:[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]] compatibleWithTraitCollection:nil]
-#define GBUserXIBView(name) [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]] loadNibNamed:name owner:nil options:nil][0]
 
 #endif /* GBUserPrefixHeader_pch */

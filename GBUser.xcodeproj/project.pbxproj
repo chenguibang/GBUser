@@ -8,30 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		B5BE205710C1E502814486B6 /* libPods-GBUser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2926D8717716FACC44BD72 /* libPods-GBUser.a */; };
+		F860C5122010307F00B5BCD7 /* GBUserMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F860C5112010307A00B5BCD7 /* GBUserMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CD0200F4E0100F715A1 /* GBUserPrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = F8883C89200F4E0100F715A1 /* GBUserPrefixHeader.pch */; };
 		F8883CD1200F4E0100F715A1 /* GBUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8A200F4E0100F715A1 /* GBUser.h */; };
 		F8883CD2200F4E0100F715A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8883C8B200F4E0100F715A1 /* Info.plist */; };
 		F8883CD3200F4E0100F715A1 /* APIBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8D200F4E0100F715A1 /* APIBaseRequest.h */; };
 		F8883CD4200F4E0100F715A1 /* APIBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C8E200F4E0100F715A1 /* APIBaseRequest.m */; };
-		F8883CD5200F4E0100F715A1 /* APIBaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8F200F4E0100F715A1 /* APIBaseResponse.h */; };
+		F8883CD5200F4E0100F715A1 /* APIBaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8F200F4E0100F715A1 /* APIBaseResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CD6200F4E0100F715A1 /* APIBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C90200F4E0100F715A1 /* APIBaseResponse.m */; };
 		F8883CD7200F4E0100F715A1 /* BaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C91200F4E0100F715A1 /* BaseResponse.h */; };
 		F8883CD8200F4E0100F715A1 /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C92200F4E0100F715A1 /* BaseResponse.m */; };
 		F8883CD9200F4E0100F715A1 /* BindingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C93200F4E0100F715A1 /* BindingRequest.h */; };
 		F8883CDA200F4E0100F715A1 /* BindingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C94200F4E0100F715A1 /* BindingRequest.m */; };
-		F8883CDB200F4E0100F715A1 /* LoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C95200F4E0100F715A1 /* LoginModel.h */; };
+		F8883CDB200F4E0100F715A1 /* LoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C95200F4E0100F715A1 /* LoginModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CDC200F4E0100F715A1 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C96200F4E0100F715A1 /* LoginModel.m */; };
 		F8883CDD200F4E0100F715A1 /* LoginParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C97200F4E0100F715A1 /* LoginParam.h */; };
 		F8883CDE200F4E0100F715A1 /* LoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C98200F4E0100F715A1 /* LoginParam.m */; };
-		F8883CDF200F4E0100F715A1 /* LoginRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C99200F4E0100F715A1 /* LoginRequest.h */; };
+		F8883CDF200F4E0100F715A1 /* LoginRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C99200F4E0100F715A1 /* LoginRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CE0200F4E0100F715A1 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C9A200F4E0100F715A1 /* LoginRequest.m */; };
-		F8883CE1200F4E0100F715A1 /* UserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C9B200F4E0100F715A1 /* UserInfo.h */; };
+		F8883CE1200F4E0100F715A1 /* UserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C9B200F4E0100F715A1 /* UserInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CE2200F4E0100F715A1 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C9C200F4E0100F715A1 /* UserInfo.m */; };
-		F8883CE3200F4E0100F715A1 /* UserInfoModifyRespone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C9D200F4E0100F715A1 /* UserInfoModifyRespone.h */; };
+		F8883CE3200F4E0100F715A1 /* UserInfoModifyRespone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C9D200F4E0100F715A1 /* UserInfoModifyRespone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CE4200F4E0100F715A1 /* UserInfoModifyRespone.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C9E200F4E0100F715A1 /* UserInfoModifyRespone.m */; };
 		F8883CE5200F4E0100F715A1 /* UserInfoParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C9F200F4E0100F715A1 /* UserInfoParam.h */; };
 		F8883CE6200F4E0100F715A1 /* UserInfoParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA0200F4E0100F715A1 /* UserInfoParam.m */; };
-		F8883CE7200F4E0100F715A1 /* UserInfoRespone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA1200F4E0100F715A1 /* UserInfoRespone.h */; };
+		F8883CE7200F4E0100F715A1 /* UserInfoRespone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA1200F4E0100F715A1 /* UserInfoRespone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CE8200F4E0200F715A1 /* UserInfoRespone.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA2200F4E0100F715A1 /* UserInfoRespone.m */; };
 		F8883CE9200F4E0200F715A1 /* GBUserAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA4200F4E0100F715A1 /* GBUserAPI.h */; };
 		F8883CEA200F4E0200F715A1 /* GBUserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA5200F4E0100F715A1 /* GBUserAPI.m */; };
@@ -52,10 +53,10 @@
 		F8883CF9200F4E0200F715A1 /* UserSecurityController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB7200F4E0100F715A1 /* UserSecurityController.m */; };
 		F8883CFA200F4E0200F715A1 /* UserSettingController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB8200F4E0100F715A1 /* UserSettingController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CFB200F4E0200F715A1 /* UserSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB9200F4E0100F715A1 /* UserSettingController.m */; };
-		F8883CFC200F4E0200F715A1 /* YTLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CBA200F4E0100F715A1 /* YTLoginController.h */; };
+		F8883CFC200F4E0200F715A1 /* YTLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CBA200F4E0100F715A1 /* YTLoginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CFD200F4E0200F715A1 /* YTLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CBB200F4E0100F715A1 /* YTLoginController.m */; };
 		F8883CFE200F4E0200F715A1 /* YTLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CBC200F4E0100F715A1 /* YTLoginController.xib */; };
-		F8883CFF200F4E0200F715A1 /* LoginViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CBE200F4E0100F715A1 /* LoginViewModel.h */; };
+		F8883CFF200F4E0200F715A1 /* LoginViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CBE200F4E0100F715A1 /* LoginViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883D00200F4E0200F715A1 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CBF200F4E0100F715A1 /* LoginViewModel.m */; };
 		F8883D01200F4E0200F715A1 /* UserCenterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC0200F4E0100F715A1 /* UserCenterManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883D02200F4E0200F715A1 /* UserCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CC1200F4E0100F715A1 /* UserCenterManager.m */; };
@@ -69,7 +70,7 @@
 		F8883D0A200F4E0200F715A1 /* UserHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CCA200F4E0100F715A1 /* UserHeaderCell.h */; };
 		F8883D0B200F4E0200F715A1 /* UserHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CCB200F4E0100F715A1 /* UserHeaderCell.m */; };
 		F8883D0C200F4E0200F715A1 /* UserHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCC200F4E0100F715A1 /* UserHeaderCell.xib */; };
-		F8883D0D200F4E0200F715A1 /* YTLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CCD200F4E0100F715A1 /* YTLoginView.h */; };
+		F8883D0D200F4E0200F715A1 /* YTLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CCD200F4E0100F715A1 /* YTLoginView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883D0E200F4E0200F715A1 /* YTLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CCE200F4E0100F715A1 /* YTLoginView.m */; };
 		F8883D0F200F4E0200F715A1 /* YTLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCF200F4E0100F715A1 /* YTLoginView.xib */; };
 		F8883D24200F4ED200F715A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8883CA9200F4E0100F715A1 /* Assets.xcassets */; };
@@ -89,6 +90,7 @@
 		B23988CA0E7BFE2C3A016600 /* Pods-GBUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBUser.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBUser/Pods-GBUser.release.xcconfig"; sourceTree = "<group>"; };
 		D3D9BD10881388D3AD9D31AA /* Pods-GBUserExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBUserExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBUserExample/Pods-GBUserExample.debug.xcconfig"; sourceTree = "<group>"; };
 		F8075CC41FD4E54B004B4480 /* GBUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GBUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860C5112010307A00B5BCD7 /* GBUserMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBUserMacros.h; sourceTree = "<group>"; };
 		F8883C89200F4E0100F715A1 /* GBUserPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUserPrefixHeader.pch; sourceTree = "<group>"; };
 		F8883C8A200F4E0100F715A1 /* GBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUser.h; sourceTree = "<group>"; };
 		F8883C8B200F4E0100F715A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				F8883C89200F4E0100F715A1 /* GBUserPrefixHeader.pch */,
+				F860C5112010307A00B5BCD7 /* GBUserMacros.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -366,9 +369,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F860C5122010307F00B5BCD7 /* GBUserMacros.h in Headers */,
+				F8883CDB200F4E0100F715A1 /* LoginModel.h in Headers */,
+				F8883CFF200F4E0200F715A1 /* LoginViewModel.h in Headers */,
+				F8883D0D200F4E0200F715A1 /* YTLoginView.h in Headers */,
+				F8883CFC200F4E0200F715A1 /* YTLoginController.h in Headers */,
+				F8883CD5200F4E0100F715A1 /* APIBaseResponse.h in Headers */,
+				F8883CE3200F4E0100F715A1 /* UserInfoModifyRespone.h in Headers */,
+				F8883CE7200F4E0100F715A1 /* UserInfoRespone.h in Headers */,
+				F8883CDF200F4E0100F715A1 /* LoginRequest.h in Headers */,
+				F8883CE1200F4E0100F715A1 /* UserInfo.h in Headers */,
 				F8883D01200F4E0200F715A1 /* UserCenterManager.h in Headers */,
 				F8883CFA200F4E0200F715A1 /* UserSettingController.h in Headers */,
-				F8883CE7200F4E0100F715A1 /* UserInfoRespone.h in Headers */,
 				F8883CD7200F4E0100F715A1 /* BaseResponse.h in Headers */,
 				F8883D07200F4E0200F715A1 /* AuthorityView.h in Headers */,
 				F8883CF4200F4E0200F715A1 /* UserCenterController.h in Headers */,
@@ -377,22 +389,14 @@
 				F8883CD3200F4E0100F715A1 /* APIBaseRequest.h in Headers */,
 				F8883CF6200F4E0200F715A1 /* UserInfoController.h in Headers */,
 				F8883CD9200F4E0100F715A1 /* BindingRequest.h in Headers */,
-				F8883CE3200F4E0100F715A1 /* UserInfoModifyRespone.h in Headers */,
 				F8883D03200F4E0200F715A1 /* UserInfoVM.h in Headers */,
-				F8883CE1200F4E0100F715A1 /* UserInfo.h in Headers */,
 				F8883D05200F4E0200F715A1 /* UserSecurityVM.h in Headers */,
-				F8883CDB200F4E0100F715A1 /* LoginModel.h in Headers */,
 				F8883CDD200F4E0100F715A1 /* LoginParam.h in Headers */,
 				F8883CD1200F4E0100F715A1 /* GBUser.h in Headers */,
 				F8883D0A200F4E0200F715A1 /* UserHeaderCell.h in Headers */,
 				F8883CD0200F4E0100F715A1 /* GBUserPrefixHeader.pch in Headers */,
-				F8883CD5200F4E0100F715A1 /* APIBaseResponse.h in Headers */,
-				F8883CDF200F4E0100F715A1 /* LoginRequest.h in Headers */,
-				F8883CFC200F4E0200F715A1 /* YTLoginController.h in Headers */,
 				F8883CEF200F4E0200F715A1 /* GBOSSUtil.h in Headers */,
 				F8883CF8200F4E0200F715A1 /* UserSecurityController.h in Headers */,
-				F8883CFF200F4E0200F715A1 /* LoginViewModel.h in Headers */,
-				F8883D0D200F4E0200F715A1 /* YTLoginView.h in Headers */,
 				F8883CE9200F4E0200F715A1 /* GBUserAPI.h in Headers */,
 				F8883CEB200F4E0200F715A1 /* GBUserRequest.h in Headers */,
 			);

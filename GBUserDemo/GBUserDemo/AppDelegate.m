@@ -8,6 +8,12 @@
 
 #import "AppDelegate.h"
 
+#import <AppFoundation/AppFoundation.h>
+#import <GBUser/UserCenterManager.h>
+
+
+
+#import <GBUser/GBUserMacros.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +24,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [APPManager shared].theme.navigationBarBackgorundColor = [UIColor colorWithRed:39.0f / 255.0f
+                                                                             green:183.0f / 255.0f
+                                                                              blue:247.0f / 255.0f
+                                                                             alpha:1.0f];
+    [APPManager shared].theme.viewControllerBackgroundColor = [UIColor whiteColor];
+    [APPManager shared].theme.preferredStatusBarStyle = UIStatusBarStyleLightContent;
+    [APPManager shared].theme.navigationBarTitleColor = [UIColor whiteColor];
+    [APPManager shared].theme.colorOfTitleNormal = [UIColor grayColor];
+
+
+    
+    [[UserCenterManager shared] setupWithHost:@"192.168.31.140" port:@"8989"];
+    
     return YES;
 }
 

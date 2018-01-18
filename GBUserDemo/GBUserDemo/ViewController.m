@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <GBUser/YTLoginController.h>
 
 @interface ViewController ()
 
@@ -19,6 +20,12 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)login:(id)sender {
+    [self presentViewController:[[YTLoginController alloc] init]   animated:YES completion:^{
+        
+    }];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

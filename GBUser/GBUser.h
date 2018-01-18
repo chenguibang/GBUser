@@ -19,5 +19,6 @@ FOUNDATION_EXPORT const unsigned char GBUserVersionString[];
 #import <GBUser/YTLoginController.h>
 #import <GBUser/UserCenterController.h>
 #import <GBUser/UserCenterManager.h>
-
+#import <GBUser/GBUserPrefixHeader.pch>
+#import <GBUser/GBUserMacros.h>
 

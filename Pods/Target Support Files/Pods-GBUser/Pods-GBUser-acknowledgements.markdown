@@ -63,7 +63,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Bugly
 
-Copyright 2017 tencent.com. All rights reserved.
+Copyright (C) 2017 Tencent Bugly, Inc. All rights reserved.
 
 
 ## CYLTableViewPlaceHolder

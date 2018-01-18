@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <GBTextFiled.h>
+
+
 @interface GBTextEditController : UIViewController
 @property (weak, nonatomic) IBOutlet GBTextFiled *textFiled;
 

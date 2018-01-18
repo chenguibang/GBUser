@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		87544919A49C59AA8977B948 /* libPods-GBUserDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9109CCD540F48BBB45991500 /* libPods-GBUserDemo.a */; };
+		F860C50E20102BBC00B5BCD7 /* GBUserResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8883D50200F535B00F715A1 /* GBUserResource.bundle */; };
 		F8883D39200F52F700F715A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883D38200F52F700F715A1 /* AppDelegate.m */; };
 		F8883D3C200F52F700F715A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883D3B200F52F700F715A1 /* ViewController.m */; };
 		F8883D3F200F52F700F715A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8883D3D200F52F700F715A1 /* Main.storyboard */; };
@@ -191,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F860C50E20102BBC00B5BCD7 /* GBUserResource.bundle in Resources */,
 				F8883D44200F52F700F715A1 /* LaunchScreen.storyboard in Resources */,
 				F8883D41200F52F700F715A1 /* Assets.xcassets in Resources */,
 				F8883D3F200F52F700F715A1 /* Main.storyboard in Resources */,
@@ -395,7 +397,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = GBUserDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -416,7 +418,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = GBUserDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
