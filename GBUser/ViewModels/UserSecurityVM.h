@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ShareSDKExtension/SSEThirdPartyLoginHelper.h>
+
+#import <ShareSDK/ShareSDK.h>
+
 #import "BindingRequest.h"
-#import <ApiResponse.h>
+
+#import <GBNetWork/ApiResponse.h>
 @interface UserSecurityVM : NSObject{
     NSMutableDictionary *auth;
 }

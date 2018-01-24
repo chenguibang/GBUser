@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GBUserPhoneLoginController">
+            <connections>
+                <outlet property="phoneTextFiled" destination="4UR-WB-AcM" id="ZOi-gP-dA0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机登录/注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRZ-jM-Ddr">
+                    <rect key="frame" x="25" y="74" width="325" height="48"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hti-1C-nAC">
+                    <rect key="frame" x="25" y="206" width="325" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="erd-Uc-vd3"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4UR-WB-AcM">
+                    <rect key="frame" x="25" y="162" width="325" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="IbE-t8-iP3"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp6-R8-o7Q">
+                    <rect key="frame" x="40" y="251" width="295" height="44"/>
+                    <color key="backgroundColor" red="0.26352742309999999" green="0.49027025699999999" blue="0.70856624840000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="b50-uP-lkP"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="e94-CF-D0h"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hti-1C-nAC" secondAttribute="trailing" constant="25" id="0eR-7d-VZ3"/>
+                <constraint firstAttribute="trailing" secondItem="wRZ-jM-Ddr" secondAttribute="trailing" constant="25" id="1EG-S6-8po"/>
+                <constraint firstAttribute="trailing" secondItem="4UR-WB-AcM" secondAttribute="trailing" constant="25" id="37F-XT-oa7"/>
+                <constraint firstItem="pp6-R8-o7Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="5jT-PE-nR7"/>
+                <constraint firstItem="hti-1C-nAC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="6Zq-H0-ocf"/>
+                <constraint firstItem="4UR-WB-AcM" firstAttribute="top" secondItem="wRZ-jM-Ddr" secondAttribute="bottom" constant="40" id="9cq-yu-ZWv"/>
+                <constraint firstItem="pp6-R8-o7Q" firstAttribute="top" secondItem="hti-1C-nAC" secondAttribute="bottom" constant="44" id="NCF-GM-fDJ"/>
+                <constraint firstItem="hti-1C-nAC" firstAttribute="top" secondItem="4UR-WB-AcM" secondAttribute="bottom" id="PkS-dd-mNv"/>
+                <constraint firstItem="wRZ-jM-Ddr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="Sub-yD-J8H"/>
+                <constraint firstItem="4UR-WB-AcM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="WaW-Cf-5A2"/>
+                <constraint firstAttribute="trailing" secondItem="pp6-R8-o7Q" secondAttribute="trailing" constant="40" id="ecG-iw-X1J"/>
+                <constraint firstItem="wRZ-jM-Ddr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="lDC-y6-4vn"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

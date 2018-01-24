@@ -38,29 +38,59 @@
    }else{
        
    }
+    
+    
+    [ShareSDK getUserInfo:platformType
+           onStateChanged:^(SSDKResponseState state, SSDKUser *user, NSError *error)
+     {
+         if (state == SSDKResponseStateSuccess)
+         {
+             
+             NSLog(@"uid=%@",user.uid);
+             NSLog(@"%@",user.credential);
+             NSLog(@"token=%@",user.credential.token);
+             NSLog(@"nickname=%@",user.nickname);
+             
+             [GBUserAPI bindingWith:parems progress:nil success:^(ApiResponse *response) {
+                 NSLog(@"绑定成功 %@",response.data);
+                 [self getData];
+             } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                 
+             }];
+             
+         }
+         
+         else
+         {
+             NSLog(@"%@",error);
+         }
+         
+     }];
+    
+    
  
-    [SSEThirdPartyLoginHelper loginByPlatform:platformType
-                                   onUserSync:^(SSDKUser *user, SSEUserAssociateHandler associateHandler) {
-                                       parems.access_token = user.credential.token;
-                                       parems.access_userId = user.uid;
-                                       
-                                       associateHandler (user.uid, user, user);
-                                       [GBUserAPI bindingWith:parems progress:nil success:^(ApiResponse *response) {
-                                           NSLog(@"绑定成功 %@",response.data);
-                                           [self getData];
-                                       } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                                           
-                                       }];
-                                       
-                                   }
-                                onLoginResult:^(SSDKResponseState state, SSEBaseUser *user, NSError *error) {
-                                    
-                                    if (state == SSDKResponseStateSuccess)
-                                    {
-                                        
-                                    }
-                                    
-                                }];
+//    [SSEThirdPartyLoginHelper loginByPlatform:platformType
+//                                   onUserSync:^(SSDKUser *user, SSEUserAssociateHandler associateHandler) {
+//                                       parems.access_token = user.credential.token;
+//                                       parems.access_userId = user.uid;
+//                                       
+//                                       associateHandler (user.uid, user, user);
+//                                       [GBUserAPI bindingWith:parems progress:nil success:^(ApiResponse *response) {
+//                                           NSLog(@"绑定成功 %@",response.data);
+//                                           [self getData];
+//                                       } failure:^(NSURLSessionDataTask *task, NSError *error) {
+//                                           
+//                                       }];
+//                                       
+//                                   }
+//                                onLoginResult:^(SSDKResponseState state, SSEBaseUser *user, NSError *error) {
+//                                    
+//                                    if (state == SSDKResponseStateSuccess)
+//                                    {
+//                                        
+//                                    }
+//                                    
+//                                }];
 }
 
 

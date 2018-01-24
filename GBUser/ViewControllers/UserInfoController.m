@@ -7,20 +7,22 @@
 //
 
 #import "UserInfoController.h"
-#import <GBSexPickView.h>
-#import <GBDatePickerView.h>
+#import <AppFoundation/GBSexPickView.h>
+#import <AppFoundation/GBDatePickerView.h>
 #import "GBTextEditController.h"
-#import <PortraitPicker.h>
+#import <AppFoundation/PortraitPicker.h>
 #import <Photos/PHFetchOptions.h>
 #import <Photos/Photos.h>
-#import <SDImageCache.h>
+#import <SDWebImage/SDImageCache.h>
 #import <AliyunOSSiOS/OSSService.h>
 #import "GBOSSUtil.h"
 #import "UserHeaderCell.h"
-#import <UIImageView+WebCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "UserCenterManager.h"
-#import <UIImage+JKSuperCompress.h>
-
+#import <JKCategories/UIImage+JKSuperCompress.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "GBUserMacros.h"
 @interface UserInfoController (){
 
 }
@@ -101,7 +103,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSString *title = self.userInfoVM.menus[indexPath.section][indexPath.row][@"title"];
     if ([title isEqualToString:@"性别"]) {
-        GBSexPickView *sexPicker = GBUserXIBView(@"GBSexPickView");
+        GBSexPickView *sexPicker = AppFoundationXIBView(@"GBSexPickView");
         sexPicker.sexPickResult = ^(NSInteger index, NSString *sexName) {
             UserInfo *userInfo = [[UserInfo alloc]init];
             userInfo.sex = @[@(1),@(2),@(0)][index];
@@ -109,7 +111,7 @@
         };
         [sexPicker showAt:self];
     }else if ([title isEqualToString:@"生日"]) {
-        GBDatePickerView *timePicker = GBUserXIBView(@"GBDatePickerView");
+        GBDatePickerView *timePicker = AppFoundationXIBView(@"GBDatePickerView");
         timePicker.datePicker.datePickerMode = UIDatePickerModeDate;
         [timePicker pickTimeAt:self];
         timePicker.datePickResult = ^(NSTimeInterval timestamp) {
@@ -122,7 +124,7 @@
     
     else if ([title isEqualToString:@"昵称"]) {
         
-        GBTextEditController *textEditor = [[GBTextEditController alloc] initWithNibName:@"GBTextEditController" bundle:nil];
+        GBTextEditController *textEditor = [[GBTextEditController alloc] initWithNibName:@"GBTextEditController" bundle:GBUserBundle];
         textEditor.title = @"修改昵称";
         textEditor.textFiled.placeholder = @"请修改昵称";
         [self.navigationController pushViewController:textEditor animated:YES];

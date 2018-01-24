@@ -21,4 +21,5 @@ FOUNDATION_EXPORT const unsigned char GBUserVersionString[];
 #import <GBUser/UserCenterManager.h>
 #import <GBUser/GBUserPrefixHeader.pch>
 #import <GBUser/GBUserMacros.h>
+#import <GBUser/GBUserPhoneLoginController.h>
 

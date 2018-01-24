@@ -7,7 +7,7 @@
 //
 
 #import "GBOSSUtil.h"
-#import <SDImageCache.h>
+#import <SDWebImage/SDImageCache.h>
 #import "GBUserAPI.h"
 
 @implementation GBOSSUtil

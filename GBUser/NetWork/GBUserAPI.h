@@ -7,16 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ApiResponse.h"
-#import "ApiResponse.h"
+
 #import "GBUserRequest.h"
-#import "APiSessionManager.h"
+#import <GBNetWork/APiSessionManager.h>
 #import <AliyunOSSiOS/OSSService.h>
 #import "BindingRequest.h"
 #import "LoginRequest.h"
 #import "UserInfo.h"
 #import "UserInfoParam.h"
+#import <GBNetWork/ApiResponse.h>
 @interface GBUserAPI : NSObject
+
+
+/**
+ 获取手机验证码
+ 
+ @param phone
+ */
++ (void)getVerifyCodeWithPhone:(NSString *)phone
+                      progress:(void (^)(NSProgress * progress))downloadProgress
+                       success:(void (^)(ApiResponse *response))success
+                       failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure;
+
 
 //登录网络请求
 + (void)loginWith:(LoginRequest *)params progress:(void (^)(NSProgress * progress))downloadProgress success:(void (^)(ApiResponse *response))success failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure;

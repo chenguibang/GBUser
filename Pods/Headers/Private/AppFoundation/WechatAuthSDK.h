@@ -1,1 +1,0 @@
-../../../../../AppFoundation/AppFoundation/ThirdPart/ShareSDK/ShareSDK/Support/PlatformSDK/WeChatSDK/WechatAuthSDK.h

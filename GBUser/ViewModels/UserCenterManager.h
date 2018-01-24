@@ -34,6 +34,8 @@
  */
 - (void)setupWithHost:(NSString *)host port:(NSString *)port;
 
+
+
 /**
  注册
  
@@ -138,6 +140,7 @@
  @param reuslt reuslt description
  */
 - (void)modifyUserInfo:(UserInfo *)userInfo result:(void(^)(UserInfo *userInfo))reuslt;
+
 
 
 

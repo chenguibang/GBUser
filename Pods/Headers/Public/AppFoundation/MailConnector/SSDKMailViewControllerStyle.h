@@ -1,1 +1,0 @@
-../../../../../../AppFoundation/AppFoundation/ThirdPart/ShareSDK/ShareSDK/Support/PlatformConnector/MailConnector.framework/Headers/SSDKMailViewControllerStyle.h

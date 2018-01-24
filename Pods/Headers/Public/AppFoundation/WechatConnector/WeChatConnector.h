@@ -1,1 +1,0 @@
-../../../../../../AppFoundation/AppFoundation/ThirdPart/ShareSDK/ShareSDK/Support/PlatformConnector/WechatConnector.framework/Headers/WeChatConnector.h

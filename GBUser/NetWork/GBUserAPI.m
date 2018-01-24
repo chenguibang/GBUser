@@ -8,7 +8,22 @@
 
 #import "GBUserAPI.h"
 
+NSString * const GBUSER_API_GETSMSCODE = @"/api/smscode";
+
 @implementation GBUserAPI
+
+
++ (void)getVerifyCodeWithPhone:(NSString *)phone
+                      progress:(void (^)(NSProgress * progress))downloadProgress
+                       success:(void (^)(ApiResponse *response))success
+                       failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure{
+    GBUserRequest *loginReq = [GBUserRequest requestWith:@{@"phone":phone}];
+    loginReq.apiInterface = GBUSER_API_GETSMSCODE;
+    [[APiSessionManager shared] API_GET:loginReq progress:downloadProgress success:success failure:failure];
+}
+
+
+
 + (void)getOSSToken:(void (^)(OSSTaskCompletionSource *, OSSFederationToken *))reult{
     GBUserRequest *loginReq = [GBUserRequest requestWith:nil];
     NSURL * url = [NSURL URLWithString:[loginReq.serverUrl stringByAppendingString:@"/api/ossToken"]];

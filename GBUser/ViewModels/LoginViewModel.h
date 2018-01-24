@@ -17,6 +17,7 @@
 
 @property (nonatomic, assign) RACSignal* loginEnableSig;
 @property (nonatomic, strong) RACSubject *loginSub;
+@property (nonatomic, strong) RACSubject *phoneLoginSub;
 @property (nonatomic, strong) RACSubject *cancleSub;
 
 - (void)login;

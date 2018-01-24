@@ -17,4 +17,5 @@
 @property (nonatomic ,strong) UIButton *loginBtn;
 @property (nonatomic ,strong) UIButton *cancleBtn;
 @property (nonatomic, strong) UIImageView *loginBackGroundImageView;
+@property (nonatomic, strong) UIButton *phoneLoginBtn;
 @end

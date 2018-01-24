@@ -8,7 +8,8 @@
 
 #import "UserInfoVM.h"
 #import "UserCenterManager.h"
-#import <NSDate+JKExtension.h>
+#import <JKCategories/NSDate+JKExtension.h>
+
 @implementation UserInfoVM
 
 

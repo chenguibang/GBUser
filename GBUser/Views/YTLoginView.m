@@ -7,12 +7,15 @@
 //
 
 #import "YTLoginView.h"
-#import <UIView+DBCorner.h>
-#import <UIImage+Additions/UIImage+Additions.h>
+#import <DBCorner/UIView+DBCorner.h>
+#import <UIImage_Additions/UIImage+Additions.h>
 #import <JKCategories/JKUIKit.h>
 #import "AuthorityView.h"
-#import <GPUImage.h>
+#import <GPUImage/GPUImage.h>
 #import <AppFoundation/AppFoundation.h>
+#import <Masonry/Masonry.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "GBUserMacros.h"
 @implementation YTLoginView
 
 
@@ -113,6 +116,18 @@
     }];
     
     
+    _phoneLoginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [_phoneLoginBtn setTitle:@"手机号登录" forState:UIControlStateNormal];
+     [_phoneLoginBtn addTarget:self action:@selector(phoneLoginAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:_phoneLoginBtn];
+    [_phoneLoginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(_content);
+        make.right.equalTo(_content);
+        make.bottom.equalTo(_loginBtn.mas_top).offset(-10);
+        make.height.equalTo(@40);
+    }];
+    
+    
     UIView *line = [[UIView alloc]init];
     [_content addSubview:line];
     [line mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -196,6 +211,10 @@
 - (void)cancleAction:(UIButton *)sender{
     [_loginViewModel.cancleSub sendNext:nil];
 }
+- (void)phoneLoginAction:(UIButton *)sender{
+    [_loginViewModel.phoneLoginSub sendNext:nil];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

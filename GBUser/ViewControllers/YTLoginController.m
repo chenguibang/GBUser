@@ -8,6 +8,10 @@
 
 #import "YTLoginController.h"
 #import <AppFoundation/AppFoundation.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <Masonry/Masonry.h>
+#import <GBUserPhoneLoginController.h>
+#import "GBUserMacros.h"
 @interface YTLoginController ()
 
 @end
@@ -22,6 +26,7 @@
     self.navigationController.navigationBarHidden = YES;
     @weakify(self)
     [self.loginViewModel.loginSub subscribeNext:^(id  _Nullable x) {
+        
         [self_weak_ dismissViewControllerAnimated:YES completion:^{
             
         }];
@@ -33,8 +38,12 @@
         }];
     }];
     
-   
   
+    [self.loginViewModel.phoneLoginSub subscribeNext:^(id  _Nullable x) {
+       //手机号登录
+        GBUserPhoneLoginController *phoneLoginVC = [[GBUserPhoneLoginController alloc]initWithNibName:@"GBUserPhoneLoginController" bundle:GBUserBundle];
+        [self.navigationController pushViewController:phoneLoginVC animated:YES];
+    }];
     
     
     
@@ -74,7 +83,7 @@
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleDefault;
+    return UIStatusBarStyleLightContent;
 }
 /*
 #pragma mark - Navigation

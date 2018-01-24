@@ -7,22 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5BE205710C1E502814486B6 /* libPods-GBUser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2926D8717716FACC44BD72 /* libPods-GBUser.a */; };
+		8D0D9CE539738F176403B569 /* libPods-GBUser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFDE42ECD0C7CD84D09E18F /* libPods-GBUser.a */; };
+		F83BBC4B2015C751008321A0 /* GBUserPhoneVerifyController.h in Headers */ = {isa = PBXBuildFile; fileRef = F83BBC482015C751008321A0 /* GBUserPhoneVerifyController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F83BBC4C2015C751008321A0 /* GBUserPhoneVerifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83BBC492015C751008321A0 /* GBUserPhoneVerifyController.m */; };
+		F83BBC4E2015C751008321A0 /* GBUserPhoneVerifyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83BBC4A2015C751008321A0 /* GBUserPhoneVerifyController.xib */; };
+		F83BBC4F2015C751008321A0 /* GBUserPhoneVerifyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83BBC4A2015C751008321A0 /* GBUserPhoneVerifyController.xib */; };
+		F83BBC522015D89D008321A0 /* GBNetWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83BBC532015D89D008321A0 /* GBNetWork.framework */; };
+		F83BBC542015D8AE008321A0 /* AppFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83BBC552015D8AE008321A0 /* AppFoundation.framework */; };
 		F860C5122010307F00B5BCD7 /* GBUserMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F860C5112010307A00B5BCD7 /* GBUserMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8883CD0200F4E0100F715A1 /* GBUserPrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = F8883C89200F4E0100F715A1 /* GBUserPrefixHeader.pch */; };
-		F8883CD1200F4E0100F715A1 /* GBUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8A200F4E0100F715A1 /* GBUser.h */; };
+		F8750ADF2015B91F00E45566 /* GBUserPhoneLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8750ADC2015B91F00E45566 /* GBUserPhoneLoginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8750AE02015B91F00E45566 /* GBUserPhoneLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8750ADD2015B91F00E45566 /* GBUserPhoneLoginController.m */; };
+		F8750AE22015B91F00E45566 /* GBUserPhoneLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8750ADE2015B91F00E45566 /* GBUserPhoneLoginController.xib */; };
+		F8750AE32015B91F00E45566 /* GBUserPhoneLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8750ADE2015B91F00E45566 /* GBUserPhoneLoginController.xib */; };
+		F8883CD0200F4E0100F715A1 /* GBUserPrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = F8883C89200F4E0100F715A1 /* GBUserPrefixHeader.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8883CD1200F4E0100F715A1 /* GBUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8A200F4E0100F715A1 /* GBUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CD2200F4E0100F715A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8883C8B200F4E0100F715A1 /* Info.plist */; };
-		F8883CD3200F4E0100F715A1 /* APIBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8D200F4E0100F715A1 /* APIBaseRequest.h */; };
+		F8883CD3200F4E0100F715A1 /* APIBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8D200F4E0100F715A1 /* APIBaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CD4200F4E0100F715A1 /* APIBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C8E200F4E0100F715A1 /* APIBaseRequest.m */; };
 		F8883CD5200F4E0100F715A1 /* APIBaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8F200F4E0100F715A1 /* APIBaseResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CD6200F4E0100F715A1 /* APIBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C90200F4E0100F715A1 /* APIBaseResponse.m */; };
-		F8883CD7200F4E0100F715A1 /* BaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C91200F4E0100F715A1 /* BaseResponse.h */; };
+		F8883CD7200F4E0100F715A1 /* BaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C91200F4E0100F715A1 /* BaseResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CD8200F4E0100F715A1 /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C92200F4E0100F715A1 /* BaseResponse.m */; };
-		F8883CD9200F4E0100F715A1 /* BindingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C93200F4E0100F715A1 /* BindingRequest.h */; };
+		F8883CD9200F4E0100F715A1 /* BindingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C93200F4E0100F715A1 /* BindingRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CDA200F4E0100F715A1 /* BindingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C94200F4E0100F715A1 /* BindingRequest.m */; };
 		F8883CDB200F4E0100F715A1 /* LoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C95200F4E0100F715A1 /* LoginModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CDC200F4E0100F715A1 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C96200F4E0100F715A1 /* LoginModel.m */; };
-		F8883CDD200F4E0100F715A1 /* LoginParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C97200F4E0100F715A1 /* LoginParam.h */; };
+		F8883CDD200F4E0100F715A1 /* LoginParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C97200F4E0100F715A1 /* LoginParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CDE200F4E0100F715A1 /* LoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C98200F4E0100F715A1 /* LoginParam.m */; };
 		F8883CDF200F4E0100F715A1 /* LoginRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C99200F4E0100F715A1 /* LoginRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CE0200F4E0100F715A1 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C9A200F4E0100F715A1 /* LoginRequest.m */; };
@@ -30,26 +40,26 @@
 		F8883CE2200F4E0100F715A1 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C9C200F4E0100F715A1 /* UserInfo.m */; };
 		F8883CE3200F4E0100F715A1 /* UserInfoModifyRespone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C9D200F4E0100F715A1 /* UserInfoModifyRespone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CE4200F4E0100F715A1 /* UserInfoModifyRespone.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883C9E200F4E0100F715A1 /* UserInfoModifyRespone.m */; };
-		F8883CE5200F4E0100F715A1 /* UserInfoParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C9F200F4E0100F715A1 /* UserInfoParam.h */; };
+		F8883CE5200F4E0100F715A1 /* UserInfoParam.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C9F200F4E0100F715A1 /* UserInfoParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CE6200F4E0100F715A1 /* UserInfoParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA0200F4E0100F715A1 /* UserInfoParam.m */; };
 		F8883CE7200F4E0100F715A1 /* UserInfoRespone.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA1200F4E0100F715A1 /* UserInfoRespone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CE8200F4E0200F715A1 /* UserInfoRespone.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA2200F4E0100F715A1 /* UserInfoRespone.m */; };
-		F8883CE9200F4E0200F715A1 /* GBUserAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA4200F4E0100F715A1 /* GBUserAPI.h */; };
+		F8883CE9200F4E0200F715A1 /* GBUserAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA4200F4E0100F715A1 /* GBUserAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CEA200F4E0200F715A1 /* GBUserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA5200F4E0100F715A1 /* GBUserAPI.m */; };
-		F8883CEB200F4E0200F715A1 /* GBUserRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA6200F4E0100F715A1 /* GBUserRequest.h */; };
+		F8883CEB200F4E0200F715A1 /* GBUserRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA6200F4E0100F715A1 /* GBUserRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CEC200F4E0200F715A1 /* GBUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA7200F4E0100F715A1 /* GBUserRequest.m */; };
 		F8883CED200F4E0200F715A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8883CA9200F4E0100F715A1 /* Assets.xcassets */; };
 		F8883CEE200F4E0200F715A1 /* radio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8883CAA200F4E0100F715A1 /* radio@2x.png */; };
-		F8883CEF200F4E0200F715A1 /* GBOSSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CAC200F4E0100F715A1 /* GBOSSUtil.h */; };
+		F8883CEF200F4E0200F715A1 /* GBOSSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CAC200F4E0100F715A1 /* GBOSSUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CF0200F4E0200F715A1 /* GBOSSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CAD200F4E0100F715A1 /* GBOSSUtil.m */; };
-		F8883CF1200F4E0200F715A1 /* GBTextEditController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CAF200F4E0100F715A1 /* GBTextEditController.h */; };
+		F8883CF1200F4E0200F715A1 /* GBTextEditController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CAF200F4E0100F715A1 /* GBTextEditController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CF2200F4E0200F715A1 /* GBTextEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB0200F4E0100F715A1 /* GBTextEditController.m */; };
 		F8883CF3200F4E0200F715A1 /* GBTextEditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CB1200F4E0100F715A1 /* GBTextEditController.xib */; };
-		F8883CF4200F4E0200F715A1 /* UserCenterController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB2200F4E0100F715A1 /* UserCenterController.h */; };
+		F8883CF4200F4E0200F715A1 /* UserCenterController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB2200F4E0100F715A1 /* UserCenterController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CF5200F4E0200F715A1 /* UserCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB3200F4E0100F715A1 /* UserCenterController.m */; };
-		F8883CF6200F4E0200F715A1 /* UserInfoController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB4200F4E0100F715A1 /* UserInfoController.h */; };
+		F8883CF6200F4E0200F715A1 /* UserInfoController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB4200F4E0100F715A1 /* UserInfoController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CF7200F4E0200F715A1 /* UserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB5200F4E0100F715A1 /* UserInfoController.m */; };
-		F8883CF8200F4E0200F715A1 /* UserSecurityController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB6200F4E0100F715A1 /* UserSecurityController.h */; };
+		F8883CF8200F4E0200F715A1 /* UserSecurityController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB6200F4E0100F715A1 /* UserSecurityController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CF9200F4E0200F715A1 /* UserSecurityController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB7200F4E0100F715A1 /* UserSecurityController.m */; };
 		F8883CFA200F4E0200F715A1 /* UserSettingController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CB8200F4E0100F715A1 /* UserSettingController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CFB200F4E0200F715A1 /* UserSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CB9200F4E0100F715A1 /* UserSettingController.m */; };
@@ -60,14 +70,14 @@
 		F8883D00200F4E0200F715A1 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CBF200F4E0100F715A1 /* LoginViewModel.m */; };
 		F8883D01200F4E0200F715A1 /* UserCenterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC0200F4E0100F715A1 /* UserCenterManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883D02200F4E0200F715A1 /* UserCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CC1200F4E0100F715A1 /* UserCenterManager.m */; };
-		F8883D03200F4E0200F715A1 /* UserInfoVM.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC2200F4E0100F715A1 /* UserInfoVM.h */; };
+		F8883D03200F4E0200F715A1 /* UserInfoVM.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC2200F4E0100F715A1 /* UserInfoVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883D04200F4E0200F715A1 /* UserInfoVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CC3200F4E0100F715A1 /* UserInfoVM.m */; };
-		F8883D05200F4E0200F715A1 /* UserSecurityVM.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC4200F4E0100F715A1 /* UserSecurityVM.h */; };
+		F8883D05200F4E0200F715A1 /* UserSecurityVM.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC4200F4E0100F715A1 /* UserSecurityVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883D06200F4E0200F715A1 /* UserSecurityVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CC5200F4E0100F715A1 /* UserSecurityVM.m */; };
-		F8883D07200F4E0200F715A1 /* AuthorityView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC7200F4E0100F715A1 /* AuthorityView.h */; };
+		F8883D07200F4E0200F715A1 /* AuthorityView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CC7200F4E0100F715A1 /* AuthorityView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883D08200F4E0200F715A1 /* AuthorityView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CC8200F4E0100F715A1 /* AuthorityView.m */; };
 		F8883D09200F4E0200F715A1 /* AuthorityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CC9200F4E0100F715A1 /* AuthorityView.xib */; };
-		F8883D0A200F4E0200F715A1 /* UserHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CCA200F4E0100F715A1 /* UserHeaderCell.h */; };
+		F8883D0A200F4E0200F715A1 /* UserHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CCA200F4E0100F715A1 /* UserHeaderCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883D0B200F4E0200F715A1 /* UserHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CCB200F4E0100F715A1 /* UserHeaderCell.m */; };
 		F8883D0C200F4E0200F715A1 /* UserHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCC200F4E0100F715A1 /* UserHeaderCell.xib */; };
 		F8883D0D200F4E0200F715A1 /* YTLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CCD200F4E0100F715A1 /* YTLoginView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -80,17 +90,46 @@
 		F8883D28200F4EDD00F715A1 /* AuthorityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CC9200F4E0100F715A1 /* AuthorityView.xib */; };
 		F8883D29200F4EDD00F715A1 /* UserHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCC200F4E0100F715A1 /* UserHeaderCell.xib */; };
 		F8883D2A200F4EDD00F715A1 /* YTLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCF200F4E0100F715A1 /* YTLoginView.xib */; };
+		F8FC08D02017194700EC6E4A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08CF2017194700EC6E4A /* AssetsLibrary.framework */; };
+		F8FC08D22017194F00EC6E4A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08D12017194F00EC6E4A /* AudioToolbox.framework */; };
+		F8FC08D42017195600EC6E4A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08D32017195600EC6E4A /* AVFoundation.framework */; };
+		F8FC08D62017195D00EC6E4A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08D52017195D00EC6E4A /* CFNetwork.framework */; };
+		F8FC08D82017196500EC6E4A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08D72017196400EC6E4A /* CoreAudio.framework */; };
+		F8FC08DA2017196B00EC6E4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08D92017196B00EC6E4A /* CoreGraphics.framework */; };
+		F8FC08DC2017197200EC6E4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08DB2017197100EC6E4A /* CoreLocation.framework */; };
+		F8FC08DE2017197700EC6E4A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08DD2017197700EC6E4A /* CoreMedia.framework */; };
+		F8FC08E02017198000EC6E4A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08DF2017198000EC6E4A /* CoreTelephony.framework */; };
+		F8FC08E22017198800EC6E4A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08E12017198700EC6E4A /* CoreVideo.framework */; };
+		F8FC08E42017198D00EC6E4A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08E32017198D00EC6E4A /* ImageIO.framework */; };
+		F8FC08E72017199A00EC6E4A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08E52017199900EC6E4A /* libc++.tbd */; };
+		F8FC08E82017199A00EC6E4A /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08E62017199900EC6E4A /* libc++abi.tbd */; };
+		F8FC08EA201719A200EC6E4A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08E9201719A100EC6E4A /* libsqlite3.tbd */; };
+		F8FC08EC201719AA00EC6E4A /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08EB201719A900EC6E4A /* libstdc++.tbd */; };
+		F8FC08EE201719AF00EC6E4A /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08ED201719AF00EC6E4A /* libxml2.tbd */; };
+		F8FC08F0201719B600EC6E4A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08EF201719B500EC6E4A /* libz.tbd */; };
+		F8FC08F2201719BD00EC6E4A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08F1201719BD00EC6E4A /* MapKit.framework */; };
+		F8FC08F4201719C300EC6E4A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08F3201719C300EC6E4A /* OpenGLES.framework */; };
+		F8FC08F6201719C900EC6E4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08F5201719C900EC6E4A /* QuartzCore.framework */; };
+		F8FC08F8201719DA00EC6E4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08F7201719DA00EC6E4A /* SystemConfiguration.framework */; };
+		F8FC08FA201719E300EC6E4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08F9201719E200EC6E4A /* UIKit.framework */; };
+		F8FC08FC201719EB00EC6E4A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08FB201719EA00EC6E4A /* Photos.framework */; };
+		F8FC08FE201719F400EC6E4A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08FD201719F400EC6E4A /* SafariServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A7DBE96BABC4D58680FAD74 /* Pods-GBUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBUser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBUser/Pods-GBUser.debug.xcconfig"; sourceTree = "<group>"; };
-		411CA5CC85B5B8D9E7DF7EB6 /* Pods-GBUserExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBUserExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBUserExample/Pods-GBUserExample.release.xcconfig"; sourceTree = "<group>"; };
-		85C92D10AE17832968EBDC43 /* libPods-GBUserExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GBUserExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D2926D8717716FACC44BD72 /* libPods-GBUser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GBUser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B23988CA0E7BFE2C3A016600 /* Pods-GBUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBUser.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBUser/Pods-GBUser.release.xcconfig"; sourceTree = "<group>"; };
-		D3D9BD10881388D3AD9D31AA /* Pods-GBUserExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBUserExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBUserExample/Pods-GBUserExample.debug.xcconfig"; sourceTree = "<group>"; };
+		7EFDE42ECD0C7CD84D09E18F /* libPods-GBUser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GBUser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EE5EC85E81099E76637EC9 /* Pods-GBUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBUser.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GBUser/Pods-GBUser.debug.xcconfig"; sourceTree = "<group>"; };
+		B4C2474E5E80D0D809B8D1D4 /* Pods-GBUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBUser.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GBUser/Pods-GBUser.release.xcconfig"; sourceTree = "<group>"; };
 		F8075CC41FD4E54B004B4480 /* GBUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GBUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83BBC482015C751008321A0 /* GBUserPhoneVerifyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBUserPhoneVerifyController.h; sourceTree = "<group>"; };
+		F83BBC492015C751008321A0 /* GBUserPhoneVerifyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBUserPhoneVerifyController.m; sourceTree = "<group>"; };
+		F83BBC4A2015C751008321A0 /* GBUserPhoneVerifyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBUserPhoneVerifyController.xib; sourceTree = "<group>"; };
+		F83BBC532015D89D008321A0 /* GBNetWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GBNetWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83BBC552015D8AE008321A0 /* AppFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F860C5112010307A00B5BCD7 /* GBUserMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBUserMacros.h; sourceTree = "<group>"; };
+		F8750ADC2015B91F00E45566 /* GBUserPhoneLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBUserPhoneLoginController.h; sourceTree = "<group>"; };
+		F8750ADD2015B91F00E45566 /* GBUserPhoneLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBUserPhoneLoginController.m; sourceTree = "<group>"; };
+		F8750ADE2015B91F00E45566 /* GBUserPhoneLoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBUserPhoneLoginController.xib; sourceTree = "<group>"; };
 		F8883C89200F4E0100F715A1 /* GBUserPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUserPrefixHeader.pch; sourceTree = "<group>"; };
 		F8883C8A200F4E0100F715A1 /* GBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUser.h; sourceTree = "<group>"; };
 		F8883C8B200F4E0100F715A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -157,6 +196,30 @@
 		F8883CCF200F4E0100F715A1 /* YTLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTLoginView.xib; sourceTree = "<group>"; };
 		F8883D1E200F4E8800F715A1 /* GBUserResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBUserResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8883D20200F4E8800F715A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8FC08CF2017194700EC6E4A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F8FC08D12017194F00EC6E4A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F8FC08D32017195600EC6E4A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F8FC08D52017195D00EC6E4A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F8FC08D72017196400EC6E4A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		F8FC08D92017196B00EC6E4A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F8FC08DB2017197100EC6E4A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F8FC08DD2017197700EC6E4A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F8FC08DF2017198000EC6E4A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F8FC08E12017198700EC6E4A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F8FC08E32017198D00EC6E4A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		F8FC08E52017199900EC6E4A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		F8FC08E62017199900EC6E4A /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		F8FC08E9201719A100EC6E4A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F8FC08EB201719A900EC6E4A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		F8FC08ED201719AF00EC6E4A /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		F8FC08EF201719B500EC6E4A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F8FC08F1201719BD00EC6E4A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F8FC08F3201719C300EC6E4A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F8FC08F5201719C900EC6E4A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F8FC08F7201719DA00EC6E4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F8FC08F9201719E200EC6E4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F8FC08FB201719EA00EC6E4A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		F8FC08FD201719F400EC6E4A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +227,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BE205710C1E502814486B6 /* libPods-GBUser.a in Frameworks */,
+				F8FC08FE201719F400EC6E4A /* SafariServices.framework in Frameworks */,
+				F8FC08FC201719EB00EC6E4A /* Photos.framework in Frameworks */,
+				F8FC08FA201719E300EC6E4A /* UIKit.framework in Frameworks */,
+				F8FC08F8201719DA00EC6E4A /* SystemConfiguration.framework in Frameworks */,
+				F8FC08F6201719C900EC6E4A /* QuartzCore.framework in Frameworks */,
+				F8FC08F4201719C300EC6E4A /* OpenGLES.framework in Frameworks */,
+				F8FC08F2201719BD00EC6E4A /* MapKit.framework in Frameworks */,
+				F8FC08F0201719B600EC6E4A /* libz.tbd in Frameworks */,
+				F8FC08EE201719AF00EC6E4A /* libxml2.tbd in Frameworks */,
+				F8FC08EC201719AA00EC6E4A /* libstdc++.tbd in Frameworks */,
+				F8FC08EA201719A200EC6E4A /* libsqlite3.tbd in Frameworks */,
+				F8FC08E72017199A00EC6E4A /* libc++.tbd in Frameworks */,
+				F8FC08E82017199A00EC6E4A /* libc++abi.tbd in Frameworks */,
+				F8FC08E42017198D00EC6E4A /* ImageIO.framework in Frameworks */,
+				F8FC08E22017198800EC6E4A /* CoreVideo.framework in Frameworks */,
+				F8FC08E02017198000EC6E4A /* CoreTelephony.framework in Frameworks */,
+				F8FC08DE2017197700EC6E4A /* CoreMedia.framework in Frameworks */,
+				F8FC08DC2017197200EC6E4A /* CoreLocation.framework in Frameworks */,
+				F8FC08DA2017196B00EC6E4A /* CoreGraphics.framework in Frameworks */,
+				F8FC08D82017196500EC6E4A /* CoreAudio.framework in Frameworks */,
+				F8FC08D62017195D00EC6E4A /* CFNetwork.framework in Frameworks */,
+				F8FC08D42017195600EC6E4A /* AVFoundation.framework in Frameworks */,
+				F8FC08D22017194F00EC6E4A /* AudioToolbox.framework in Frameworks */,
+				F8FC08D02017194700EC6E4A /* AssetsLibrary.framework in Frameworks */,
+				F83BBC542015D8AE008321A0 /* AppFoundation.framework in Frameworks */,
+				F83BBC522015D89D008321A0 /* GBNetWork.framework in Frameworks */,
+				8D0D9CE539738F176403B569 /* libPods-GBUser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,24 +267,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		56BA51CFD20C6E56105CF402 /* Frameworks */ = {
+		0A80560169D33FD2FD73C41D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9D2926D8717716FACC44BD72 /* libPods-GBUser.a */,
-				85C92D10AE17832968EBDC43 /* libPods-GBUserExample.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C6E693FAA9BE91423E34CA6F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0A7DBE96BABC4D58680FAD74 /* Pods-GBUser.debug.xcconfig */,
-				B23988CA0E7BFE2C3A016600 /* Pods-GBUser.release.xcconfig */,
-				D3D9BD10881388D3AD9D31AA /* Pods-GBUserExample.debug.xcconfig */,
-				411CA5CC85B5B8D9E7DF7EB6 /* Pods-GBUserExample.release.xcconfig */,
+				A4EE5EC85E81099E76637EC9 /* Pods-GBUser.debug.xcconfig */,
+				B4C2474E5E80D0D809B8D1D4 /* Pods-GBUser.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E1067DFE715531E356E7E6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC08FD201719F400EC6E4A /* SafariServices.framework */,
+				F8FC08FB201719EA00EC6E4A /* Photos.framework */,
+				F8FC08F9201719E200EC6E4A /* UIKit.framework */,
+				F8FC08F7201719DA00EC6E4A /* SystemConfiguration.framework */,
+				F8FC08F5201719C900EC6E4A /* QuartzCore.framework */,
+				F8FC08F3201719C300EC6E4A /* OpenGLES.framework */,
+				F8FC08F1201719BD00EC6E4A /* MapKit.framework */,
+				F8FC08EF201719B500EC6E4A /* libz.tbd */,
+				F8FC08ED201719AF00EC6E4A /* libxml2.tbd */,
+				F8FC08EB201719A900EC6E4A /* libstdc++.tbd */,
+				F8FC08E9201719A100EC6E4A /* libsqlite3.tbd */,
+				F8FC08E52017199900EC6E4A /* libc++.tbd */,
+				F8FC08E62017199900EC6E4A /* libc++abi.tbd */,
+				F8FC08E32017198D00EC6E4A /* ImageIO.framework */,
+				F8FC08E12017198700EC6E4A /* CoreVideo.framework */,
+				F8FC08DF2017198000EC6E4A /* CoreTelephony.framework */,
+				F8FC08DD2017197700EC6E4A /* CoreMedia.framework */,
+				F8FC08DB2017197100EC6E4A /* CoreLocation.framework */,
+				F8FC08D92017196B00EC6E4A /* CoreGraphics.framework */,
+				F8FC08D72017196400EC6E4A /* CoreAudio.framework */,
+				F8FC08D52017195D00EC6E4A /* CFNetwork.framework */,
+				F8FC08D32017195600EC6E4A /* AVFoundation.framework */,
+				F8FC08D12017194F00EC6E4A /* AudioToolbox.framework */,
+				F8FC08CF2017194700EC6E4A /* AssetsLibrary.framework */,
+				F83BBC552015D8AE008321A0 /* AppFoundation.framework */,
+				F83BBC532015D89D008321A0 /* GBNetWork.framework */,
+				7EFDE42ECD0C7CD84D09E18F /* libPods-GBUser.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F8075CBA1FD4E54B004B4480 = {
@@ -204,8 +316,8 @@
 				F8883C87200F4E0100F715A1 /* GBUser */,
 				F8883D1F200F4E8800F715A1 /* GBUserResource */,
 				F8075CC51FD4E54B004B4480 /* Products */,
-				C6E693FAA9BE91423E34CA6F /* Pods */,
-				56BA51CFD20C6E56105CF402 /* Frameworks */,
+				4E1067DFE715531E356E7E6D /* Frameworks */,
+				0A80560169D33FD2FD73C41D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -319,6 +431,12 @@
 				F8883CBA200F4E0100F715A1 /* YTLoginController.h */,
 				F8883CBB200F4E0100F715A1 /* YTLoginController.m */,
 				F8883CBC200F4E0100F715A1 /* YTLoginController.xib */,
+				F8750ADC2015B91F00E45566 /* GBUserPhoneLoginController.h */,
+				F8750ADD2015B91F00E45566 /* GBUserPhoneLoginController.m */,
+				F8750ADE2015B91F00E45566 /* GBUserPhoneLoginController.xib */,
+				F83BBC482015C751008321A0 /* GBUserPhoneVerifyController.h */,
+				F83BBC492015C751008321A0 /* GBUserPhoneVerifyController.m */,
+				F83BBC4A2015C751008321A0 /* GBUserPhoneVerifyController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -369,6 +487,26 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8883CD0200F4E0100F715A1 /* GBUserPrefixHeader.pch in Headers */,
+				F8883CD7200F4E0100F715A1 /* BaseResponse.h in Headers */,
+				F8883D07200F4E0200F715A1 /* AuthorityView.h in Headers */,
+				F83BBC4B2015C751008321A0 /* GBUserPhoneVerifyController.h in Headers */,
+				F8883CF4200F4E0200F715A1 /* UserCenterController.h in Headers */,
+				F8883CF1200F4E0200F715A1 /* GBTextEditController.h in Headers */,
+				F8883CE5200F4E0100F715A1 /* UserInfoParam.h in Headers */,
+				F8883CD3200F4E0100F715A1 /* APIBaseRequest.h in Headers */,
+				F8883CF6200F4E0200F715A1 /* UserInfoController.h in Headers */,
+				F8883CD9200F4E0100F715A1 /* BindingRequest.h in Headers */,
+				F8883D03200F4E0200F715A1 /* UserInfoVM.h in Headers */,
+				F8883D05200F4E0200F715A1 /* UserSecurityVM.h in Headers */,
+				F8883CDD200F4E0100F715A1 /* LoginParam.h in Headers */,
+				F8883CD1200F4E0100F715A1 /* GBUser.h in Headers */,
+				F8883D0A200F4E0200F715A1 /* UserHeaderCell.h in Headers */,
+				F8750ADF2015B91F00E45566 /* GBUserPhoneLoginController.h in Headers */,
+				F8883CEF200F4E0200F715A1 /* GBOSSUtil.h in Headers */,
+				F8883CF8200F4E0200F715A1 /* UserSecurityController.h in Headers */,
+				F8883CE9200F4E0200F715A1 /* GBUserAPI.h in Headers */,
+				F8883CEB200F4E0200F715A1 /* GBUserRequest.h in Headers */,
 				F860C5122010307F00B5BCD7 /* GBUserMacros.h in Headers */,
 				F8883CDB200F4E0100F715A1 /* LoginModel.h in Headers */,
 				F8883CFF200F4E0200F715A1 /* LoginViewModel.h in Headers */,
@@ -381,24 +519,6 @@
 				F8883CE1200F4E0100F715A1 /* UserInfo.h in Headers */,
 				F8883D01200F4E0200F715A1 /* UserCenterManager.h in Headers */,
 				F8883CFA200F4E0200F715A1 /* UserSettingController.h in Headers */,
-				F8883CD7200F4E0100F715A1 /* BaseResponse.h in Headers */,
-				F8883D07200F4E0200F715A1 /* AuthorityView.h in Headers */,
-				F8883CF4200F4E0200F715A1 /* UserCenterController.h in Headers */,
-				F8883CF1200F4E0200F715A1 /* GBTextEditController.h in Headers */,
-				F8883CE5200F4E0100F715A1 /* UserInfoParam.h in Headers */,
-				F8883CD3200F4E0100F715A1 /* APIBaseRequest.h in Headers */,
-				F8883CF6200F4E0200F715A1 /* UserInfoController.h in Headers */,
-				F8883CD9200F4E0100F715A1 /* BindingRequest.h in Headers */,
-				F8883D03200F4E0200F715A1 /* UserInfoVM.h in Headers */,
-				F8883D05200F4E0200F715A1 /* UserSecurityVM.h in Headers */,
-				F8883CDD200F4E0100F715A1 /* LoginParam.h in Headers */,
-				F8883CD1200F4E0100F715A1 /* GBUser.h in Headers */,
-				F8883D0A200F4E0200F715A1 /* UserHeaderCell.h in Headers */,
-				F8883CD0200F4E0100F715A1 /* GBUserPrefixHeader.pch in Headers */,
-				F8883CEF200F4E0200F715A1 /* GBOSSUtil.h in Headers */,
-				F8883CF8200F4E0200F715A1 /* UserSecurityController.h in Headers */,
-				F8883CE9200F4E0200F715A1 /* GBUserAPI.h in Headers */,
-				F8883CEB200F4E0200F715A1 /* GBUserRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,12 +529,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8075CCC1FD4E54B004B4480 /* Build configuration list for PBXNativeTarget "GBUser" */;
 			buildPhases = (
-				4F55528A2324BC2F661FB1CC /* [CP] Check Pods Manifest.lock */,
+				5DBAA1DC41D9894BEB16E565 /* [CP] Check Pods Manifest.lock */,
 				F8075CBF1FD4E54B004B4480 /* Sources */,
 				F8075CC01FD4E54B004B4480 /* Frameworks */,
 				F8075CC11FD4E54B004B4480 /* Headers */,
 				F8075CC21FD4E54B004B4480 /* Resources */,
-				8219457A565FCBDFDCB575FB /* [CP] Copy Pods Resources */,
+				7E90B4B0D073D90814662C4A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -468,6 +588,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = F8075CBA1FD4E54B004B4480;
 			productRefGroup = F8075CC51FD4E54B004B4480 /* Products */;
@@ -490,9 +611,11 @@
 				F8883CED200F4E0200F715A1 /* Assets.xcassets in Resources */,
 				F8883CFE200F4E0200F715A1 /* YTLoginController.xib in Resources */,
 				F8883CF3200F4E0200F715A1 /* GBTextEditController.xib in Resources */,
+				F8750AE22015B91F00E45566 /* GBUserPhoneLoginController.xib in Resources */,
 				F8883D0C200F4E0200F715A1 /* UserHeaderCell.xib in Resources */,
 				F8883CD2200F4E0100F715A1 /* Info.plist in Resources */,
 				F8883CEE200F4E0200F715A1 /* radio@2x.png in Resources */,
+				F83BBC4E2015C751008321A0 /* GBUserPhoneVerifyController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +629,8 @@
 				F8883D29200F4EDD00F715A1 /* UserHeaderCell.xib in Resources */,
 				F8883D2A200F4EDD00F715A1 /* YTLoginView.xib in Resources */,
 				F8883D24200F4ED200F715A1 /* Assets.xcassets in Resources */,
+				F8750AE32015B91F00E45566 /* GBUserPhoneLoginController.xib in Resources */,
+				F83BBC4F2015C751008321A0 /* GBUserPhoneVerifyController.xib in Resources */,
 				F8883D25200F4ED200F715A1 /* radio@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,22 +638,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4F55528A2324BC2F661FB1CC /* [CP] Check Pods Manifest.lock */ = {
+		5DBAA1DC41D9894BEB16E565 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GBUser-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8219457A565FCBDFDCB575FB /* [CP] Copy Pods Resources */ = {
+		7E90B4B0D073D90814662C4A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,7 +668,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GBUser/Pods-GBUser-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GBUser/Pods-GBUser-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -568,6 +696,7 @@
 				F8883D04200F4E0200F715A1 /* UserInfoVM.m in Sources */,
 				F8883CE4200F4E0100F715A1 /* UserInfoModifyRespone.m in Sources */,
 				F8883CFD200F4E0200F715A1 /* YTLoginController.m in Sources */,
+				F8750AE02015B91F00E45566 /* GBUserPhoneLoginController.m in Sources */,
 				F8883CF7200F4E0200F715A1 /* UserInfoController.m in Sources */,
 				F8883CDE200F4E0100F715A1 /* LoginParam.m in Sources */,
 				F8883CEA200F4E0200F715A1 /* GBUserAPI.m in Sources */,
@@ -576,6 +705,7 @@
 				F8883CF2200F4E0200F715A1 /* GBTextEditController.m in Sources */,
 				F8883D02200F4E0200F715A1 /* UserCenterManager.m in Sources */,
 				F8883CDC200F4E0100F715A1 /* LoginModel.m in Sources */,
+				F83BBC4C2015C751008321A0 /* GBUserPhoneVerifyController.m in Sources */,
 				F8883CE8200F4E0200F715A1 /* UserInfoRespone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,8 +832,9 @@
 		};
 		F8075CCD1FD4E54B004B4480 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A7DBE96BABC4D58680FAD74 /* Pods-GBUser.debug.xcconfig */;
+			baseConfigurationReference = A4EE5EC85E81099E76637EC9 /* Pods-GBUser.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -714,23 +845,74 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/GBUser/Config/GBUserPrefixHeader.pch;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AliyunOSSiOS\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/BlocksKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CYLTableViewPlaceHolder\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DBCorner\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FCFileManager\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FMDB\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GPUImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManager\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ISO8601DateFormatterValueTransformer\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JKCategories\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KVOController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KYGooeyMenu\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/LBXScan\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJExtension\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/NSDate-Escort\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/QrcodeBuilder\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RKNotificationHub\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RKValueTransformers\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RefreshControl\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RestKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDCycleScrollView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SOCKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ScottAlertController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TZImagePickerController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TransitionKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UIButton-SSEdgeInsets\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UIImage+Additions\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UITableView+FDTemplateLayoutCell\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UITextField+Max\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/VIPhotoView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/WebViewJavascriptBridge\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/XMLDictionary\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/YBPopupMenu\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/YYKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ZBarSDK\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ZYCornerRadius\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/pop\"",
+					"\"${PODS_ROOT}/Bugly\"",
+				);
+				GCC_PREFIX_HEADER = "$SRCROOT/GBUser/Config/GBUserPrefixHeader.pch";
 				INFOPLIST_FILE = GBUser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengb.GBUser;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		F8075CCE1FD4E54B004B4480 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B23988CA0E7BFE2C3A016600 /* Pods-GBUser.release.xcconfig */;
+			baseConfigurationReference = B4C2474E5E80D0D809B8D1D4 /* Pods-GBUser.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -741,15 +923,65 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/GBUser/Config/GBUserPrefixHeader.pch;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AliyunOSSiOS\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/BlocksKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CYLTableViewPlaceHolder\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DBCorner\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FCFileManager\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FMDB\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GPUImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManager\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ISO8601DateFormatterValueTransformer\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JKCategories\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KVOController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KYGooeyMenu\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/LBXScan\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJExtension\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/NSDate-Escort\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/QrcodeBuilder\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RKNotificationHub\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RKValueTransformers\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RefreshControl\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RestKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDCycleScrollView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SOCKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ScottAlertController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TZImagePickerController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TransitionKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UIButton-SSEdgeInsets\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UIImage+Additions\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UITableView+FDTemplateLayoutCell\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UITextField+Max\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/VIPhotoView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/WebViewJavascriptBridge\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/XMLDictionary\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/YBPopupMenu\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/YYKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ZBarSDK\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ZYCornerRadius\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/pop\"",
+					"\"${PODS_ROOT}/Bugly\"",
+				);
+				GCC_PREFIX_HEADER = "$SRCROOT/GBUser/Config/GBUserPrefixHeader.pch";
 				INFOPLIST_FILE = GBUser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengb.GBUser;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -760,18 +992,19 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
 				DEVELOPMENT_TEAM = DS9W6935FH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = GBUserResource/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengb.GBUserResource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -782,18 +1015,20 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
+				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = DS9W6935FH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = GBUserResource/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengb.GBUserResource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;

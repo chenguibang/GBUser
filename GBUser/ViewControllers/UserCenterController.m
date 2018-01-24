@@ -11,6 +11,7 @@
 #import <BlocksKit/BlocksKit+UIKit.h>
 #import "UserSettingController.h"
 #import "YTLoginController.h"
+#import "GBUserMacros.h"
 @interface UserCenterController ()
 
 @end

@@ -14,8 +14,11 @@
 //#define GBUserImage(a) [UIImage jk_imageWithFileName:a inBundle:[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]]]
 
 
+
+#ifdef __OBJC__
+
 #import "GBUserMacros.h"
 
-
+#endif
 
 #endif /* GBUserPrefixHeader_pch */

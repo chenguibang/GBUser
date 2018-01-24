@@ -7,7 +7,7 @@
 		<key>GBUser.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>44</integer>
+			<integer>97</integer>
 		</dict>
 		<key>GBUserExample.xcscheme</key>
 		<dict>
@@ -17,7 +17,7 @@
 		<key>GBUserResource.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>45</integer>
+			<integer>98</integer>
 		</dict>
 	</dict>
 </dict>

@@ -8,6 +8,7 @@
 
 #import "UserSecurityController.h"
 #import <ShareSDKExtension/SSEThirdPartyLoginHelper.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 @interface UserSecurityController (){
    
 }

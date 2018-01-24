@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GBTextFiled.h>
+#import <AppFoundation/GBTextFiled.h>
 
 
 @interface GBTextEditController : UIViewController

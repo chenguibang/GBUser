@@ -9,8 +9,9 @@
 #import "GBTextEditController.h"
 #import <AppFoundation/AppFoundation.h>
 #import "GBTextEditController.h"
-#import <UITextField+GBExt.h>
+#import <AppFoundation/UITextField+GBExt.h>
 #import "UserCenterManager.h"
+#import <BlocksKit/BlocksKit+UIKit.h>
 
 @interface GBTextEditController ()
 

@@ -8,8 +8,8 @@
 
 #import "LoginViewModel.h"
 #import <ShareSDKExtension/SSEThirdPartyLoginHelper.h>
-#import "APiSessionManager.h"
-#import "ApiRequest.h"
+#import <GBNetWork/APiSessionManager.h>
+#import <GBNetWork/ApiRequest.h>
 #import "LoginRequest.h"
 #import <MJExtension/MJExtension.h>
 #import "UserCenterManager.h"
@@ -165,4 +165,12 @@
     }
     return _loginParam;
 }
+
+- (RACSubject *)phoneLoginSub{
+    if (!_phoneLoginSub) {
+        _phoneLoginSub = [RACSubject subject];
+    }
+    return _phoneLoginSub;
+}
+
 @end
