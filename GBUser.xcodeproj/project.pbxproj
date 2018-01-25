@@ -19,6 +19,9 @@
 		F8750AE02015B91F00E45566 /* GBUserPhoneLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8750ADD2015B91F00E45566 /* GBUserPhoneLoginController.m */; };
 		F8750AE22015B91F00E45566 /* GBUserPhoneLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8750ADE2015B91F00E45566 /* GBUserPhoneLoginController.xib */; };
 		F8750AE32015B91F00E45566 /* GBUserPhoneLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8750ADE2015B91F00E45566 /* GBUserPhoneLoginController.xib */; };
+		F87AFE7B2019675100CB8EE5 /* GBUser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F87AFE7A2019675100CB8EE5 /* GBUser.bundle */; };
+		F87AFE822019AE7900CB8EE5 /* UserAuthPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = F87AFE802019AE7900CB8EE5 /* UserAuthPlatform.h */; };
+		F87AFE832019AE7900CB8EE5 /* UserAuthPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AFE812019AE7900CB8EE5 /* UserAuthPlatform.m */; };
 		F8883CD0200F4E0100F715A1 /* GBUserPrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = F8883C89200F4E0100F715A1 /* GBUserPrefixHeader.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CD1200F4E0100F715A1 /* GBUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883C8A200F4E0100F715A1 /* GBUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CD2200F4E0100F715A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8883C8B200F4E0100F715A1 /* Info.plist */; };
@@ -48,8 +51,6 @@
 		F8883CEA200F4E0200F715A1 /* GBUserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA5200F4E0100F715A1 /* GBUserAPI.m */; };
 		F8883CEB200F4E0200F715A1 /* GBUserRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CA6200F4E0100F715A1 /* GBUserRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CEC200F4E0200F715A1 /* GBUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CA7200F4E0100F715A1 /* GBUserRequest.m */; };
-		F8883CED200F4E0200F715A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8883CA9200F4E0100F715A1 /* Assets.xcassets */; };
-		F8883CEE200F4E0200F715A1 /* radio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8883CAA200F4E0100F715A1 /* radio@2x.png */; };
 		F8883CEF200F4E0200F715A1 /* GBOSSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CAC200F4E0100F715A1 /* GBOSSUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883CF0200F4E0200F715A1 /* GBOSSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CAD200F4E0100F715A1 /* GBOSSUtil.m */; };
 		F8883CF1200F4E0200F715A1 /* GBTextEditController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CAF200F4E0100F715A1 /* GBTextEditController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -83,13 +84,17 @@
 		F8883D0D200F4E0200F715A1 /* YTLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8883CCD200F4E0100F715A1 /* YTLoginView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8883D0E200F4E0200F715A1 /* YTLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8883CCE200F4E0100F715A1 /* YTLoginView.m */; };
 		F8883D0F200F4E0200F715A1 /* YTLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCF200F4E0100F715A1 /* YTLoginView.xib */; };
-		F8883D24200F4ED200F715A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8883CA9200F4E0100F715A1 /* Assets.xcassets */; };
-		F8883D25200F4ED200F715A1 /* radio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8883CAA200F4E0100F715A1 /* radio@2x.png */; };
 		F8883D26200F4EDD00F715A1 /* GBTextEditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CB1200F4E0100F715A1 /* GBTextEditController.xib */; };
 		F8883D27200F4EDD00F715A1 /* YTLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CBC200F4E0100F715A1 /* YTLoginController.xib */; };
 		F8883D28200F4EDD00F715A1 /* AuthorityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CC9200F4E0100F715A1 /* AuthorityView.xib */; };
 		F8883D29200F4EDD00F715A1 /* UserHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCC200F4E0100F715A1 /* UserHeaderCell.xib */; };
 		F8883D2A200F4EDD00F715A1 /* YTLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8883CCF200F4E0100F715A1 /* YTLoginView.xib */; };
+		F8953BE12019CEDC006BE6D1 /* UserPhoneBindController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8953BDE2019CEDC006BE6D1 /* UserPhoneBindController.h */; };
+		F8953BE22019CEDC006BE6D1 /* UserPhoneBindController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8953BDF2019CEDC006BE6D1 /* UserPhoneBindController.m */; };
+		F8953BE32019CEDC006BE6D1 /* UserPhoneBindController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8953BE02019CEDC006BE6D1 /* UserPhoneBindController.xib */; };
+		F8953BE72019CEF5006BE6D1 /* UserPhoneBindVerifyController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8953BE42019CEF5006BE6D1 /* UserPhoneBindVerifyController.h */; };
+		F8953BE82019CEF5006BE6D1 /* UserPhoneBindVerifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8953BE52019CEF5006BE6D1 /* UserPhoneBindVerifyController.m */; };
+		F8953BE92019CEF5006BE6D1 /* UserPhoneBindVerifyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8953BE62019CEF5006BE6D1 /* UserPhoneBindVerifyController.xib */; };
 		F8FC08D02017194700EC6E4A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08CF2017194700EC6E4A /* AssetsLibrary.framework */; };
 		F8FC08D22017194F00EC6E4A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08D12017194F00EC6E4A /* AudioToolbox.framework */; };
 		F8FC08D42017195600EC6E4A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FC08D32017195600EC6E4A /* AVFoundation.framework */; };
@@ -130,6 +135,9 @@
 		F8750ADC2015B91F00E45566 /* GBUserPhoneLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBUserPhoneLoginController.h; sourceTree = "<group>"; };
 		F8750ADD2015B91F00E45566 /* GBUserPhoneLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBUserPhoneLoginController.m; sourceTree = "<group>"; };
 		F8750ADE2015B91F00E45566 /* GBUserPhoneLoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBUserPhoneLoginController.xib; sourceTree = "<group>"; };
+		F87AFE7A2019675100CB8EE5 /* GBUser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GBUser.bundle; sourceTree = "<group>"; };
+		F87AFE802019AE7900CB8EE5 /* UserAuthPlatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAuthPlatform.h; sourceTree = "<group>"; };
+		F87AFE812019AE7900CB8EE5 /* UserAuthPlatform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserAuthPlatform.m; sourceTree = "<group>"; };
 		F8883C89200F4E0100F715A1 /* GBUserPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUserPrefixHeader.pch; sourceTree = "<group>"; };
 		F8883C8A200F4E0100F715A1 /* GBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUser.h; sourceTree = "<group>"; };
 		F8883C8B200F4E0100F715A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -159,8 +167,6 @@
 		F8883CA5200F4E0100F715A1 /* GBUserAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBUserAPI.m; sourceTree = "<group>"; };
 		F8883CA6200F4E0100F715A1 /* GBUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBUserRequest.h; sourceTree = "<group>"; };
 		F8883CA7200F4E0100F715A1 /* GBUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBUserRequest.m; sourceTree = "<group>"; };
-		F8883CA9200F4E0100F715A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F8883CAA200F4E0100F715A1 /* radio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio@2x.png"; sourceTree = "<group>"; };
 		F8883CAC200F4E0100F715A1 /* GBOSSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBOSSUtil.h; sourceTree = "<group>"; };
 		F8883CAD200F4E0100F715A1 /* GBOSSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBOSSUtil.m; sourceTree = "<group>"; };
 		F8883CAF200F4E0100F715A1 /* GBTextEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBTextEditController.h; sourceTree = "<group>"; };
@@ -196,6 +202,12 @@
 		F8883CCF200F4E0100F715A1 /* YTLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTLoginView.xib; sourceTree = "<group>"; };
 		F8883D1E200F4E8800F715A1 /* GBUserResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBUserResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8883D20200F4E8800F715A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8953BDE2019CEDC006BE6D1 /* UserPhoneBindController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPhoneBindController.h; sourceTree = "<group>"; };
+		F8953BDF2019CEDC006BE6D1 /* UserPhoneBindController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPhoneBindController.m; sourceTree = "<group>"; };
+		F8953BE02019CEDC006BE6D1 /* UserPhoneBindController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPhoneBindController.xib; sourceTree = "<group>"; };
+		F8953BE42019CEF5006BE6D1 /* UserPhoneBindVerifyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPhoneBindVerifyController.h; sourceTree = "<group>"; };
+		F8953BE52019CEF5006BE6D1 /* UserPhoneBindVerifyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPhoneBindVerifyController.m; sourceTree = "<group>"; };
+		F8953BE62019CEF5006BE6D1 /* UserPhoneBindVerifyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPhoneBindVerifyController.xib; sourceTree = "<group>"; };
 		F8FC08CF2017194700EC6E4A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		F8FC08D12017194F00EC6E4A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F8FC08D32017195600EC6E4A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -381,6 +393,8 @@
 				F8883CA0200F4E0100F715A1 /* UserInfoParam.m */,
 				F8883CA1200F4E0100F715A1 /* UserInfoRespone.h */,
 				F8883CA2200F4E0100F715A1 /* UserInfoRespone.m */,
+				F87AFE802019AE7900CB8EE5 /* UserAuthPlatform.h */,
+				F87AFE812019AE7900CB8EE5 /* UserAuthPlatform.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -399,8 +413,7 @@
 		F8883CA8200F4E0100F715A1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F8883CA9200F4E0100F715A1 /* Assets.xcassets */,
-				F8883CAA200F4E0100F715A1 /* radio@2x.png */,
+				F87AFE7A2019675100CB8EE5 /* GBUser.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -437,6 +450,12 @@
 				F83BBC482015C751008321A0 /* GBUserPhoneVerifyController.h */,
 				F83BBC492015C751008321A0 /* GBUserPhoneVerifyController.m */,
 				F83BBC4A2015C751008321A0 /* GBUserPhoneVerifyController.xib */,
+				F8953BDE2019CEDC006BE6D1 /* UserPhoneBindController.h */,
+				F8953BDF2019CEDC006BE6D1 /* UserPhoneBindController.m */,
+				F8953BE02019CEDC006BE6D1 /* UserPhoneBindController.xib */,
+				F8953BE42019CEF5006BE6D1 /* UserPhoneBindVerifyController.h */,
+				F8953BE52019CEF5006BE6D1 /* UserPhoneBindVerifyController.m */,
+				F8953BE62019CEF5006BE6D1 /* UserPhoneBindVerifyController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -490,6 +509,7 @@
 				F8883CD0200F4E0100F715A1 /* GBUserPrefixHeader.pch in Headers */,
 				F8883CD7200F4E0100F715A1 /* BaseResponse.h in Headers */,
 				F8883D07200F4E0200F715A1 /* AuthorityView.h in Headers */,
+				F8953BE12019CEDC006BE6D1 /* UserPhoneBindController.h in Headers */,
 				F83BBC4B2015C751008321A0 /* GBUserPhoneVerifyController.h in Headers */,
 				F8883CF4200F4E0200F715A1 /* UserCenterController.h in Headers */,
 				F8883CF1200F4E0200F715A1 /* GBTextEditController.h in Headers */,
@@ -507,12 +527,14 @@
 				F8883CF8200F4E0200F715A1 /* UserSecurityController.h in Headers */,
 				F8883CE9200F4E0200F715A1 /* GBUserAPI.h in Headers */,
 				F8883CEB200F4E0200F715A1 /* GBUserRequest.h in Headers */,
+				F87AFE822019AE7900CB8EE5 /* UserAuthPlatform.h in Headers */,
 				F860C5122010307F00B5BCD7 /* GBUserMacros.h in Headers */,
 				F8883CDB200F4E0100F715A1 /* LoginModel.h in Headers */,
 				F8883CFF200F4E0200F715A1 /* LoginViewModel.h in Headers */,
 				F8883D0D200F4E0200F715A1 /* YTLoginView.h in Headers */,
 				F8883CFC200F4E0200F715A1 /* YTLoginController.h in Headers */,
 				F8883CD5200F4E0100F715A1 /* APIBaseResponse.h in Headers */,
+				F8953BE72019CEF5006BE6D1 /* UserPhoneBindVerifyController.h in Headers */,
 				F8883CE3200F4E0100F715A1 /* UserInfoModifyRespone.h in Headers */,
 				F8883CE7200F4E0100F715A1 /* UserInfoRespone.h in Headers */,
 				F8883CDF200F4E0100F715A1 /* LoginRequest.h in Headers */,
@@ -608,14 +630,15 @@
 			files = (
 				F8883D09200F4E0200F715A1 /* AuthorityView.xib in Resources */,
 				F8883D0F200F4E0200F715A1 /* YTLoginView.xib in Resources */,
-				F8883CED200F4E0200F715A1 /* Assets.xcassets in Resources */,
 				F8883CFE200F4E0200F715A1 /* YTLoginController.xib in Resources */,
 				F8883CF3200F4E0200F715A1 /* GBTextEditController.xib in Resources */,
 				F8750AE22015B91F00E45566 /* GBUserPhoneLoginController.xib in Resources */,
 				F8883D0C200F4E0200F715A1 /* UserHeaderCell.xib in Resources */,
 				F8883CD2200F4E0100F715A1 /* Info.plist in Resources */,
-				F8883CEE200F4E0200F715A1 /* radio@2x.png in Resources */,
+				F8953BE92019CEF5006BE6D1 /* UserPhoneBindVerifyController.xib in Resources */,
+				F87AFE7B2019675100CB8EE5 /* GBUser.bundle in Resources */,
 				F83BBC4E2015C751008321A0 /* GBUserPhoneVerifyController.xib in Resources */,
+				F8953BE32019CEDC006BE6D1 /* UserPhoneBindController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,10 +651,8 @@
 				F8883D28200F4EDD00F715A1 /* AuthorityView.xib in Resources */,
 				F8883D29200F4EDD00F715A1 /* UserHeaderCell.xib in Resources */,
 				F8883D2A200F4EDD00F715A1 /* YTLoginView.xib in Resources */,
-				F8883D24200F4ED200F715A1 /* Assets.xcassets in Resources */,
 				F8750AE32015B91F00E45566 /* GBUserPhoneLoginController.xib in Resources */,
 				F83BBC4F2015C751008321A0 /* GBUserPhoneVerifyController.xib in Resources */,
-				F8883D25200F4ED200F715A1 /* radio@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,12 +708,15 @@
 				F8883D06200F4E0200F715A1 /* UserSecurityVM.m in Sources */,
 				F8883CEC200F4E0200F715A1 /* GBUserRequest.m in Sources */,
 				F8883CE0200F4E0100F715A1 /* LoginRequest.m in Sources */,
+				F8953BE82019CEF5006BE6D1 /* UserPhoneBindVerifyController.m in Sources */,
 				F8883CF5200F4E0200F715A1 /* UserCenterController.m in Sources */,
 				F8883D0B200F4E0200F715A1 /* UserHeaderCell.m in Sources */,
 				F8883CD6200F4E0100F715A1 /* APIBaseResponse.m in Sources */,
 				F8883CD8200F4E0100F715A1 /* BaseResponse.m in Sources */,
+				F8953BE22019CEDC006BE6D1 /* UserPhoneBindController.m in Sources */,
 				F8883CD4200F4E0100F715A1 /* APIBaseRequest.m in Sources */,
 				F8883D00200F4E0200F715A1 /* LoginViewModel.m in Sources */,
+				F87AFE832019AE7900CB8EE5 /* UserAuthPlatform.m in Sources */,
 				F8883D04200F4E0200F715A1 /* UserInfoVM.m in Sources */,
 				F8883CE4200F4E0100F715A1 /* UserInfoModifyRespone.m in Sources */,
 				F8883CFD200F4E0200F715A1 /* YTLoginController.m in Sources */,
@@ -893,7 +917,7 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/pop\"",
 					"\"${PODS_ROOT}/Bugly\"",
 				);
-				GCC_PREFIX_HEADER = "$SRCROOT/GBUser/Config/GBUserPrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/GBUser/Config/GBUserPrefixHeader.pch;
 				INFOPLIST_FILE = GBUser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -971,7 +995,7 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/pop\"",
 					"\"${PODS_ROOT}/Bugly\"",
 				);
-				GCC_PREFIX_HEADER = "$SRCROOT/GBUser/Config/GBUserPrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/GBUser/Config/GBUserPrefixHeader.pch;
 				INFOPLIST_FILE = GBUser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

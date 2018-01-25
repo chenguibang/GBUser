@@ -10,10 +10,14 @@
 #define GBUserMacros_h
 
 
-#define GBUserBundle [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]]
+//#define GBUserBundle [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]]
+//#define GBUserImage(a) [UIImage imageNamed:a inBundle:GBUserBundle compatibleWithTraitCollection:nil]
+//#define GBUserXIBView(name) [GBUserBundle loadNibNamed:name owner:nil options:nil][0]
 
-#define GBUserImage(a) [UIImage imageNamed:a inBundle:[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]] compatibleWithTraitCollection:nil]
-#define GBUserXIBView(name) [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]] loadNibNamed:name owner:nil options:nil][0]
+//#define GBUserBundle [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"]]
+#define GBUserBundle [NSBundle mainBundle]
+#define GBUserImage(a) [UIImage imageNamed:a]
+#define GBUserXIBView(name) [GBUserBundle loadNibNamed:name owner:nil options:nil][0]
 
 
 

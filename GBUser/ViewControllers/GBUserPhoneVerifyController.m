@@ -9,6 +9,8 @@
 #import "GBUserPhoneVerifyController.h"
 #import <Masonry/Masonry.h>
 #import "GBUserMacros.h"
+#import "UserCenterManager.h"
+#import "GBUserAPI.h"
 @interface GBUserPhoneVerifyController ()
 
 @end
@@ -18,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.phoneLabel.text = self.phone;
+    
     _cancleBtn = [[UIButton alloc]init];
     [self.view addSubview:_cancleBtn];
     [_cancleBtn setBackgroundImage:GBUserImage(@"cancle") forState:UIControlStateNormal];
@@ -27,6 +32,15 @@
         make.right.equalTo(self.view).offset(-15);
     }];
     [_cancleBtn addTarget:self action:@selector(cancleAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didLogin:) name:AppClientNOTI_LOGIN_SUCEESS object:nil];
+}
+
+
+- (void)didLogin:(NSNotification *)noti{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,13 +52,36 @@
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];
+}
+- (IBAction)loginAction:(id)sender {
+    LoginRequest *loginParam = [[LoginRequest alloc]init];
+    loginParam.access_userId = self.phone;
+    loginParam.access_token = self.codeTextFiled.text;
+    loginParam.paltform = @(1);
+    [[UserCenterManager shared] loginWith:loginParam];
+    
+}
 
+- (IBAction)getCode:(id)sender {
+    [GBUserAPI getVerifyCodeWithPhone:self.phone progress:^(NSProgress *progress) {
+        
+    } success:^(ApiResponse *response) {
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    }];
 }
 
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleDefault;
 }
+
+- (void)dealloc{
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 /*
 #pragma mark - Navigation

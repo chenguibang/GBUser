@@ -10,4 +10,9 @@
 
 @interface GBUserPhoneVerifyController : UIViewController
 @property (nonatomic ,strong) UIButton *cancleBtn;
+@property (weak, nonatomic) IBOutlet UITextField *codeTextFiled;
+
+@property (nonatomic ,copy) NSString *phone;
+@property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
+
 @end

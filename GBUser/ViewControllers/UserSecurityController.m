@@ -9,6 +9,8 @@
 #import "UserSecurityController.h"
 #import <ShareSDKExtension/SSEThirdPartyLoginHelper.h>
 #import <ReactiveObjC/ReactiveObjC.h>
+#import "UserAuthPlatform.h"
+#import "UserPhoneBindController.h"
 @interface UserSecurityController (){
    
 }
@@ -66,8 +68,17 @@
         cell.detailTextLabel.font = [UIFont systemFontOfSize:14];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    cell.textLabel.text = self.userSecurityVM.menus[indexPath.section][indexPath.row][@"title"];
-    cell.detailTextLabel.text = self.userSecurityVM.menus[indexPath.section][indexPath.row][@"content"];
+    
+    
+    NSDictionary *dict = self.userSecurityVM.menus[indexPath.section][indexPath.row];
+    if ([dict[@"content"] isEqual:[NSNull null]]) {
+        cell.detailTextLabel.text = @"未绑定";
+    }else{
+        UserAuthPlatform *platForm = self.userSecurityVM.menus[indexPath.section][indexPath.row][@"content"];
+        cell.detailTextLabel.text = platForm.userId;
+    }
+    cell.textLabel.text = dict[@"title"];
+    
     return cell;
 }
 
@@ -75,11 +86,56 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSString *title = self.userSecurityVM.menus[indexPath.section][indexPath.row][@"title"];
+    
+    if ([title isEqualToString:@"手机"]) {
+        
+        NSDictionary *dict = self.userSecurityVM.menus[indexPath.section][indexPath.row];
+        if ([dict[@"content"] isEqual:[NSNull null]]) {
+            UserPhoneBindController *userPhoneBindController = [[UserPhoneBindController alloc]initWithNibName:@"UserPhoneBindController" bundle:nil];
+            userPhoneBindController.userSecurityVM = self.userSecurityVM;
+            [self.navigationController pushViewController:userPhoneBindController animated:YES];
+            
+        }else{
+            UserAuthPlatform *platForm = self.userSecurityVM.menus[indexPath.section][indexPath.row][@"content"];
+            
+        }
+        
+        
+        
+        
+    }
+    
+    
     if ([title isEqualToString:@"QQ"]) {
-        [self.userSecurityVM bindWith:1];
+        
+        NSDictionary *dict = self.userSecurityVM.menus[indexPath.section][indexPath.row];
+        if ([dict[@"content"] isEqual:[NSNull null]]) {
+           [self.userSecurityVM bindWith:100];
+        }else{
+            UserAuthPlatform *platForm = self.userSecurityVM.menus[indexPath.section][indexPath.row][@"content"];
+         
+        }
+        
+        
+        
 
     }if ([title isEqualToString:@"微信"]) {
-        [self.userSecurityVM bindWith:2];
+        NSDictionary *dict = self.userSecurityVM.menus[indexPath.section][indexPath.row];
+        if ([dict[@"content"] isEqual:[NSNull null]]) {
+            [self.userSecurityVM bindWith:101];
+        }else{
+            UserAuthPlatform *platForm = self.userSecurityVM.menus[indexPath.section][indexPath.row][@"content"];
+            
+        }
+        
+    }if ([title isEqualToString:@"新浪微博"]) {
+        NSDictionary *dict = self.userSecurityVM.menus[indexPath.section][indexPath.row];
+        if ([dict[@"content"] isEqual:[NSNull null]]) {
+            [self.userSecurityVM bindWith:102];
+        }else{
+            UserAuthPlatform *platForm = self.userSecurityVM.menus[indexPath.section][indexPath.row][@"content"];
+            
+        }
         
     }
     

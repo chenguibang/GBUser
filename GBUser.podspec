@@ -107,7 +107,7 @@ GBUser. for quik development GBUser. for quik development
   #
 
   #s.resource  = "GBUser/**/*.xib"
-   s.resources = "GBUser/**/*.xib", "GBUser/Resource/Media.xcassets/**/*.png","GBUser/**/*.bundle"
+   s.resources = "GBUser/**/*.xib", "GBUser/**/*.xcassets/**/*.png","GBUser/**/*.bundle"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

@@ -12,6 +12,8 @@
 #import "GBUserAPI.h"
 #import <Masonry/Masonry.h>
 #import "GBUserMacros.h"
+#import "LoginViewModel.h"
+#import "UserCenterManager.h"
 @interface GBUserPhoneLoginController ()
 
 @end
@@ -28,6 +30,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    _loginViewModel = [[LoginViewModel alloc]init];
     
     self.view.backgroundColor = [UIColor whiteColor];
     AuthorityView *authorityView = GBUserXIBView(@"AuthorityView");
@@ -57,7 +61,18 @@
     
     [authorityView.weiBoBtn addTarget:self action:@selector(weiBoLogin:) forControlEvents:UIControlEventTouchUpInside];
     
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didLogin:) name:AppClientNOTI_LOGIN_SUCEESS object:nil];
+}
+
+- (void)didLogin:(NSNotification *)noti{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+- (void)dealloc{
     
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -71,6 +86,7 @@
         
     } success:^(ApiResponse *response) {
         GBUserPhoneVerifyController *verifyVC = [[GBUserPhoneVerifyController alloc]initWithNibName:@"GBUserPhoneVerifyController" bundle:GBUserBundle];
+        verifyVC.phone = self.phoneTextFiled.text;
         [self.navigationController pushViewController:verifyVC animated:YES];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         

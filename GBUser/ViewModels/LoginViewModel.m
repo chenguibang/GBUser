@@ -61,7 +61,7 @@
                                        //在此示例中没有跟用户系统关联，则使用一个社交用户对应一个系统用户的方式。将社交用户的uid作为关联ID传入associateHandler。
                                        NSLog(@"登录的id == %@",user.uid);
                                        self.loginParam.access_userId = user.uid;
-                                       self.loginParam.paltform = @(1);
+                                       self.loginParam.paltform = @(100);
                                        self.loginParam.access_token = user.credential.token;
                                        [self sendLogin];
                                        associateHandler (user.uid, user, user);
@@ -85,7 +85,7 @@
                                        //在此示例中没有跟用户系统关联，则使用一个社交用户对应一个系统用户的方式。将社交用户的uid作为关联ID传入associateHandler。
                                        NSLog(@"登录的id == %@",user.uid);
                                        self.loginParam.access_userId = user.uid;
-                                       self.loginParam.paltform = @(2);
+                                       self.loginParam.paltform = @(101);
                                        self.loginParam.access_token = user.credential.token;
                                        [self sendLogin];
                                        associateHandler (user.uid, user, user);
@@ -108,7 +108,10 @@
                                        //在此回调中可以将社交平台用户信息与自身用户系统进行绑定，最后使用一个唯一用户标识来关联此用户信息。
                                        //在此示例中没有跟用户系统关联，则使用一个社交用户对应一个系统用户的方式。将社交用户的uid作为关联ID传入associateHandler。
                                        NSLog(@"登录的id == %@",user.uid);
-                                       
+                                       self.loginParam.access_userId = user.uid;
+                                       self.loginParam.paltform = @(102);
+                                       self.loginParam.access_token = user.credential.token;
+                                       [self sendLogin];
                                        associateHandler (user.uid, user, user);
                                        
                                    }

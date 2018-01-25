@@ -14,7 +14,7 @@
 
 #import <GBNetWork/ApiResponse.h>
 @interface UserSecurityVM : NSObject{
-    NSMutableDictionary *auth;
+    NSArray *auths;
 }
 @property (nonatomic ,strong) NSArray *menus;
 - (void)bindWith:(int)type;
