@@ -8,7 +8,7 @@
 
 #import "YTLoginView.h"
 #import <DBCorner/UIView+DBCorner.h>
-#import <UIImage_Additions/UIImage+Additions.h>
+#import <UIImage+Additions/UIImage+Additions.h>
 #import <JKCategories/JKUIKit.h>
 #import "AuthorityView.h"
 #import <GPUImage/GPUImage.h>
@@ -16,6 +16,8 @@
 #import <Masonry/Masonry.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 #import "GBUserMacros.h"
+
+
 @implementation YTLoginView
 
 
@@ -46,11 +48,8 @@
         make.edges.equalTo(self);
     }];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"GBUserResource" ofType:@"bundle"];
-    NSBundle *bundle = [NSBundle bundleWithPath:path];
-    
-    
-    UIImage *image = [UIImage imageNamed:@"loginbgimg" inBundle:bundle compatibleWithTraitCollection:nil];
+
+    UIImage *image = GBUserImage(@"loginbgimg");
     
     GPUImageGaussianBlurFilter *filter = [[GPUImageGaussianBlurFilter alloc] init];
     filter.texelSpacingMultiplier = 2.0;
