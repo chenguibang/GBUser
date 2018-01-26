@@ -9,6 +9,7 @@
 #import "GBUserAPI.h"
 
 NSString * const GBUSER_API_GETSMSCODE = @"/api/smscode";
+NSString * const GBUSER_API_GETEMAILCODE = @"/api/sendEmailCode";
 
 @implementation GBUserAPI
 
@@ -17,11 +18,19 @@ NSString * const GBUSER_API_GETSMSCODE = @"/api/smscode";
                       progress:(void (^)(NSProgress * progress))downloadProgress
                        success:(void (^)(ApiResponse *response))success
                        failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure{
-    GBUserRequest *loginReq = [GBUserRequest requestWith:@{@"phone":phone}];
+    GBUserRequest *loginReq = [GBUserRequest requestWith:@{@"access_id":phone}];
     loginReq.apiInterface = GBUSER_API_GETSMSCODE;
     [[APiSessionManager shared] API_GET:loginReq progress:downloadProgress success:success failure:failure];
 }
 
++ (void)getVerifyCodeWithEmail:(NSString *)email
+                      progress:(void (^)(NSProgress * progress))downloadProgress
+                       success:(void (^)(ApiResponse *response))success
+                       failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure{
+    GBUserRequest *loginReq = [GBUserRequest requestWith:@{@"access_id":email}];
+    loginReq.apiInterface = GBUSER_API_GETEMAILCODE;
+    [[APiSessionManager shared] API_GET:loginReq progress:downloadProgress success:success failure:failure];
+}
 
 
 + (void)getOSSToken:(void (^)(OSSTaskCompletionSource *, OSSFederationToken *))reult{

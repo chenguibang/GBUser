@@ -8,7 +8,7 @@
 
 #import "UserPhoneBindVerifyController.h"
 #import "GBUserAPI.h"
-
+#import <JKCategories/NSString+JKNormalRegex.h>
 @interface UserPhoneBindVerifyController ()
 
 @end
@@ -29,7 +29,7 @@
     BindingRequest *parems = [[BindingRequest alloc]init];
     parems.access_userId = self.phone;
     parems.access_token = self.codeTextFiled.text;
-    parems.platform = @(1);
+    parems.platform = [self.phone jk_isMobileNumber] ? @(1) : @(2);
     [GBUserAPI bindingWith:parems progress:nil success:^(ApiResponse *response) {
         NSLog(@"绑定成功 %@",response.data);
         [self.userSecurityVM getData];
@@ -39,13 +39,23 @@
     
 }
 - (IBAction)getCode:(id)sender {
-    [GBUserAPI getVerifyCodeWithPhone:self.phone progress:^(NSProgress *progress) {
-        
-    } success:^(ApiResponse *response) {
-     
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
-    }];
+    if ([self.phone jk_isMobileNumber]) {
+        [GBUserAPI getVerifyCodeWithPhone:self.phone progress:^(NSProgress *progress) {
+            
+        } success:^(ApiResponse *response) {
+            
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            
+        }];
+    }else  if ([self.phone jk_isEmailAddress]) {
+        [GBUserAPI getVerifyCodeWithEmail:self.phone progress:^(NSProgress *progress) {
+            
+        } success:^(ApiResponse *response) {
+            
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            
+        }];
+    }
 }
 
 /*

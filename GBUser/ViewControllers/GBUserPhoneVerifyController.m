@@ -11,6 +11,7 @@
 #import "GBUserMacros.h"
 #import "UserCenterManager.h"
 #import "GBUserAPI.h"
+#import <JKCategories/NSString+JKNormalRegex.h>
 @interface GBUserPhoneVerifyController ()
 
 @end
@@ -57,19 +58,29 @@
     LoginRequest *loginParam = [[LoginRequest alloc]init];
     loginParam.access_userId = self.phone;
     loginParam.access_token = self.codeTextFiled.text;
-    loginParam.paltform = @(1);
+    loginParam.paltform = [self.phone jk_isMobileNumber] ?  @(1) : @(2);
     [[UserCenterManager shared] loginWith:loginParam];
     
 }
 
 - (IBAction)getCode:(id)sender {
-    [GBUserAPI getVerifyCodeWithPhone:self.phone progress:^(NSProgress *progress) {
-        
-    } success:^(ApiResponse *response) {
-        
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
-    }];
+    if ([self.phone jk_isMobileNumber]) {
+        [GBUserAPI getVerifyCodeWithPhone:self.phone progress:^(NSProgress *progress) {
+            
+        } success:^(ApiResponse *response) {
+           
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            
+        }];
+    }else  if ([self.phone jk_isEmailAddress]) {
+        [GBUserAPI getVerifyCodeWithEmail:self.phone progress:^(NSProgress *progress) {
+            
+        } success:^(ApiResponse *response) {
+          
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            
+        }];
+    }
 }
 
 

@@ -14,6 +14,8 @@
 #import "GBUserMacros.h"
 #import "LoginViewModel.h"
 #import "UserCenterManager.h"
+#import <JKCategories/NSString+JKNormalRegex.h>
+
 @interface GBUserPhoneLoginController ()
 
 @end
@@ -82,15 +84,30 @@
 
 
 - (IBAction)nextAction:(id)sender {
-    [GBUserAPI getVerifyCodeWithPhone:self.phoneTextFiled.text progress:^(NSProgress *progress) {
-        
-    } success:^(ApiResponse *response) {
-        GBUserPhoneVerifyController *verifyVC = [[GBUserPhoneVerifyController alloc]initWithNibName:@"GBUserPhoneVerifyController" bundle:GBUserBundle];
-        verifyVC.phone = self.phoneTextFiled.text;
-        [self.navigationController pushViewController:verifyVC animated:YES];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
-    }];
+    if ([self.phoneTextFiled.text jk_isMobileNumber]) {
+        [GBUserAPI getVerifyCodeWithPhone:self.phoneTextFiled.text progress:^(NSProgress *progress) {
+            
+        } success:^(ApiResponse *response) {
+            GBUserPhoneVerifyController *verifyVC = [[GBUserPhoneVerifyController alloc]initWithNibName:@"GBUserPhoneVerifyController" bundle:GBUserBundle];
+            verifyVC.phone = self.phoneTextFiled.text;
+            [self.navigationController pushViewController:verifyVC animated:YES];
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            
+        }];
+    }else  if ([self.phoneTextFiled.text jk_isEmailAddress]) {
+        [GBUserAPI getVerifyCodeWithEmail:self.phoneTextFiled.text progress:^(NSProgress *progress) {
+            
+        } success:^(ApiResponse *response) {
+            GBUserPhoneVerifyController *verifyVC = [[GBUserPhoneVerifyController alloc]initWithNibName:@"GBUserPhoneVerifyController" bundle:GBUserBundle];
+            verifyVC.phone = self.phoneTextFiled.text;
+            [self.navigationController pushViewController:verifyVC animated:YES];
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            
+        }];
+    }
+    
+    
+  
   
 }
 

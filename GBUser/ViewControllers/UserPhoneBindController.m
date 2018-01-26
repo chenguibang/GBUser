@@ -10,6 +10,7 @@
 #import "GBUserAPI.h"
 #import "UserPhoneBindVerifyController.h"
 #import "GBUserMacros.h"
+#import <JKCategories/NSString+JKNormalRegex.h>
 @interface UserPhoneBindController ()
 
 @end
@@ -29,17 +30,33 @@
 
 
 - (IBAction)next:(id)sender {
+        
+    if ([self.phoneTextFiled.text jk_isMobileNumber]) {
+        [GBUserAPI getVerifyCodeWithPhone:self.phoneTextFiled.text progress:^(NSProgress *progress) {
+            
+        } success:^(ApiResponse *response) {
+            UserPhoneBindVerifyController *verifyVC = [[UserPhoneBindVerifyController alloc]initWithNibName:@"UserPhoneBindVerifyController" bundle:GBUserBundle];
+            verifyVC.userSecurityVM = self.userSecurityVM;
+            verifyVC.phone = self.phoneTextFiled.text;
+            [self.navigationController pushViewController:verifyVC animated:YES];
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            
+        }];
+    }else  if ([self.phoneTextFiled.text jk_isEmailAddress]) {
+        [GBUserAPI getVerifyCodeWithEmail:self.phoneTextFiled.text progress:^(NSProgress *progress) {
+            
+        } success:^(ApiResponse *response) {
+            UserPhoneBindVerifyController *verifyVC = [[UserPhoneBindVerifyController alloc]initWithNibName:@"UserPhoneBindVerifyController" bundle:GBUserBundle];
+            verifyVC.userSecurityVM = self.userSecurityVM;
+            verifyVC.phone = self.phoneTextFiled.text;
+            [self.navigationController pushViewController:verifyVC animated:YES];
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            
+        }];
+    }
     
-    [GBUserAPI getVerifyCodeWithPhone:self.phoneTextFiled.text progress:^(NSProgress *progress) {
-        
-    } success:^(ApiResponse *response) {
-        UserPhoneBindVerifyController *verifyVC = [[UserPhoneBindVerifyController alloc]initWithNibName:@"UserPhoneBindVerifyController" bundle:GBUserBundle];
-        verifyVC.userSecurityVM = self.userSecurityVM;
-        verifyVC.phone = self.phoneTextFiled.text;
-        [self.navigationController pushViewController:verifyVC animated:YES];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
-    }];
+    
+    
 }
 
 /*

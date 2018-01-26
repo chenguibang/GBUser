@@ -30,6 +30,17 @@
                        failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure;
 
 
+/**
+ 获取邮箱验证吗
+ 
+ @param phone
+ */
++ (void)getVerifyCodeWithEmail:(NSString *)email
+                      progress:(void (^)(NSProgress * progress))downloadProgress
+                       success:(void (^)(ApiResponse *response))success
+                       failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure;
+
+
 //登录网络请求
 + (void)loginWith:(LoginRequest *)params progress:(void (^)(NSProgress * progress))downloadProgress success:(void (^)(ApiResponse *response))success failure:(void (^)(NSURLSessionDataTask * task, NSError * error))failure;
 

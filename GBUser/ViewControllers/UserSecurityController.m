@@ -99,10 +99,20 @@
             UserAuthPlatform *platForm = self.userSecurityVM.menus[indexPath.section][indexPath.row][@"content"];
             
         }
+    }
+    
+    if ([title isEqualToString:@"邮箱"]) {
         
-        
-        
-        
+        NSDictionary *dict = self.userSecurityVM.menus[indexPath.section][indexPath.row];
+        if ([dict[@"content"] isEqual:[NSNull null]]) {
+            UserPhoneBindController *userPhoneBindController = [[UserPhoneBindController alloc]initWithNibName:@"UserPhoneBindController" bundle:nil];
+            userPhoneBindController.userSecurityVM = self.userSecurityVM;
+            [self.navigationController pushViewController:userPhoneBindController animated:YES];
+            
+        }else{
+            UserAuthPlatform *platForm = self.userSecurityVM.menus[indexPath.section][indexPath.row][@"content"];
+            
+        }
     }
     
     
